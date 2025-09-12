@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Hero from "./sections/Hero";
 import Navs from "./sections/Navs";
 import WhoWeAre from "./sections/WhoWeAre";
+import FeaturedCompanies from "./sections/FeaturedCompany";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <Navs />
       <WhoWeAre />
+      <FeaturedCompanies />
     </Box>
   );
 }

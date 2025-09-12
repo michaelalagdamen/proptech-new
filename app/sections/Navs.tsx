@@ -139,7 +139,7 @@ export default function Navs() {
           <Stack spacing={2} direction="row">
             <Button
               variant="text"
-              href="/"
+              href="#"
               sx={{
                 fontFamily: "Outfit, sans-serif",
                 fontSize: "16px",

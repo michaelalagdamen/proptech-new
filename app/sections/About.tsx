@@ -1,10 +1,8 @@
 import * as React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import Divider from "@mui/material/Divider";
-import Image from "next/image";
 import WhoWeAre from "./WhoWeAre";
 
-export default function Hero() {
+export default function About() {
   return (
     <Box>
       <Container
