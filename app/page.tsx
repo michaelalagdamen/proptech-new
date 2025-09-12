@@ -9,6 +9,8 @@ export default function Page() {
       sx={{
         overflowX: "hidden",
         backgroundColor: "#FFFFFF",
+        width: "100%",
+        height: "100%",
       }}
     >
       <Hero />
