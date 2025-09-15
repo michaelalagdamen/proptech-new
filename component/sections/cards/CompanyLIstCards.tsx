@@ -7,7 +7,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function CompanyListCards() {
   return (
@@ -18,54 +18,113 @@ export default function CompanyListCards() {
           width: "100%",
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))",
-          gridTemplateRows: "341px",
+          gridTemplateRows: "380px",
           gap: 3,
         }}
       >
         <Card
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "left",
             maxWidth: 450,
+            maxHeight: 380,
             borderRadius: "15px",
             boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/infinite-logo.png"
-              alt="Technelolodja"
-              width={180}
-              height={60}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              Infinite Systems Technology Corp.
-            </Typography>
-            <Typography
+              <Image
+                src="/images/infinite-logo.png"
+                alt="Technelolodja"
+                width={155}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              Our product lines include real solutions meant to help IMPROVE,
-              ENHANCE and SECURE businesses on a day-to-day basis.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                Infinite Systems Technology Corp.
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                Our product lines include real solutions meant to help IMPROVE,
+                ENHANCE and SECURE businesses on a day-to-day basis.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
@@ -107,37 +166,98 @@ export default function CompanyListCards() {
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/smart-home.png"
-              alt="Technelolodja"
-              width={85}
-              height={92}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              Smart Home
-            </Typography>
-            <Typography
+              <Image
+                src="/images/smart-home.png"
+                alt="Technelolodja"
+                width={125}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              We provide end-to-end automation services that redefine the way
-              you interact with your space.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                Smart Home
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                We provide end-to-end automation services that redefine the way
+                you interact with your space.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
@@ -179,37 +299,99 @@ export default function CompanyListCards() {
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/iconnect-tech.png"
-              alt="Technelolodja"
-              width={215}
-              height={52}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              iConnect Technologies Inc.
-            </Typography>
-            <Typography
+              <Image
+                src="/images/iconnect-tech.png"
+                alt="Technelolodja"
+                width={155}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              Specializes in IT Solutions. We offer comprehensive, powerful
-              solutions for your IT needs.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                iConnect Technologies Inc.
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                Specializes in IT Solutions. We offer comprehensive, powerful
+                solutions for your IT needs.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
@@ -238,13 +420,14 @@ export default function CompanyListCards() {
           </CardActions>
         </Card>
       </Box>
+
       <Box
         sx={{
           marginTop: "25px",
           width: "100%",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(418px, 1fr))",
-          gridTemplateRows: "341px",
+          gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))",
+          gridTemplateRows: "380px",
           gap: 3,
         }}
       >
@@ -256,43 +439,107 @@ export default function CompanyListCards() {
             justifyContent: "center",
             textAlign: "left",
             maxWidth: 450,
+            maxHeight: 380,
             borderRadius: "15px",
             boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/itech.png"
-              alt="Technelolodja"
-              width={192}
-              height={51}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              iTECH Philippines
-            </Typography>
-            <Typography
+              <Image
+                src="/images/itech.png"
+                alt="Technelolodja"
+                width={155}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              Offer a large array of videogames, consoles, PC hardware, and
-              peripherals, and just about any videogame entertainment you may
-              need.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                iTECH Philippines
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                Offer a large array of videogames, consoles, PC hardware, and
+                peripherals, and just about any videogame entertainment you may
+                need.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
@@ -329,42 +576,105 @@ export default function CompanyListCards() {
             justifyContent: "center",
             textAlign: "left",
             maxWidth: 450,
+            maxHeight: 380,
             borderRadius: "15px",
             boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/rapid-tech.png"
-              alt="Technelolodja"
-              width={300}
-              height={35}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              Rapid Tech Cebu 
-            </Typography>
-            <Typography
+              <Image
+                src="/images/rapid-tech.png"
+                alt="Technelolodja"
+                width={155}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              Get the upgrade you deserve! Our units are affordable, reliable,
-              and ready to take on the toughest challenges.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                Rapid Tech Cebu 
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                Get the upgrade you deserve! Our units are affordable, reliable,
+                and ready to take on the toughest challenges.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
@@ -401,42 +711,105 @@ export default function CompanyListCards() {
             justifyContent: "center",
             textAlign: "left",
             maxWidth: 450,
+            maxHeight: 380,
             borderRadius: "15px",
             boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
           }}
         >
           <CardContent sx={{ padding: "25px" }}>
-            {/* <Image
-              src="/images/republic-gamers.png"
-              alt="Technelolodja"
-              width={205}
-              height={51}
-            /> */}
-            <Typography
+            <Box
               sx={{
-                marginTop: "95px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "22px",
-                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
               }}
             >
-              ASUS Republic of Gamers
-            </Typography>
-            <Typography
+              <Image
+                src="/images/republic-gamers.png"
+                alt="Technelolodja"
+                width={155}
+                height={50}
+              />
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "173px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  (02) 8892-9073 to 77
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  inquiry.ayala@infinitePH.com
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "13px",
+                    lineHeight: "15px",
+                    marginTop: "17px",
+                    fontFamily: "Outfit, sans-serif",
+                    color: "#222959",
+                    fontWeight: 400,
+                  }}
+                >
+                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
+                </Typography>
+              </Box>
+            </Box>
+            <Box
               sx={{
-                marginTop: "10px",
-                fontFamily: "Outfit, sans-serif",
-                color: "#222959",
-                fontSize: "18px",
-                lineHeight: "30px",
-                fontWeight: 300,
-                width: "380px",
+                display: "flex",
+                flexDirection: "column",
+
+                justifyContent: "center",
+                textAlign: "left",
               }}
             >
-              Driven by relentless innovation, ROG is committed to producing
-              out-of-this-world experiences for gamers and enthusiasts.
-            </Typography>
+              <Typography
+                sx={{
+                  marginTop: "35px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "22px",
+                  fontWeight: 700,
+                }}
+              >
+                ASUS Republic of Gamers
+              </Typography>
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  fontWeight: 300,
+                  width: "380px",
+                }}
+              >
+                Driven by relentless innovation, ROG is committed to producing
+                out-of-this-world experiences for gamers and enthusiasts.
+              </Typography>
+            </Box>
           </CardContent>
 
           <CardActions
