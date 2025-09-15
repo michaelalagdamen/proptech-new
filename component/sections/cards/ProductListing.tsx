@@ -1,117 +1,138 @@
-import * as React from "react";
-import { Card, CardContent, Button, Typography, Box } from "@mui/material";
 import Image from "next/image";
+import { Star } from "lucide-react";
+import Link from "next/link";
 
-export default function ProductListing() {
+const products = [
+  {
+    id: 1,
+    name: "Blink Video Doorbell",
+    brand: "DoorSmarty",
+    description:
+      "Standout features like its 135° field of view, HD resolution, and seamless integration.",
+    image: "/images/doorbell.png",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Smart Vacuum",
+    brand: "HomeSmart",
+    description:
+      "Get Smart & Enhance your cleaning regimen! New era of clean homes.",
+    image: "/images/vacuum.png",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Smart Thermostat",
+    brand: "Just Tech Me At",
+    description:
+      "Regulates heating and cooling systems in a more efficient and user-friendly way.",
+    image: "/images/thermostat.png",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Moon Coffee Maker",
+    brand: "Yanko Design",
+    description:
+      "This machine is very unlike the espresso makers in the market and it’s the aesthetics that set it apart.",
+    image: "/images/coffee.png",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Oculus Quest 2",
+    brand: "Meta",
+    description:
+      "The most popular virtual reality (VR) hardware belongs to Meta’s Oculus (formerly Facebook).",
+    image: "/images/vr.png",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Cordless Knee Massager",
+    brand: "BIBIRE",
+    description:
+      "The knee massager has 9-speed vibration and heating modes (107°F-137°F).",
+    image: "/images/knee.png",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Anti-Gravity Humidifier",
+    brand: "Personocare",
+    description:
+      "Experience the magic, where mist floats upward, creating a calming, almost magical ambiance.",
+    image: "/images/humidifier.png",
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: "iFlight Alpha A85 HD",
+    brand: "Caddx",
+    description:
+      "Compact and versatile Whoop style racing FPV drone. Features DJI-compatible digital FPV system.",
+    image: "/images/drone.png",
+    rating: 5,
+  },
+];
+
+export default function FeaturedProducts() {
   return (
-    <Box>
-      <Box
-        sx={{
-          marginTop: "50px",
-          width: "100%",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(316px, 1fr))",
-          gridTemplateRows: "297px",
-          gap: 3,
-        }}
-      >
-        <Box sx={{ position: "relative", display: "inline-block" }}>
-          <Card
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
-              maxHeight: 300,
-              wmaxWidth: 316,
-              borderRadius: "15px",
-              boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
-              zIndex: 2,
-              position: "relative",
-            }}
-          >
-            <CardContent sx={{ padding: "15px" }}>
-              {/* <Image
-                src="/images/proptech-logo.png"
-                alt="Technelolodja"
-                width={133}
-                height={116}
-              /> */}
-
-              <Typography
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#6E1B5D",
-                  fontSize: "25px",
-                  fontWeight: 700,
-                  marginTop: "10px",
-                  width: "150px",
-                  textAlign: "left",
-                }}
-              >
-                Blink Video Doorbell
-              </Typography>
-              <Typography
-                sx={{
-                  marginTop: "80px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#222959",
-                  fontSize: "20px",
-                  fontWeight: 700,
-                  width: "100%",
-                  height: "100%",
-                }}
-              >
-                DoorSmary
-              </Typography>
-              <Typography
-                sx={{
-                  marginTop: "10px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#222959",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  width: "285px",
-                }}
-              >
-                Standout features like its 135° field of view, 1080p resolution,
-                and seamless Alexa integration.
-              </Typography>
-            </CardContent>
-          </Card>
-          <Button
-            variant="contained"
-            sx={{
-              position: "absolute",
-              bottom: -40,
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "331px",
-              height: "60px",
-              backgroundColor: "#672361",
-              borderRadius: " 0 0 15px 15px",
-              zIndex: 1,
-            }}
-          >
-            <Typography
-              sx={{
-                fontFamily: "Outfit, sans-serif",
-                color: "#fff",
-                fontWeight: 300,
-                textTransform: "none",
-                marginTop: "30px",
-                fontSize: "18px",
-              }}
+    <section className="py-16">
+      <div className="container  px-6">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-white rounded-xl shadow-md flex flex-col overflow-hidden"
             >
-              Click Here
-            </Typography>
-          </Button>
-        </Box>
-      </Box>
-    </Box>
+              <div className="p-6 flex-1">
+                <div className="grid grid-cols-[auto_1fr] gap-5 items-start">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={100}
+                    height={60}
+                    className="rounded-md"
+                  />
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#6E1B5D] mb-1">
+                      {product.name}
+                    </h3>
+                    <div className="flex items-center">
+                      {[...Array(product.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 text-purple-700 fill-purple-700"
+                        />
+                      ))}
+                      <span className="ml-2 text-sm text-gray-500">(5)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pl-4 p-4 flex-1">
+                <p className="text-gray-600 text-sm">
+                  <span className="font-semibold">{product.brand}</span>{" "}
+                  {product.description}
+                </p>
+              </div>
+
+              <div className="bg-[#672361] hover:bg-purple-600">
+                <Link
+                  href="#"
+                  className="block w-full text-center text-white text-sm py-3 font-medium"
+                >
+                  Click Here
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
