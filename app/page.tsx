@@ -4,6 +4,7 @@ import Navs from "../component/sections/Navs";
 import WhoWeAre from "../component/sections/WhoWeAre";
 import FeaturedCompanies from "../component/sections/FeaturedCompany";
 import FeaturedProducts from "../component/sections/FeaturedProducts";
+import Footer from "../component/sections/Footer";
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
       <WhoWeAre />
       <FeaturedCompanies />
       <FeaturedProducts />
+      <Footer />
     </Box>
   );
 }

@@ -80,12 +80,12 @@ const products = [
 export default function FeaturedProducts() {
   return (
     <section className="py-16">
-      <div className="container  px-6">
+      <div className="container px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-xl shadow-md flex flex-col overflow-hidden"
+              className="rounded-xl border-3 flex flex-col overflow-hidden"
             >
               <div className="p-6 flex-1">
                 <div className="grid grid-cols-[auto_1fr] gap-5 items-start">
