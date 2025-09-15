@@ -1,8 +1,9 @@
 import { Box } from "@mui/material";
-import Hero from "./sections/Hero";
-import Navs from "./sections/Navs";
-import WhoWeAre from "./sections/WhoWeAre";
-import FeaturedCompanies from "./sections/FeaturedCompany";
+import Hero from "../component/sections/Hero";
+import Navs from "../component/sections/Navs";
+import WhoWeAre from "../component/sections/WhoWeAre";
+import FeaturedCompanies from "../component/sections/FeaturedCompany";
+import FeaturedProducts from "../component/sections/FeaturedProducts";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <Navs />
       <WhoWeAre />
       <FeaturedCompanies />
+      <FeaturedProducts />
     </Box>
   );
 }
