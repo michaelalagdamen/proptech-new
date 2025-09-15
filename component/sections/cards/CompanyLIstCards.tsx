@@ -49,44 +49,81 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (02) 8892-9073 to 77
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    inquiry.ayala@infinitePH.com
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Door A, 345 L. Tudtud Street,Mabolo, Cebu City
+                  </Typography>
+                </Box>
               </Box>
             </Box>
 
@@ -149,6 +186,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
@@ -184,46 +229,84 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    0932 887 3173
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    hello@smarthomecebu.com
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Level 2 The Space, AS Fortuna St, Mandaue, Cebu
+                  </Typography>
+                </Box>
               </Box>
             </Box>
+
             <Box
               sx={{
                 display: "flex",
@@ -282,6 +365,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
@@ -317,44 +408,81 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (032) 252-1122
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    sales@iconnecttech.com
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Unit 11L, 11th floor Avenir Bldg., Cebu City
+                  </Typography>
+                </Box>
               </Box>
             </Box>
 
@@ -416,6 +544,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
@@ -463,44 +599,81 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    +639770374462
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    support@itech.com.ph
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    3rd Floor, Cyberzone, SM J Mall, Mandaue City, Cebu
+                  </Typography>
+                </Box>
               </Box>
             </Box>
 
@@ -564,6 +737,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
@@ -600,44 +781,81 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    0917 112 1948
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    admin@rapidtechph.com
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    2nd floor JY Square Mall Salinas Drive Lahug, Cebu
+                  </Typography>
+                </Box>
               </Box>
             </Box>
             <Box
@@ -699,6 +917,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
@@ -735,44 +961,81 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  width: "173px",
+                  maxWidth: "240px",
+                  marginLeft: "15px",
                 }}
               >
-                <Typography
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Image
+                    src="/icons/call-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (02) 8892-9073 to 77
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
-                  }}
-                >
-                  (02) 8892-9073 to 77
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  inquiry.ayala@infinitePH.com
-                </Typography>
-                <Typography
+                  <Image
+                    src="/icons/email-icon.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    asusrepublic@gmail.com
+                  </Typography>
+                </Box>
+                <Box
                   sx={{
-                    fontSize: "13px",
-                    lineHeight: "15px",
                     marginTop: "17px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontWeight: 400,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
                   }}
                 >
-                  Door A, 345 L. Tudtud Street, Mabolo, Cebu City
-                </Typography>
+                  <Image
+                    src="/icons/location.svg"
+                    alt="Call Icon"
+                    width={20}
+                    height={20}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontWeight: 400,
+                    }}
+                  >
+                    3rd Floor, Ayala Center Cebu, Cebu Business Park
+                  </Typography>
+                </Box>
               </Box>
             </Box>
             <Box
@@ -834,6 +1097,14 @@ export default function CompanyListCards() {
               }}
             >
               View all products
+              <Box sx={{ marginLeft: "10px" }}>
+                <Image
+                  src="/icons/view-icon.svg"
+                  alt="ViewIcon"
+                  width={15}
+                  height={15}
+                />
+              </Box>
             </Button>
           </CardActions>
         </Card>
