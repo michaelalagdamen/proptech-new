@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
-import CompanyListCards from "../../component/sections/cards/CompanyLIstCardsLIstCards";
+import CompanyListCards from "./cards/CompanyLIstCards";
 
 export default function FeaturedCompany() {
   return (
     <Container
+      id="feature-company"
       maxWidth={false}
       sx={{
         maxWidth: "1440px",

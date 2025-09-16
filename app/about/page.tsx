@@ -1,8 +1,6 @@
+import Hero from "@/component/sections/Hero";
+import WhoWeAre from "@/component/sections/WhoWeAre";
 import { Box } from "@mui/material";
-import Hero from "../../sections/Hero";
-import Navs from "../../sections/Navs";
-import WhoWeAre from "../../sections/WhoWeAre";
-import Footer from "../../sections/Footer";
 
 export default function About() {
   return (
@@ -15,9 +13,7 @@ export default function About() {
       }}
     >
       <Hero />
-      <Navs />
       <WhoWeAre />
-      <Footer />
     </Box>
   );
 }
