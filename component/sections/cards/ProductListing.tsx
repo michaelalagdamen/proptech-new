@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
 import Link from "next/link";
-
+import { Box } from "@mui/material";
 const products = [
   {
     id: 1,

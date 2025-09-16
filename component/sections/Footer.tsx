@@ -46,7 +46,6 @@ export default function Footer() {
             </Button>
           </Grid>
         </Grid>
-
         <Grid container spacing={6}>
           <Grid>
             <Image
@@ -184,7 +183,6 @@ export default function Footer() {
             </Box>
           </Grid>
         </Grid>
-
         <Grid
           container
           justifyContent="space-between"
