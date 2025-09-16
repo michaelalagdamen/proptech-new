@@ -1,18 +1,19 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
-import ProductsCards from "../cards/ProductsCards";
+import CompanyListCards from "../../component/sections/cards/CompanyLIstCardsLIstCards";
 
-export default function FeaturedProducts() {
+export default function FeaturedCompany() {
   return (
     <Container
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
-        maxHeight: "749px",
+        maxHeight: "848px",
         position: "relative",
+        marginTop: "100px",
       }}
     >
-      <Box sx={{ marginTop: "100px" }}>
+      <Box>
         <Typography
           sx={{
             fontFamily: "Outfit, sans-serif",
@@ -21,7 +22,7 @@ export default function FeaturedProducts() {
             fontWeight: 700,
           }}
         >
-          Featured Products
+          Featured Company
         </Typography>
         <Typography
           sx={{
@@ -33,12 +34,11 @@ export default function FeaturedProducts() {
             fontWeight: 300,
           }}
         >
-          Explore innovative solutions crafted to make your everyday life
-          simpler and smarter.
+          Discover listed companies and explore the opportunities they bring to
+          the market.
         </Typography>
       </Box>
-
-      <ProductsCards />
+      <CompanyListCards />
     </Container>
   );
 }

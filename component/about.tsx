@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import Hero from "./sections/Hero";
-import Navs from "./sections/Navs";
-import WhoWeAre from "./sections/WhoWeAre";
-import Footer from "./sections/Footer";
+import Hero from "../../sections/Hero";
+import Navs from "../../sections/Navs";
+import WhoWeAre from "../../sections/WhoWeAre";
+import Footer from "../../sections/Footer";
 
 export default function About() {
   return (
