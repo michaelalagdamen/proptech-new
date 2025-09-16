@@ -9,7 +9,7 @@ export default function Navs() {
       <Container
         maxWidth={false}
         sx={{
-          maxWidth: "1450px",
+          maxWidth: "1440px",
           maxHeight: "750px",
           position: "relative",
         }}
@@ -26,6 +26,7 @@ export default function Navs() {
         >
           <Box sx={{ display: "flex", justifyContent: "flex-start", gap: 5 }}>
             <Button
+              href="/component/sections/FeaturedCompany.tsx"
               sx={{
                 borderTop: "1px solid #fff",
                 borderLeft: "1px solid #fff",
@@ -139,7 +140,7 @@ export default function Navs() {
           <Stack spacing={2} direction="row">
             <Button
               variant="text"
-              href="#"
+              href="/component/sections/About.tsx"
               sx={{
                 fontFamily: "Outfit, sans-serif",
                 fontSize: "16px",

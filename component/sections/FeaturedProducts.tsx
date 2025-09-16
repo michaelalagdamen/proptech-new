@@ -7,13 +7,12 @@ export default function FeaturedProducts() {
     <Container
       maxWidth={false}
       sx={{
-        maxWidth: "1450px",
+        maxWidth: "1440px",
         maxHeight: "749px",
         position: "relative",
-        marginTop: "100px",
       }}
     >
-      <Box>
+      <Box sx={{ marginTop: "100px" }}>
         <Typography
           sx={{
             fontFamily: "Outfit, sans-serif",

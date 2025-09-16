@@ -9,7 +9,7 @@ export default function Hero() {
       <Container
         maxWidth={false}
         sx={{
-          maxWidth: "1450px",
+          maxWidth: "1440px",
           maxHeight: "750px",
           position: "relative",
         }}
