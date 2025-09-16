@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
-import ProductListing from "./cards/ProductListing";
+import ProductsCards from "./cards/ProductsCards";
 
 export default function FeaturedProducts() {
   return (
@@ -38,7 +38,7 @@ export default function FeaturedProducts() {
         </Typography>
       </Box>
 
-      <ProductListing />
+      <ProductsCards />
     </Container>
   );
 }

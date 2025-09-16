@@ -1,12 +1,11 @@
-import FeaturedCompany from "@/component/sections/FeaturedCompany";
-import FeaturedProducts from "@/component/sections/FeaturedProducts";
-import Footer from "@/component/sections/Footer";
+import ProductsCards from "@/component/sections/cards/ProductsCards";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
+import NavTab from "@/component/sections/NavTab";
 import WhoWeAre from "@/component/sections/WhoWeAre";
 import { Box } from "@mui/material";
 
-export default function Home() {
+export default function Products() {
   return (
     <Box
       sx={{
@@ -18,10 +17,8 @@ export default function Home() {
     >
       <Hero />
       <Navs />
-      <WhoWeAre />
-      <FeaturedCompany />
-      <FeaturedProducts />
-      <Footer />
+      <NavTab />
+      <ProductsCards />
     </Box>
   );
 }

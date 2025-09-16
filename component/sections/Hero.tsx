@@ -17,8 +17,6 @@ export default function Hero() {
         <Box
           sx={{
             position: "relative",
-            width: "100%",
-            height: "750px",
             display: "flex",
             justifyContent: "center",
             marginTop: "25px",

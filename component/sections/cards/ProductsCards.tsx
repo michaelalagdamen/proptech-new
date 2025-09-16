@@ -77,7 +77,7 @@ const products = [
   },
 ];
 
-export default function FeaturedProducts() {
+export default function ProductsCards() {
   return (
     <section className="py-16">
       <div className="container px-6">
