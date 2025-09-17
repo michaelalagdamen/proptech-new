@@ -1,4 +1,5 @@
 import FeaturedEvents from "@/component/sections/FeaturedEvents";
+import Footer from "@/component/sections/Footer";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
 import { Box } from "@mui/material";
@@ -16,6 +17,7 @@ export default function Events() {
       <Hero />
       <Navs />
       <FeaturedEvents />
+      <Footer />
     </Box>
   );
 }

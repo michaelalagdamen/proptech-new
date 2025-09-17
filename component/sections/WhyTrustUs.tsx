@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
 
-export default function FeaturedEvents() {
+export default function WhyTrustUs() {
   return (
     <Container
       maxWidth={false}
@@ -20,7 +20,7 @@ export default function FeaturedEvents() {
             fontWeight: 700,
           }}
         >
-          Featured Events
+          Why Trust Us
         </Typography>
         <Typography
           sx={{
@@ -32,11 +32,9 @@ export default function FeaturedEvents() {
             fontWeight: 300,
           }}
         >
-          Connecting visionaries through events that drive progress and
-          opportunity.
+          Witnessed the HACKESTATE highlights that PropTech organize for solving
+          real life problems.
         </Typography>
-
-        <FeaturedEvents />
       </Box>
     </Container>
   );
