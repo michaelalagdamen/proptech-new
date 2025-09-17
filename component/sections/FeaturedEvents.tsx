@@ -39,32 +39,6 @@ export default function FeaturedEvents() {
 
           <EventCards />
         </Box>
-
-        <Box sx={{ marginTop: "60px" }}>
-          <Typography
-            sx={{
-              fontFamily: "Outfit, sans-serif",
-              color: "#672361",
-              fontSize: "40px",
-              fontWeight: 700,
-            }}
-          >
-            Featured Events
-          </Typography>
-          <Typography
-            sx={{
-              marginTop: "7px",
-              fontFamily: "Outfit, sans-serif",
-              color: "#672361",
-              fontSize: "22px",
-              lineHeight: "30px",
-              fontWeight: 300,
-            }}
-          >
-            Connecting visionaries through events that drive progress and
-            opportunity.
-          </Typography>
-        </Box>
       </Box>
     </Container>
   );

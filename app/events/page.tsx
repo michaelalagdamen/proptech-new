@@ -2,6 +2,7 @@ import FeaturedEvents from "@/component/sections/FeaturedEvents";
 import Footer from "@/component/sections/Footer";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
+import PropTechYoutube from "@/component/sections/PropTechYoutube";
 import SmallNavs from "@/component/sections/SmallNavs";
 import { Box } from "@mui/material";
 
@@ -19,6 +20,7 @@ export default function Events() {
       <Navs />
       <SmallNavs />
       <FeaturedEvents />
+      <PropTechYoutube />
       <Footer />
     </Box>
   );
