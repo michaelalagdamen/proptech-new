@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
+import EventCards from "./cards/EventCards";
 
 export default function FeaturedEvents() {
   return (
@@ -11,7 +12,7 @@ export default function FeaturedEvents() {
         position: "relative",
       }}
     >
-      <Box sx={{ marginTop: "100px" }}>
+      <Box>
         <Typography
           sx={{
             fontFamily: "Outfit, sans-serif",
@@ -36,7 +37,7 @@ export default function FeaturedEvents() {
           opportunity.
         </Typography>
 
-        <FeaturedEvents />
+        <EventCards />
       </Box>
     </Container>
   );

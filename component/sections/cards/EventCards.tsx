@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Card,
-  CardActions,
   CardContent,
   Button,
   Typography,
@@ -13,12 +12,10 @@ import Image from "next/image";
 export default function EventCards() {
   return (
     <Container
-      id="feature-company"
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
         maxHeight: "848px",
-        position: "relative",
         marginTop: "50px",
       }}
     >
@@ -27,184 +24,426 @@ export default function EventCards() {
           sx={{
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))",
-            gridTemplateRows: "380px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(429px, 1fr))",
+            gridTemplateRows: "541px",
             gap: 3,
           }}
         >
-          <Card
+          {/* FIRST EVENT CARD */}
+          <Box
             sx={{
-              maxWidth: 450,
-              maxHeight: 380,
-              borderRadius: "15px",
-              boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+              position: "relative",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
-              <Box
+            <Box sx={{ position: "absolute", top: 0, left: 347, zIndex: 2 }}>
+              <Button
+                variant="contained"
                 sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 4,
+                  width: "85px",
+                  height: "55px",
+                  backgroundColor: "#672361",
+                  borderRadius: "0 15px 0 15px",
+                  boxShadow: "none",
+                  "&:hover": {
+                    backgroundColor: "#986393",
+                    fontWeight: 600,
+                  },
                 }}
               >
+                <Image
+                  src="/icons/expand.svg"
+                  alt="ViewIcon"
+                  width={35}
+                  height={35}
+                />
+              </Button>
+            </Box>
+
+            <Card
+              sx={{
+                maxWidth: 450,
+                height: 541,
+                borderRadius: "15px",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+                zIndex: 1,
+              }}
+            >
+              <CardContent sx={{ padding: "15px" }}>
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "32px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#672361",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    HACKESTATE 2025
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      marginTop: "240px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      gap: 22,
+                      zIndex: 2,
+                      position: "absolute",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "15px",
+                        fontFamily: "Outfit, sans-serif",
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
+                      }}
+                    >
+                      Cebu City
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "15px",
+                        fontFamily: "Outfit, sans-serif",
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
+                      }}
+                    >
+                      April 14 - 15, 2025
+                    </Typography>
+                  </Box>
+                  <Box sx={{ marginTop: "15px", zIndex: 1 }}>
+                    <Image
+                      src="/images/cebuhack.jpg"
+                      alt="Cebu Hackathon"
+                      width={400}
+                      height={276}
+                    />
+                  </Box>
+                </Box>
+
                 <Box
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    justifyContent: "center",
+                    textAlign: "left",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      marginTop: "20px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontSize: "18px",
+                      lineHeight: "25px",
+                      fontWeight: 300,
+                      width: "400px",
+                    }}
+                  >
+                    HackEstate 2025 brings together brilliant minds to reimagine
+                    real estate through technology and innovation. Hosted in
+                    Cebu City, this event empowers teams to collaborate, code,
+                    and create future-ready solutions for the property industry.
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </Box>
+
+          {/* SECOND */}
+          <Box
+            sx={{
+              position: "relative",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box sx={{ position: "absolute", top: 0, left: 347, zIndex: 2 }}>
+              <Button
+                variant="contained"
+                sx={{
+                  width: "85px",
+                  height: "55px",
+                  backgroundColor: "#672361",
+                  borderRadius: "0 15px 0 15px",
+                  boxShadow: "none",
+                  "&:hover": {
+                    backgroundColor: "#986393",
+                    fontWeight: 600,
+                  },
+                }}
+              >
+                <Image
+                  src="/icons/expand.svg"
+                  alt="ViewIcon"
+                  width={35}
+                  height={35}
+                />
+              </Button>
+            </Box>
+
+            <Card
+              sx={{
+                maxWidth: 450,
+                height: 541,
+                borderRadius: "15px",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+                zIndex: 1,
+              }}
+            >
+              <CardContent sx={{ padding: "15px" }}>
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "32px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#672361",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    HACKESTATE 2025
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
                   <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      (02) 8892-9073 to 77
-                    </Typography>
-                  </Box>
-                  <Box
                     sx={{
-                      marginTop: "17px",
+                      marginTop: "240px",
                       display: "flex",
+                      justifyContent: "space-between",
                       alignItems: "center",
-                      gap: "5px",
+                      gap: 22,
+                      zIndex: 2,
+                      position: "absolute",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
                     <Typography
                       sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
+                        fontSize: "15px",
                         fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
                       }}
                     >
-                      inquiry.ayala@infinitePH.com
+                      Zoom Session
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "15px",
+                        fontFamily: "Outfit, sans-serif",
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
+                      }}
+                    >
+                      July 30, 2025
                     </Typography>
                   </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
+                  <Box sx={{ marginTop: "15px", zIndex: 1 }}>
                     <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
+                      src="/images/onlinehack.jpg"
+                      alt="Cebu Hackathon"
+                      width={400}
+                      height={276}
                     />
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      Door A, 345 L. Tudtud Street,Mabolo, Cebu City
-                    </Typography>
                   </Box>
                 </Box>
 
-                <CardActions
+                <Box
                   sx={{
-                    padding: " 0 25px 25px 25px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    textAlign: "left",
                   }}
                 >
-                  <Button
-                    variant="contained"
+                  <Typography
                     sx={{
-                      width: "400px",
-                      height: "40px",
+                      marginTop: "20px",
                       fontFamily: "Outfit, sans-serif",
-                      color: "#fff",
+                      color: "#222959",
                       fontSize: "18px",
-                      lineHeight: "30px",
+                      lineHeight: "25px",
                       fontWeight: 300,
-                      textTransform: "none",
-                      padding: "10px",
-                      backgroundColor: "#672361",
-                      borderRadius: "10px",
-                      "&:hover": {
-                        backgroundColor: "#986393",
-                        fontWeight: 600,
-                      },
+                      width: "400px",
                     }}
                   >
-                    View all products
-                    <Box sx={{ marginLeft: "10px" }}>
-                      <Image
-                        src="/icons/view-icon.svg"
-                        alt="ViewIcon"
-                        width={15}
-                        height={15}
-                      />
-                    </Box>
-                  </Button>
-                </CardActions>
-              </Box>
+                    HackEstate 2025: Pitch and Demo Day is where innovation
+                    takes the spotlight. Through this Zoom session, teams from
+                    GenSan and Davao will showcase their groundbreaking
+                    solutions, pitching ideas and demonstrating technologies
+                    that reimagine the future of real estate.
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </Box>
 
-              <Box
+          {/* THIRD */}
+          <Box
+            sx={{
+              position: "relative",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box sx={{ position: "absolute", top: 0, left: 347, zIndex: 2 }}>
+              <Button
+                variant="contained"
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  textAlign: "left",
+                  width: "85px",
+                  height: "55px",
+                  backgroundColor: "#672361",
+                  borderRadius: "0 15px 0 15px",
+                  boxShadow: "none",
+                  "&:hover": {
+                    backgroundColor: "#986393",
+                    fontWeight: 600,
+                  },
                 }}
               >
-                <Typography
+                <Image
+                  src="/icons/expand.svg"
+                  alt="ViewIcon"
+                  width={35}
+                  height={35}
+                />
+              </Button>
+            </Box>
+
+            <Card
+              sx={{
+                maxWidth: 450,
+                height: 541,
+                borderRadius: "15px",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+                zIndex: 1,
+              }}
+            >
+              <CardContent sx={{ padding: "15px" }}>
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "32px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#672361",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    HACKESTATE 2025
+                  </Typography>
+                </Box>
+
+                <Box
                   sx={{
-                    marginTop: "35px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontSize: "22px",
-                    fontWeight: 700,
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
-                  Infinite Systems Technology Corp.
-                </Typography>
-                <Typography
+                  <Box
+                    sx={{
+                      marginTop: "240px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      gap: 22,
+                      zIndex: 2,
+                      position: "absolute",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "15px",
+                        fontFamily: "Outfit, sans-serif",
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
+                      }}
+                    >
+                      Davao City
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "15px",
+                        fontFamily: "Outfit, sans-serif",
+                        color: "#fff",
+                        fontWeight: 300,
+                        textTransform: "none",
+                      }}
+                    >
+                      August 30, 2025
+                    </Typography>
+                  </Box>
+                  <Box sx={{ marginTop: "15px", zIndex: 1 }}>
+                    <Image
+                      src="/images/davaohack.jpg"
+                      alt="Cebu Hackathon"
+                      width={400}
+                      height={276}
+                    />
+                  </Box>
+                </Box>
+
+                <Box
                   sx={{
-                    marginTop: "10px",
-                    fontFamily: "Outfit, sans-serif",
-                    color: "#222959",
-                    fontSize: "18px",
-                    lineHeight: "30px",
-                    fontWeight: 300,
-                    width: "380px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    textAlign: "left",
                   }}
                 >
-                  Our product lines include real solutions meant to help
-                  IMPROVE, ENHANCE and SECURE businesses on a day-to-day basis.
-                </Typography>
-              </Box>
-            </CardContent>
-          </Card>
+                  <Typography
+                    sx={{
+                      marginTop: "20px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#222959",
+                      fontSize: "18px",
+                      lineHeight: "25px",
+                      fontWeight: 300,
+                      width: "400px",
+                    }}
+                  >
+                    HackEstate 2025: Hackathon Finals unites young innovators
+                    and visionaries in Davao City to reimagine the future of
+                    real estate through groundbreaking technology. Challenges
+                    teams to showcase smart solutions that can transform the
+                    real estate industry.
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </Box>
         </Box>
       </Box>
     </Container>
