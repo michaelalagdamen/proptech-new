@@ -79,8 +79,8 @@ const products = [
 
 export default function ProductsCards() {
   return (
-    <section className="py-16 px-10">
-      <div className="container px-6">
+    <section className="py-16">
+      <div className="container px-12">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => (
             <div
