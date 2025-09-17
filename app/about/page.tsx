@@ -1,6 +1,7 @@
 import Hero from "@/component/sections/Hero";
-import WhoWeAre from "@/component/sections/WhoWeAre";
 import { Box } from "@mui/material";
+import AboutHero from "@/component/sections/AboutHero";
+import MissionVision from "@/component/sections/MissionVision";
 
 export default function About() {
   return (
@@ -12,8 +13,8 @@ export default function About() {
         height: "100%",
       }}
     >
-      <Hero />
-      <WhoWeAre />
+      <AboutHero />
+      <MissionVision />
     </Box>
   );
 }

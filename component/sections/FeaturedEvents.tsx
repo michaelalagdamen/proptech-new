@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
-import ProductsCards from "./cards/ProductsCards";
 
 export default function FeaturedEvents() {
   return (
