@@ -1,7 +1,9 @@
 import CompanyListCards from "@/component/sections/cards/CompanyLIstCards";
+import Footer from "@/component/sections/Footer";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
 import NavTab from "@/component/sections/NavTab";
+import SmallNavs from "@/component/sections/SmallNavs";
 
 import { Box } from "@mui/material";
 
@@ -17,8 +19,10 @@ export default function Company() {
     >
       <Hero />
       <Navs />
+      <SmallNavs />
       <NavTab />
       <CompanyListCards />
+      <Footer />
     </Box>
   );
 }

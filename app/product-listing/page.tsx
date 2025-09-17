@@ -1,8 +1,9 @@
 import ProductsCards from "@/component/sections/cards/ProductsCards";
+import Footer from "@/component/sections/Footer";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
 import NavTab from "@/component/sections/NavTab";
-import WhoWeAre from "@/component/sections/WhoWeAre";
+import SmallNavs from "@/component/sections/SmallNavs";
 import { Box } from "@mui/material";
 
 export default function Products() {
@@ -17,8 +18,10 @@ export default function Products() {
     >
       <Hero />
       <Navs />
+      <SmallNavs />
       <NavTab />
       <ProductsCards />
+      <Footer />
     </Box>
   );
 }

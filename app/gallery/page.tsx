@@ -1,10 +1,9 @@
-import FeaturedEvents from "@/component/sections/FeaturedEvents";
+import EventCards from "@/component/sections/cards/EventCards";
 import Footer from "@/component/sections/Footer";
-import Hero from "@/component/sections/Hero";
-import Navs from "@/component/sections/Navs";
+import GalleryHero from "@/component/sections/GalleryHero";
 import { Box } from "@mui/material";
 
-export default function Events() {
+export default function Gallery() {
   return (
     <Box
       sx={{
@@ -14,9 +13,7 @@ export default function Events() {
         height: "100%",
       }}
     >
-      <Hero />
-      <Navs />
-      <FeaturedEvents />
+      <GalleryHero />
       <Footer />
     </Box>
   );

@@ -5,8 +5,8 @@ import {
   Box,
   Typography,
   Container,
-  Grid,
   Button,
+  Divider,
   Link as MuiLink,
 } from "@mui/material";
 import Link from "next/link";
@@ -15,40 +15,86 @@ import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 
 export default function Footer() {
   return (
-    <Box sx={{ bgcolor: "#0A1A61", color: "#fff", mt: 8, pt: 6, pb: 3 }}>
-      <Container maxWidth="lg">
-        <Grid
-          container
-          justifyContent="space-between"
-          alignItems="center"
-          sx={{ mb: 6 }}
+    <Container
+      maxWidth={false}
+      sx={{
+        maxWidth: "1440px",
+        maxHeight: "750px",
+        position: "relative",
+        paddingBottom: "25px",
+        marginTop: "100px",
+      }}
+    >
+      <Box
+        sx={{
+          bgcolor: "#00165E",
+          color: "#fff",
+          borderRadius: "15px",
+          padding: "40px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            maxWidth: "240px",
+            gap: 14,
+          }}
         >
-          <Grid>
+          <Box>
             <Typography
               variant="h4"
-              sx={{ fontWeight: 600, fontFamily: "Outfit, sans-serif" }}
+              sx={{
+                fontWeight: 600,
+                fontFamily: "Outfit, sans-serif",
+                fontSize: "50px",
+              }}
             >
               Future <span style={{ color: "#3B82F6" }}>Driven</span> Together
             </Typography>
-          </Grid>
-          <Grid>
+            <Divider
+              sx={{
+                marginTop: "17px",
+                width: "950px",
+                height: "2px",
+                backgroundColor: "#0533B7",
+              }}
+            />
+          </Box>
+
+          <Box>
             <Button
               variant="contained"
               sx={{
+                width: "250px",
+                height: "67px",
                 bgcolor: "#2563EB",
                 "&:hover": { bgcolor: "#1E40AF" },
                 borderRadius: "8px",
-                textTransform: "none",
-                fontWeight: 600,
               }}
             >
-              Contact Us
+              <Typography
+                sx={{
+                  fontSize: "30px",
+                  fontFamily: "Outfit, sans-serif",
+                  textTransform: "none",
+                  fontWeight: 600,
+                }}
+              >
+                Contact Us
+              </Typography>
             </Button>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
 
-        <Grid container spacing={6}>
-          <Grid>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            width: "100%",
+          }}
+        >
+          <Box sx={{ marginTop: "55px" }}>
             <Image
               src="/images/proptech-white.png"
               alt="PropTech Logo"
@@ -56,13 +102,28 @@ export default function Footer() {
               height={60}
             />
             <Typography
-              sx={{ mt: 2, mb: 2, fontSize: "14px", color: "#E5E7EB" }}
+              sx={{
+                fontSize: "18px",
+                color: "#E5E7EB",
+                width: "420px",
+                marginTop: "30px",
+                fontWeight: 300,
+                lineHeight: "25px",
+                fontFamily: "Outfit, sans-serif",
+              }}
             >
               Discover cutting-edge technology designed to elevate your
               experience and drive the future.
             </Typography>
 
-            <Box sx={{ display: "flex", gap: 2, fontSize: "20px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                fontSize: "20px",
+                marginTop: "25px",
+              }}
+            >
               <MuiLink href="#" color="inherit">
                 <Facebook />
               </MuiLink>
@@ -76,134 +137,252 @@ export default function Footer() {
                 <LinkedIn />
               </MuiLink>
             </Box>
-          </Grid>
+          </Box>
 
-          <Grid>
-            <Typography sx={{ fontWeight: 600, mb: 2 }}>Featured</Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+          <Box
+            sx={{
+              marginLeft: "110px",
+              justifyContent: "space-between",
+              display: "flex",
+              flexDirection: "row",
+              gap: 15,
+            }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontWeight: 600,
+                  marginTop: "75px",
+                  fontFamily: "Outfit, sans-serif",
+                  fontSize: "25px",
+                }}
               >
-                Featured Companies
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+                Featured
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1,
+                  marginTop: "25px",
+                }}
               >
-                Featured Products
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
-              >
-                Featured Events
-              </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Featured Companies
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Featured Products
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Featured Events
+                </MuiLink>
+              </Box>
             </Box>
-          </Grid>
 
-          <Grid>
-            <Typography sx={{ fontWeight: 600, mb: 2 }}>Quick Links</Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+            <Box>
+              <Typography
+                sx={{
+                  fontWeight: 600,
+                  marginTop: "75px",
+                  fontFamily: "Outfit, sans-serif",
+                  fontSize: "25px",
+                }}
               >
-                About
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+                Quick Links
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1,
+                  marginTop: "25px",
+                }}
               >
-                Product Listing
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
-              >
-                Events
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
-              >
-                Listed Companies
-              </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  About
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Product Listing
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Events
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Listed Companies
+                </MuiLink>
+              </Box>
             </Box>
-          </Grid>
 
-          <Grid>
-            <Typography sx={{ fontWeight: 600, mb: 2 }}>News</Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+            <Box>
+              <Typography
+                sx={{
+                  fontWeight: 600,
+                  marginTop: "75px",
+                  fontFamily: "Outfit, sans-serif",
+                  fontSize: "25px",
+                }}
               >
-                Latest News
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
+                News
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1,
+                  marginTop: "25px",
+                }}
               >
-                Opinion & Analysis
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
-              >
-                Videos
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="#"
-                underline="none"
-                color="inherit"
-              >
-                Sponsored Content
-              </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Latest News
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Opinion & Analysis
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Videos
+                </MuiLink>
+                <MuiLink
+                  component={Link}
+                  href="#"
+                  underline="none"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 400,
+                    fontFamily: "Outfit, sans-serif",
+                    fontSize: "18px",
+                  }}
+                >
+                  Sponsored Content
+                </MuiLink>
+              </Box>
             </Box>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
 
-        <Grid
-          container
-          justifyContent="space-between"
-          alignItems="center"
-          sx={{ mt: 6, pt: 3, borderTop: "1px solid #1E3A8A" }}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            gap: 5,
+            marginTop: "80px",
+          }}
         >
-          <Grid>
-            <Typography sx={{ fontSize: "12px", color: "#D1D5DB" }}>
+          <Box>
+            <Typography
+              sx={{ fontSize: "20px", color: "#fff", fontWeight: 300 }}
+            >
               © Copyright 2025 PropTech Philippines. All rights reserved
             </Typography>
-          </Grid>
-          <Grid>
+          </Box>
+          <Box>
             <Box sx={{ display: "flex", gap: 3 }}>
               <MuiLink
                 component={Link}
                 href="#"
                 underline="none"
                 color="inherit"
-                sx={{ fontSize: "12px" }}
+                sx={{ fontSize: "20px" }}
               >
                 User Terms & Conditions
               </MuiLink>
@@ -212,14 +391,14 @@ export default function Footer() {
                 href="#"
                 underline="none"
                 color="inherit"
-                sx={{ fontSize: "12px" }}
+                sx={{ fontSize: "20px" }}
               >
                 Privacy Policy
               </MuiLink>
             </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Container>
   );
 }
