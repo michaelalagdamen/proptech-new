@@ -1,6 +1,5 @@
-import ProductsCards from "@/component/sections/cards/ProductsCards";
+import Footer from "@/component/sections/Footer";
 import Hero from "@/component/sections/Hero";
-import WhoWeAre from "@/component/sections/WhoWeAre";
 import { Box } from "@mui/material";
 
 export default function Contacts() {
@@ -14,7 +13,7 @@ export default function Contacts() {
       }}
     >
       <Hero />
-      <ProductsCards />
+      <Footer />
     </Box>
   );
 }

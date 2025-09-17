@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function WhoWeAre() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="container mx-auto mt-10 px-6 grid md:grid-cols-2 items-center gap-12">
+      <div className="container mx-auto mt-30 px-6 grid md:grid-cols-2 items-center gap-12">
         <div className="flex-1 flex justify-center mb-8 md:mb-0 translate-x-15">
           <Image
             src="/images/who-we-are.png"
@@ -39,7 +39,7 @@ export default function WhoWeAre() {
             <br /> market and sell with impact.
           </p>
 
-          <h4 className="text-4xl md:text-7xl text-[#672361] font-whisper mt-4 mb-2">
+          <h4 className="text-4xl md:text-3sm text-[#672361] font-outfit mt-4 mb-2">
             Anthony Leuterio
           </h4>
 
