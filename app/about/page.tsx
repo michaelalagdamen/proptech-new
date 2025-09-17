@@ -1,9 +1,7 @@
-import Footer from "@/component/sections/Footer";
-import Hero from "@/component/sections/Hero";
-import Navs from "@/component/sections/Navs";
-import WhoWeAre from "@/component/sections/WhoWeAre";
-import WhyTrustUs from "@/component/sections/WhyTrustUs";
 import { Box } from "@mui/material";
+import AboutHero from "@/component/sections/AboutHero";
+import MissionVision from "@/component/sections/MissionVision";
+import Footer from "@/component/sections/Footer";
 
 export default function About() {
   return (
@@ -15,10 +13,8 @@ export default function About() {
         height: "100%",
       }}
     >
-      <Hero />
-      <Navs />
-      <WhoWeAre />
-      <WhyTrustUs />
+      <AboutHero />
+      <MissionVision />
       <Footer />
     </Box>
   );

@@ -12,7 +12,7 @@ export default function FeaturedProducts() {
         position: "relative",
       }}
     >
-      <Box sx={{ marginTop: "100px" }}>
+      <Box sx={{ marginTop: "170px" }}>
         <Typography
           sx={{
             fontFamily: "Outfit, sans-serif",
