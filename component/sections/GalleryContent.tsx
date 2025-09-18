@@ -13,7 +13,7 @@ export default function GalleryContent() {
         maxHeight: "4676px",
       }}
     >
-      <Box sx={{ marginTop: "100px" }}>
+      <Box sx={{ marginTop: "70px" }}>
         <Box>
           <Typography
             sx={{
@@ -23,11 +23,11 @@ export default function GalleryContent() {
               fontWeight: 700,
             }}
           >
-            HackEstate
+            Latest PropTech Highlights
           </Typography>
           <Typography
             sx={{
-              marginTop: "7px",
+              marginTop: "60px",
               fontFamily: "Outfit, sans-serif",
               color: "#222959",
               fontSize: "22px",
@@ -35,7 +35,32 @@ export default function GalleryContent() {
               fontWeight: 300,
             }}
           >
-            The power of PropTech collaboration in action.
+            HACKESTATE Finals in Davao City
+          </Typography>
+        </Box>
+
+        <Box sx={{ marginTop: "70px" }}>
+          <Typography
+            sx={{
+              fontFamily: "Outfit, sans-serif",
+              color: "#222959",
+              fontSize: "40px",
+              fontWeight: 700,
+            }}
+          >
+            HACKESTATE Hosted in Cebu
+          </Typography>
+          <Typography
+            sx={{
+              marginTop: "60px",
+              fontFamily: "Outfit, sans-serif",
+              color: "#222959",
+              fontSize: "22px",
+              lineHeight: "30px",
+              fontWeight: 300,
+            }}
+          >
+            First PropTech Hackathon Hosted in Cebu
           </Typography>
         </Box>
       </Box>
