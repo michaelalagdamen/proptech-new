@@ -3,6 +3,8 @@ import AboutHero from "@/component/sections/AboutHero";
 import MissionVision from "@/component/sections/MissionVision";
 import OurJourney from "@/component/sections/OurJourney";
 import Schools from "@/component/sections/Schools";
+import ProductPeople from "@/component/sections/ProptechPeople";
+import Partner from "@/component/sections/Partner";
 import Footer from "@/component/sections/Footer";
 
 export default function About() {
@@ -19,6 +21,8 @@ export default function About() {
       <MissionVision />
       <OurJourney />
       <Schools />
+      <ProductPeople />
+      <Partner />
       <Footer />
     </Box>
   );

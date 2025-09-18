@@ -8,7 +8,7 @@ export default function Schools() {
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
-        maxHeight: "749px",
+        maxHeight: "749vh",
         position: "relative",
       }}
     >
