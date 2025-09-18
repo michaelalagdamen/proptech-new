@@ -5,6 +5,7 @@ import {
   InputAdornment,
   Button,
 } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function Partner() {
   return (
@@ -69,6 +70,7 @@ export default function Partner() {
               <InputAdornment position="end">
                 <Button
                   variant="contained"
+                  endIcon={<ArrowForwardIcon />}
                   sx={{
                     bgcolor: "#0A0F2C",
                     borderRadius: "25px",
