@@ -1,8 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Button, Box, Typography, Container, Stack } from "@mui/material";
-import Image from "next/image";
+import { Button, Box, Typography, Container } from "@mui/material";
 
 export default function Navs() {
   return (
