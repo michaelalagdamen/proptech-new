@@ -13,6 +13,7 @@ export default function Schools() {
         marginTop: "50px",
         position: "relative",
         paddingBottom: "125px",
+        marginLeft: 5,
       }}
     >
       <Box
@@ -397,7 +398,7 @@ export default function Schools() {
           sx={{
             border: "4px solid #0A0F2C",
             borderRadius: "50px",
-            left: "430px",
+            left: "435px",
             px: 5,
             py: 6,
             mb: 6,
@@ -458,7 +459,8 @@ export default function Schools() {
         <Box
           sx={{
             position: "absolute",
-            bottom: 0,
+            bottom: -30,
+
             left: "25px",
           }}
         >
@@ -468,8 +470,9 @@ export default function Schools() {
             endIcon={<ArrowForwardIcon />}
             sx={{
               borderRadius: "10px",
-              px: 3,
-              py: 2,
+              fontSize: "22px",
+              px: 2,
+              py: 1,
               fontWeight: "bold",
               textTransform: "none",
               backgroundColor: "#0A0F2C",
