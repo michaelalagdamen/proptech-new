@@ -1,5 +1,6 @@
 import EventCards from "@/component/sections/cards/EventCards";
 import Footer from "@/component/sections/Footer";
+import GalleryContent from "@/component/sections/GalleryContent";
 import GalleryHero from "@/component/sections/GalleryHero";
 import { Box } from "@mui/material";
 
@@ -14,6 +15,7 @@ export default function Gallery() {
       }}
     >
       <GalleryHero />
+      <GalleryContent />
       <Footer />
     </Box>
   );
