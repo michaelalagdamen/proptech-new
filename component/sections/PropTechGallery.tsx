@@ -2,15 +2,7 @@
 
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import {
-  Typography,
-  Container,
-  Box,
-  Button,
-  Grid,
-  Paper,
-  Stack,
-} from "@mui/material";
+import { Typography, Container, Box, Button, Paper } from "@mui/material";
 import Image from "next/image";
 import GalleryImages from "./gallery-boxes/GalleryImages";
 

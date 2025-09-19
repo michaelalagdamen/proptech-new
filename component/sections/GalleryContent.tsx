@@ -1,8 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { Typography, Container, Box, Button } from "@mui/material";
-import Image from "next/image";
+import { Typography, Container, Box } from "@mui/material";
+import FirstGroup from "../galleryImages/FirstGroup";
+import SecondGroup from "../galleryImages/SecondGroup";
 
 export default function GalleryContent() {
   return (
@@ -37,6 +38,8 @@ export default function GalleryContent() {
           >
             HACKESTATE Finals in Davao City
           </Typography>
+
+          <FirstGroup />
         </Box>
 
         <Box sx={{ marginTop: "70px" }}>
@@ -62,6 +65,8 @@ export default function GalleryContent() {
           >
             First PropTech Hackathon Hosted in Cebu
           </Typography>
+
+          <SecondGroup />
         </Box>
       </Box>
     </Container>
