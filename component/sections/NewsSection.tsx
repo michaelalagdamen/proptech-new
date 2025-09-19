@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Box, Typography, Tabs, Tab, Container, Divider } from "@mui/material";
+import { Box, Typography, Tabs, Tab, Container } from "@mui/material";
 import Image from "next/image";
 
 export default function NewsSection() {
