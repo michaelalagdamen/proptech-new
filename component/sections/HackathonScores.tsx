@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Typography, Container, Box, Button } from "@mui/material";
+import { Typography, Container, Box, Button, TextField } from "@mui/material";
 import Image from "next/image";
 
 export default function HackathonScores() {
@@ -100,6 +100,25 @@ export default function HackathonScores() {
             >
               Enter team code to view current ranking.
             </Typography>
+
+            <Box component="form" noValidate autoComplete="off">
+              <TextField
+                required
+                id="outlined-required"
+                label="Team Code"
+                sx={{
+                  width: "639px",
+                  height: "60px",
+                  borderRadius: "15px",
+                  border: "1px #222959",
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "15px",
+                  fontWeight: 300,
+                }}
+                // defaultValue="Hello World"
+              />
+            </Box>
 
             <Button
               variant="contained"
