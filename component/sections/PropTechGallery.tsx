@@ -83,6 +83,7 @@ export default function PropTechGallery() {
                 "&:hover": {
                   backgroundColor: "#747CB2",
                   fontWeight: 600,
+                  boxShadow: "none",
                 },
               }}
             >

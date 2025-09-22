@@ -103,6 +103,7 @@ export default function PropTechYoutube() {
                 "&:hover": {
                   backgroundColor: "#747CB2",
                   fontWeight: 600,
+                  boxShadow: "none",
                 },
               }}
             >

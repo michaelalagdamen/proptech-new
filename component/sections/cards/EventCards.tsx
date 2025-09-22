@@ -51,11 +51,12 @@ export default function EventCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
                 <OpenInNewRounded
-                  sx={{ color: "#fff", width: "30px", height: "30px" }}
+                  sx={{ color: "#fff", width: "35px", height: "35px" }}
                 />
               </Button>
             </Box>
@@ -186,11 +187,12 @@ export default function EventCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
                 <OpenInNewRounded
-                  sx={{ color: "#fff", width: "30px", height: "30px" }}
+                  sx={{ color: "#fff", width: "35px", height: "35px" }}
                 />
               </Button>
             </Box>
@@ -322,11 +324,12 @@ export default function EventCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
                 <OpenInNewRounded
-                  sx={{ color: "#fff", width: "30px", height: "30px" }}
+                  sx={{ color: "#fff", width: "35px", height: "35px" }}
                 />
               </Button>
             </Box>

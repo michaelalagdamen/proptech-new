@@ -40,6 +40,7 @@ export default function Navs() {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
                   background: "#292045",
+                  boxShadow: "none",
                 },
               }}
             >
@@ -84,6 +85,7 @@ export default function Navs() {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
                   background: "#292045",
+                  boxShadow: "none",
                 },
               }}
             >
@@ -128,6 +130,7 @@ export default function Navs() {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
                   background: "#273157",
+                  boxShadow: "none",
                 },
               }}
             >

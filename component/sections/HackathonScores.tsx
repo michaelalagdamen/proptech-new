@@ -73,7 +73,7 @@ export default function HackathonScores() {
               }}
             >
               <EmojiEventsRoundedIcon
-                sx={{ color: "#222959", width: "30px", height: "30px" }}
+                sx={{ color: "#222959", width: "35px", height: "35px" }}
               />
               <Typography
                 sx={{
@@ -164,6 +164,7 @@ export default function HackathonScores() {
                 "&:hover": {
                   backgroundColor: "#747CB2",
                   fontWeight: 600,
+                  boxShadow: "none",
                 },
                 marginTop: "40px",
               }}

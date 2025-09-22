@@ -223,6 +223,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
@@ -430,6 +431,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
@@ -637,6 +639,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
@@ -858,6 +861,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
@@ -1066,6 +1070,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
@@ -1274,6 +1279,7 @@ export default function CompanyListCards() {
                   "&:hover": {
                     backgroundColor: "#986393",
                     fontWeight: 600,
+                    boxShadow: "none",
                   },
                 }}
               >
