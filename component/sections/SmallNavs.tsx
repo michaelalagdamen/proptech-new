@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import { Button, Box, Container, Stack } from "@mui/material";
 import Image from "next/image";
@@ -22,13 +21,13 @@ export default function SmallNavs() {
             display: "flex",
             justifyContent: "flex-end",
             marginRight: "30px",
-            marginTop: "-150px",
+            marginTop: "-130px",
             // zIndex: 9999,
           }}
         >
           <Button
+            href="/about"
             variant="text"
-            href="/"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -61,6 +60,7 @@ export default function SmallNavs() {
           </Box>
 
           <Button
+            href="/product-listing"
             variant="text"
             sx={{
               fontFamily: "Outfit, sans-serif",
@@ -91,7 +91,7 @@ export default function SmallNavs() {
           </Box>
 
           <Button
-            href="/"
+            href="/events"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -121,7 +121,7 @@ export default function SmallNavs() {
           </Box>
 
           <Button
-            href="/"
+            href="/listed-company"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -151,7 +151,7 @@ export default function SmallNavs() {
           </Box>
 
           <Button
-            href="/"
+            href="/news"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",

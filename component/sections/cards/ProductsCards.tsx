@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
 import Link from "next/link";
-import { Box } from "@mui/material";
+import { Container } from "@mui/material";
 const products = [
   {
     id: 1,
@@ -79,60 +79,71 @@ const products = [
 
 export default function ProductsCards() {
   return (
-    <section className="py-16">
-      <div className="container px-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="rounded-xl border-3 flex flex-col overflow-hidden"
-            >
-              <div className="p-6 flex-1">
-                <div className="grid grid-cols-[auto_1fr] gap-5 items-start">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    width={100}
-                    height={60}
-                    className="rounded-md"
-                  />
+    <Container
+      maxWidth={false}
+      sx={{
+        maxWidth: "1440px",
+        maxHeight: "750px",
+        position: "relative",
+        overflow: "hidden",
+        p: 0,
+      }}
+    >
+      <section className="py-16 flex items-center">
+        <div className="container px-12">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="rounded-xl border-3 flex flex-col overflow-hidden"
+              >
+                <div className="p-6 flex-1">
+                  <div className="grid grid-cols-[auto_1fr] gap-5 items-start">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={100}
+                      height={60}
+                      className="rounded-md"
+                    />
 
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#6E1B5D] mb-1">
-                      {product.name}
-                    </h3>
-                    <div className="flex items-center">
-                      {[...Array(product.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="w-4 h-4 text-purple-700 fill-purple-700"
-                        />
-                      ))}
-                      <span className="ml-2 text-sm text-gray-500">(5)</span>
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#6E1B5D] mb-1">
+                        {product.name}
+                      </h3>
+                      <div className="flex items-center">
+                        {[...Array(product.rating)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-4 h-4 text-purple-700 fill-purple-700"
+                          />
+                        ))}
+                        <span className="ml-2 text-sm text-gray-500">(5)</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="pl-4 p-4 flex-1">
-                <p className="text-gray-600 text-sm">
-                  <span className="font-semibold">{product.brand}</span>{" "}
-                  {product.description}
-                </p>
-              </div>
+                <div className="pl-4 p-4 flex-1">
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-semibold">{product.brand}</span>{" "}
+                    {product.description}
+                  </p>
+                </div>
 
-              <div className="bg-[#672361] hover:bg-[#986393]">
-                <Link
-                  href="#"
-                  className="block w-full text-center text-white text-sm py-3 font-medium"
-                >
-                  Click Here
-                </Link>
+                <div className="bg-[#672361] hover:bg-[#986393]">
+                  <Link
+                    href="#"
+                    className="block w-full text-center text-white text-sm py-3 font-medium"
+                  >
+                    Click Here
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 }
