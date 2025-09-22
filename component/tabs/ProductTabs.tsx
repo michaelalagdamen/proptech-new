@@ -118,7 +118,7 @@ export default function ProductTabs() {
                   paddingX: "20px",
                 },
                 "& .Mui-selected": {
-                  background: "#575290",
+                  background: "#6660A2",
                   color: "#fff",
                   fontWeight: 400,
                 },

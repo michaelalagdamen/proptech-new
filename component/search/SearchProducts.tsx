@@ -14,6 +14,7 @@ export default function SearchProducts() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        marginTop: "40px",
       }}
     >
       <OutlinedInput
@@ -25,31 +26,29 @@ export default function SearchProducts() {
         startAdornment={
           <InputAdornment position="start">
             <Image
-              src="/icons/search.svg"
+              src="/icons/search-purple.svg"
               alt="Search"
-              width={25}
-              height={25}
+              width={28}
+              height={28}
             />
           </InputAdornment>
         }
         sx={{
           borderRadius: "8px",
-          height: "40px",
-          width: "400px",
+          height: "60px",
+          width: "580px",
           textTransform: "none",
           fontFamily: "Outfit, sans-serif",
-          fontSize: "18px",
+          fontSize: "20px",
           fontWeight: 400,
-          color: "#222959",
+          color: "#83547fff",
           "& .MuiOutlinedInput-notchedOutline": {
-            borderWidth: "1.5px",
-            borderStyle: "solid",
-            borderColor: "transparent",
-            background: "linear-gradient(90deg, #672361, #222959) border-box",
-            WebkitMask:
-              "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
-            WebkitMaskComposite: "xor",
-            maskComposite: "exclude",
+            borderWidth: "2px",
+            borderColor: "#672361",
+          },
+          "& input::placeholder": {
+            color: "#83547fff",
+            opacity: 0.6,
           },
         }}
       />

@@ -17,7 +17,7 @@ export default function SearchCompany() {
       }}
     >
       <OutlinedInput
-        placeholder="Search..."
+        placeholder="Search"
         value={value}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setValue(e.target.value)
@@ -36,12 +36,16 @@ export default function SearchCompany() {
           borderRadius: "8px",
           height: "40px",
           width: "400px",
-          background: "#fff",
-          textTransform: "none",
+          background: "#6660A2",
           fontFamily: "Outfit, sans-serif",
           fontSize: "18px",
           fontWeight: 400,
-          color: "#222959",
+          color: "#fff",
+
+          "& input::placeholder": {
+            color: "#fff",
+            opacity: 0.6,
+          },
         }}
       />
     </FormControl>

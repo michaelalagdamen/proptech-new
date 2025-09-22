@@ -121,7 +121,7 @@ export default function ProductsCards() {
                 </p>
               </div>
 
-              <div className="bg-[#672361] hover:bg-purple-600">
+              <div className="bg-[#672361] hover:bg-[#986393]">
                 <Link
                   href="#"
                   className="block w-full text-center text-white text-sm py-3 font-medium"
