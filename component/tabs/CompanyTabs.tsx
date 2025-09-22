@@ -46,9 +46,7 @@ export default function CompanyTabs() {
               TabIndicatorProps={{ style: { display: "none" } }}
               sx={{
                 minHeight: "40px",
-                "& .MuiTabs-flexContainer": {
-                  gap: "20px",
-                },
+                "& .MuiTabs-flexContainer": { gap: "20px" },
                 "& .MuiTab-root": {
                   minHeight: "40px",
                   textTransform: "none",
@@ -63,9 +61,7 @@ export default function CompanyTabs() {
                   color: "#672361",
                   fontWeight: 400,
                 },
-                "& .MuiTab-root:not(.Mui-selected)": {
-                  color: "#fff",
-                },
+                "& .MuiTab-root:not(.Mui-selected)": { color: "#fff" },
               }}
             >
               <Tab
