@@ -183,7 +183,7 @@ export default function Footer() {
                     fontSize: "18px",
                   }}
                 >
-                  Featured Companies
+                  Featured Company
                 </MuiLink>
                 <MuiLink
                   component={Link}

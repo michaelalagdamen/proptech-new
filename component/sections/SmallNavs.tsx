@@ -39,6 +39,7 @@ export default function SmallNavs() {
               "&:hover, &:focus": {
                 color: "#672361",
                 fontWeight: 700,
+                background: "transparent",
               },
             }}
           >
@@ -62,7 +63,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { fontColor: "#672361", fontWeight: 600 },
+              ":hover": {
+                fontColor: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Product Listing
@@ -79,7 +84,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { color: "#672361", fontWeight: 600 },
+              ":hover": {
+                color: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Events
@@ -96,7 +105,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { color: "#672361", fontWeight: 600 },
+              ":hover": {
+                color: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Listed Companies
@@ -116,6 +129,7 @@ export default function SmallNavs() {
               "&:hover": {
                 color: "#672361",
                 fontWeight: 700,
+                background: "transparent",
               },
             }}
           >

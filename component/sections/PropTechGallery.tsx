@@ -3,7 +3,7 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import { Typography, Container, Box, Button, Paper } from "@mui/material";
-import Image from "next/image";
+import { OpenInNewRounded } from "@mui/icons-material";
 import GalleryImages from "./gallery-boxes/GalleryImages";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -86,11 +86,8 @@ export default function PropTechGallery() {
                 },
               }}
             >
-              <Image
-                src="/icons/view-icon.svg"
-                alt="ViewIcon"
-                width={30}
-                height={30}
+              <OpenInNewRounded
+                sx={{ color: "#fff", width: "30px", height: "30px" }}
               />
             </Button>
           </Box>

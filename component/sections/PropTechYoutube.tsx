@@ -11,7 +11,13 @@ import {
   Paper,
   Stack,
 } from "@mui/material";
-import Image from "next/image";
+
+import {
+  AccountCircleRounded,
+  OpenInNewRounded,
+  RemoveRedEyeRounded,
+  YouTube,
+} from "@mui/icons-material";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -46,12 +52,7 @@ export default function PropTechYoutube() {
             PropTech is on
           </Typography>
 
-          <Image
-            src="/icons/yt.svg"
-            alt="YouTube Icon"
-            width={65}
-            height={65}
-          />
+          <YouTube sx={{ color: "#222959", width: "65px", height: "65px" }} />
 
           <Typography
             sx={{
@@ -105,11 +106,8 @@ export default function PropTechYoutube() {
                 },
               }}
             >
-              <Image
-                src="/icons/view-icon.svg"
-                alt="ViewIcon"
-                width={30}
-                height={30}
+              <OpenInNewRounded
+                sx={{ color: "#fff", width: "30px", height: "30px" }}
               />
             </Button>
           </Box>
@@ -153,11 +151,8 @@ export default function PropTechYoutube() {
               alignItems: "center",
             }}
           >
-            <Image
-              src="/icons/profile-icon.svg"
-              alt="YouTube Icon"
-              width={30}
-              height={30}
+            <AccountCircleRounded
+              sx={{ color: "#222959", width: "30px", height: "29px" }}
             />
           </Box>
 
@@ -198,12 +193,7 @@ export default function PropTechYoutube() {
               alignItems: "center",
             }}
           >
-            <Image
-              src="/icons/yt.svg"
-              alt="YouTube Icon"
-              width={30}
-              height={30}
-            />
+            <YouTube sx={{ color: "#222959", width: "40px", height: "35px" }} />
           </Box>
 
           <Box sx={{ marginLeft: "5px" }}>
@@ -243,11 +233,8 @@ export default function PropTechYoutube() {
               alignItems: "center",
             }}
           >
-            <Image
-              src="/icons/eye-icon.svg"
-              alt="YouTube Icon"
-              width={35}
-              height={23}
+            <RemoveRedEyeRounded
+              sx={{ color: "#222959", width: "35px", height: "30px" }}
             />
           </Box>
 
