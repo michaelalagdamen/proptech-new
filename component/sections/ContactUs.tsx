@@ -24,7 +24,7 @@ export default function ContactUs() {
         <Paper
           elevation={0}
           sx={{
-            border: "2px solid #e0e0e0",
+            border: "2px solid #672361",
             ml: -30,
             borderRadius: "20px",
             p: 4,
@@ -42,7 +42,7 @@ export default function ContactUs() {
               bgcolor: "#fff",
               py: 1,
               borderRadius: "0 0 12px 12px ",
-              border: "2px solid #e0e0e0",
+              border: "2px solid #672361",
               borderTop: "none",
             }}
           >
@@ -69,22 +69,54 @@ export default function ContactUs() {
               mt: 15,
             }}
           >
-            <TextField label="Name" placeholder="Enter Your Name" fullWidth />
+            <TextField
+              label="Name"
+              placeholder="Enter Your Name"
+              fullWidth
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
+            />
             <TextField
               label="Email"
               placeholder="Enter Email Address"
               fullWidth
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             />
             <TextField
               label="Company Name"
               placeholder="Enter Company Name"
               fullWidth
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             />
             <TextField
               label="Category"
               placeholder="Select Category"
               select
               fullWidth
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             >
               <MenuItem value="general">General Inquiry</MenuItem>
               <MenuItem value="support">Support</MenuItem>
@@ -97,7 +129,14 @@ export default function ContactUs() {
               fullWidth
               multiline
               rows={5}
-              sx={{ gridColumn: { xs: "1", md: "span 2" } }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+                gridColumn: { xs: "1", md: "span 2" },
+              }}
             />
           </Box>
 
@@ -127,7 +166,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -161,7 +200,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -195,7 +234,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
