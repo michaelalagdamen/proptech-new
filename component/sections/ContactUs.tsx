@@ -24,33 +24,32 @@ export default function ContactUs() {
         <Paper
           elevation={0}
           sx={{
-            border: "2px solid #e0e0e0",
+            boxShadow: "0 0 3px #2C225980",
             ml: -30,
-            borderRadius: "20px",
+            borderRadius: "15px",
             p: 4,
             position: "relative",
             width: "773px",
-            height: "670px",
+            height: "600px",
           }}
         >
           <Box
             sx={{
               position: "absolute",
-              top: -1,
+              top: 0,
               left: "50%",
               transform: "translateX(-50%)",
               bgcolor: "#fff",
               py: 1,
-              borderRadius: "0 0 12px 12px ",
-              border: "2px solid #e0e0e0",
-              borderTop: "none",
+              borderRadius: "0 0 15px 15px ",
+              boxShadow: "0 1px 3px rgba(90, 45, 130, 0.3)",
             }}
           >
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#0A0F2C",
+                color: "#222959",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",
@@ -69,22 +68,30 @@ export default function ContactUs() {
               mt: 15,
             }}
           >
-            <TextField label="Name" placeholder="Enter Your Name" fullWidth />
+            <TextField
+              label="Name"
+              placeholder="Enter Your Name"
+              fullWidth
+              sx={{ background: "#F2F3FD" }}
+            />
             <TextField
               label="Email"
               placeholder="Enter Email Address"
               fullWidth
+              sx={{ background: "#F2F3FD" }}
             />
             <TextField
               label="Company Name"
               placeholder="Enter Company Name"
               fullWidth
+              sx={{ background: "#F2F3FD" }}
             />
             <TextField
               label="Category"
               placeholder="Select Category"
               select
               fullWidth
+              sx={{ background: "#F2F3FD" }}
             >
               <MenuItem value="general">General Inquiry</MenuItem>
               <MenuItem value="support">Support</MenuItem>
@@ -97,11 +104,17 @@ export default function ContactUs() {
               fullWidth
               multiline
               rows={5}
-              sx={{ gridColumn: { xs: "1", md: "span 2" } }}
+              sx={{
+                gridColumn: {
+                  xs: "1",
+                  md: "span 2",
+                  background: "#F2F3FD",
+                },
+              }}
             />
           </Box>
 
-          <Box sx={{ textAlign: "center", mt: 17.5 }}>
+          <Box sx={{ textAlign: "center", marginTop: "72px" }}>
             <Button
               variant="contained"
               sx={{
@@ -111,8 +124,9 @@ export default function ContactUs() {
                 border: "none",
                 borderRadius: " 12px 12px 0 0 ",
                 textTransform: "none",
-                bgcolor: "#0A0F2C",
-                "&:hover": { bgcolor: "#1a234f" },
+                bgcolor: "#222959",
+                "&:hover": { bgcolor: "#747CB2" },
+                boxShadow: "none",
               }}
             >
               Send Message
@@ -127,8 +141,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
-              borderRadius: "50px",
+              boxShadow: "0 0 3px #2C225980",
+              borderRadius: "15px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -137,7 +151,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -150,7 +164,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               (032) 254-8900
@@ -161,8 +175,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
-              borderRadius: "50px",
+              boxShadow: "0 0 3px #2C225980",
+              borderRadius: "15px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -171,7 +185,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -184,7 +198,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               propertytechph@gmail.com
@@ -195,8 +209,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #e0e0e0",
-              borderRadius: "50px",
+              boxShadow: "0 0 3px #2C225980",
+              borderRadius: "15px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -205,7 +219,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -218,7 +232,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               Cebu City, Philippines

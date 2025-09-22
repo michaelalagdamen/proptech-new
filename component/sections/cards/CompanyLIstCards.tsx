@@ -9,6 +9,12 @@ import {
   Box,
 } from "@mui/material";
 import Image from "next/image";
+import {
+  PhoneRounded,
+  Email,
+  LocationOn,
+  OpenInNewRounded,
+} from "@mui/icons-material";
 
 export default function CompanyListCards() {
   return (
@@ -66,18 +72,26 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
                         lineHeight: "15px",
                         fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
+                        color: "#6681a8ff",
                         fontWeight: 400,
                       }}
                     >
@@ -92,18 +106,24 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
                         lineHeight: "15px",
                         fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
+                        color: "#6681a8ff",
                         fontWeight: 400,
                       }}
                     >
@@ -118,18 +138,24 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
                         lineHeight: "15px",
                         fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
+                        color: "#6681a8ff",
                         fontWeight: 400,
                       }}
                     >
@@ -191,7 +217,7 @@ export default function CompanyListCards() {
                   lineHeight: "30px",
                   fontWeight: 300,
                   textTransform: "none",
-                  padding: "10px",
+                  padding: "15px",
                   backgroundColor: "#672361",
                   borderRadius: "10px",
                   "&:hover": {
@@ -201,13 +227,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>
@@ -251,12 +279,20 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -277,12 +313,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -303,12 +345,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -386,13 +434,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>
@@ -436,12 +486,20 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -462,12 +520,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -488,12 +552,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -571,13 +641,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>
@@ -633,12 +705,20 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -659,12 +739,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -685,12 +771,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -770,13 +862,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>
@@ -821,12 +915,20 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -847,12 +949,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -873,12 +981,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -956,13 +1070,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>
@@ -1007,12 +1123,20 @@ export default function CompanyListCards() {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: "5px" }}
                   >
-                    <Image
-                      src="/icons/call-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <PhoneRounded
+                        sx={{ color: "#7689A6", fontSize: "13px" }}
+                      />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -1033,12 +1157,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/email-icon.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -1059,12 +1189,18 @@ export default function CompanyListCards() {
                       gap: "5px",
                     }}
                   >
-                    <Image
-                      src="/icons/location.svg"
-                      alt="Call Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Box
+                      sx={{
+                        bgcolor: "#E8E8E8",
+                        borderRadius: "50%",
+                        p: 0.5,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                    </Box>
                     <Typography
                       sx={{
                         fontSize: "13px",
@@ -1142,13 +1278,15 @@ export default function CompanyListCards() {
                 }}
               >
                 View all products
-                <Box sx={{ marginLeft: "10px" }}>
-                  <Image
-                    src="/icons/view-icon.svg"
-                    alt="ViewIcon"
-                    width={15}
-                    height={15}
-                  />
+                <Box
+                  sx={{
+                    marginLeft: "10px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                  }}
+                >
+                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
                 </Box>
               </Button>
             </CardActions>

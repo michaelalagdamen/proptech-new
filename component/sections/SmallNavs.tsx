@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Button, Box, Container, Stack } from "@mui/material";
-import Image from "next/image";
+import LensRoundedIcon from "@mui/icons-material/LensRounded";
 
 export default function SmallNavs() {
   return (
@@ -21,6 +21,7 @@ export default function SmallNavs() {
           sx={{
             display: "flex",
             justifyContent: "flex-end",
+            alignItems: "center",
             marginRight: "30px",
             marginTop: "-150px",
             // zIndex: 9999,
@@ -45,20 +46,12 @@ export default function SmallNavs() {
             About
           </Button>
 
-          <Box
+          <LensRoundedIcon
             sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
+              color: "#222959",
+              fontSize: "5px",
             }}
-          >
-            <Image
-              src="/icons/circle.svg"
-              alt="Call Icon"
-              width={5}
-              height={5}
-            />
-          </Box>
+          />
 
           <Button
             variant="text"
@@ -75,20 +68,7 @@ export default function SmallNavs() {
             Product Listing
           </Button>
 
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Image
-              src="/icons/circle.svg"
-              alt="Call Icon"
-              width={5}
-              height={5}
-            />
-          </Box>
+          <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
             href="/"
@@ -105,20 +85,7 @@ export default function SmallNavs() {
             Events
           </Button>
 
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Image
-              src="/icons/circle.svg"
-              alt="Call Icon"
-              width={5}
-              height={5}
-            />
-          </Box>
+          <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
             href="/"
@@ -135,20 +102,7 @@ export default function SmallNavs() {
             Listed Companies
           </Button>
 
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Image
-              src="/icons/circle.svg"
-              alt="Call Icon"
-              width={5}
-              height={5}
-            />
-          </Box>
+          <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
             href="/"
