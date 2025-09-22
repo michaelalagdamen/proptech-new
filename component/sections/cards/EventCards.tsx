@@ -7,6 +7,7 @@ import {
   Container,
   Box,
 } from "@mui/material";
+import { OpenInNewRounded } from "@mui/icons-material";
 import Image from "next/image";
 
 export default function EventCards() {
@@ -53,11 +54,8 @@ export default function EventCards() {
                   },
                 }}
               >
-                <Image
-                  src="/icons/expand.svg"
-                  alt="ViewIcon"
-                  width={35}
-                  height={35}
+                <OpenInNewRounded
+                  sx={{ color: "#fff", width: "30px", height: "30px" }}
                 />
               </Button>
             </Box>
@@ -191,11 +189,8 @@ export default function EventCards() {
                   },
                 }}
               >
-                <Image
-                  src="/icons/expand.svg"
-                  alt="ViewIcon"
-                  width={35}
-                  height={35}
+                <OpenInNewRounded
+                  sx={{ color: "#fff", width: "30px", height: "30px" }}
                 />
               </Button>
             </Box>
@@ -330,11 +325,8 @@ export default function EventCards() {
                   },
                 }}
               >
-                <Image
-                  src="/icons/expand.svg"
-                  alt="ViewIcon"
-                  width={35}
-                  height={35}
+                <OpenInNewRounded
+                  sx={{ color: "#fff", width: "30px", height: "30px" }}
                 />
               </Button>
             </Box>

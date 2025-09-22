@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutHero() {
   return (
@@ -44,56 +45,70 @@ export default function AboutHero() {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-            }}
-          >
-            About
-          </Typography>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-            }}
-          >
-            Product Listing
-          </Typography>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-            }}
-          >
-            Listed Companies
-          </Typography>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-            }}
-          >
-            Contacts
-          </Typography>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-            }}
-          >
-            Events
-          </Typography>
+          <Link href="/home" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+              }}
+            >
+              Home
+            </Typography>
+          </Link>
+
+          <Link href="/product-listing" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+              }}
+            >
+              Product Listing
+            </Typography>
+          </Link>
+
+          <Link href="/listed-company" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+              }}
+            >
+              Listed Companies
+            </Typography>
+          </Link>
+
+          <Link href="/contact" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+              }}
+            >
+              Contacts
+            </Typography>
+          </Link>
+
+          <Link href="/events" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+              }}
+            >
+              Events
+            </Typography>
+          </Link>
         </Box>
       </Box>
 
@@ -112,17 +127,19 @@ export default function AboutHero() {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Typography
-            sx={{
-              color: "#fff",
-              fontFamily: "Outfit, sans-serif",
-              cursor: "pointer",
-              fontSize: "24px",
-              fontWeight: 800,
-            }}
-          >
-            Join Us!
-          </Typography>
+          <Link href="/contact" passHref>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Outfit, sans-serif",
+                cursor: "pointer",
+                fontSize: "24px",
+                fontWeight: 800,
+              }}
+            >
+              Join Us!
+            </Typography>
+          </Link>
         </Box>
       </Box>
 

@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import * as React from "react";
 import { Button, Box, Typography, Container } from "@mui/material";
 
@@ -9,7 +9,7 @@ export default function Navs() {
       <Container
         maxWidth={false}
         sx={{
-          maxWidth: "1440px",
+          maxWidth: "1100px",
           maxHeight: "750px",
           position: "relative",
         }}
@@ -18,13 +18,12 @@ export default function Navs() {
           position="relative"
           sx={{
             background: "transparent",
-            top: "-97px",
-            left: "50px",
-            padding: "10px 40px",
+            top: "-85px",
+            left: "-480px",
             zIndex: 2,
           }}
         >
-          <Box sx={{ display: "flex", justifyContent: "flex-start", gap: 3 }}>
+          <Box sx={{ display: "flex", justifyContent: "flex-end", gap: 3 }}>
             <Button
               sx={{
                 borderTop: "1px solid #fff",
@@ -45,25 +44,27 @@ export default function Navs() {
               }}
             >
               <Box sx={{ transform: "skew(42deg)" }}>
-                <Typography
-                  sx={{
-                    fontSize: "25px",
-                    lineHeight: "22px",
-                    color: "#ffffff",
-                    fontFamily: "Outfit, sans-serif",
-                    textTransform: "none",
-                    width: "180px",
-                    textAlign: "left",
-                    paddingLeft: "30px",
-                    paddingTop: "2px",
-                    "&:hover": {
-                      color: "#fff",
-                      fontWeight: 700,
-                    },
-                  }}
-                >
-                  Featured Company
-                </Typography>
+                <Link href="/listed-company" passHref>
+                  <Typography
+                    sx={{
+                      fontSize: "25px",
+                      lineHeight: "22px",
+                      color: "#ffffff",
+                      fontFamily: "Outfit, sans-serif",
+                      textTransform: "none",
+                      width: "180px",
+                      textAlign: "left",
+                      paddingLeft: "30px",
+                      paddingTop: "2px",
+                      "&:hover": {
+                        color: "#fff",
+                        fontWeight: 700,
+                      },
+                    }}
+                  >
+                    Featured Company
+                  </Typography>
+                </Link>
               </Box>
             </Button>
 
@@ -87,25 +88,27 @@ export default function Navs() {
               }}
             >
               <Box sx={{ transform: "skew(42deg)" }}>
-                <Typography
-                  sx={{
-                    fontSize: "25px",
-                    lineHeight: "22px",
-                    color: "#ffffff",
-                    fontFamily: "Outfit, sans-serif",
-                    textTransform: "none",
-                    width: "180px",
-                    textAlign: "left",
-                    paddingLeft: "30px",
-                    paddingTop: "2px",
-                    "&:hover": {
-                      color: "#fff",
-                      fontWeight: 700,
-                    },
-                  }}
-                >
-                  Featured Products
-                </Typography>
+                <Link href="/product-listing" passHref>
+                  <Typography
+                    sx={{
+                      fontSize: "25px",
+                      lineHeight: "22px",
+                      color: "#ffffff",
+                      fontFamily: "Outfit, sans-serif",
+                      textTransform: "none",
+                      width: "180px",
+                      textAlign: "left",
+                      paddingLeft: "30px",
+                      paddingTop: "2px",
+                      "&:hover": {
+                        color: "#fff",
+                        fontWeight: 700,
+                      },
+                    }}
+                  >
+                    Featured Products
+                  </Typography>
+                </Link>
               </Box>
             </Button>
 
@@ -129,25 +132,27 @@ export default function Navs() {
               }}
             >
               <Box sx={{ transform: "skew(42deg)" }}>
-                <Typography
-                  sx={{
-                    fontSize: "25px",
-                    lineHeight: "22px",
-                    color: "#ffffff",
-                    fontFamily: "Outfit, sans-serif",
-                    textTransform: "none",
-                    width: "180px",
-                    textAlign: "left",
-                    paddingLeft: "30px",
-                    paddingTop: "2px",
-                    "&:hover": {
-                      color: "#fff",
-                      fontWeight: 700,
-                    },
-                  }}
-                >
-                  Featured Events
-                </Typography>
+                <Link href="/events" passHref>
+                  <Typography
+                    sx={{
+                      fontSize: "25px",
+                      lineHeight: "22px",
+                      color: "#ffffff",
+                      fontFamily: "Outfit, sans-serif",
+                      textTransform: "none",
+                      width: "180px",
+                      textAlign: "left",
+                      paddingLeft: "30px",
+                      paddingTop: "2px",
+                      "&:hover": {
+                        color: "#fff",
+                        fontWeight: 700,
+                      },
+                    }}
+                  >
+                    Featured Events
+                  </Typography>
+                </Link>
               </Box>
             </Button>
           </Box>

@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import { Button, Box, Container, Stack } from "@mui/material";
 import LensRoundedIcon from "@mui/icons-material/LensRounded";
@@ -23,13 +22,13 @@ export default function SmallNavs() {
             justifyContent: "flex-end",
             alignItems: "center",
             marginRight: "30px",
-            marginTop: "-150px",
+            marginTop: "-130px",
             // zIndex: 9999,
           }}
         >
           <Button
+            href="/about"
             variant="text"
-            href="/"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -40,6 +39,7 @@ export default function SmallNavs() {
               "&:hover, &:focus": {
                 color: "#672361",
                 fontWeight: 700,
+                background: "transparent",
               },
             }}
           >
@@ -54,6 +54,7 @@ export default function SmallNavs() {
           />
 
           <Button
+            href="/product-listing"
             variant="text"
             sx={{
               fontFamily: "Outfit, sans-serif",
@@ -62,7 +63,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { fontColor: "#672361", fontWeight: 600 },
+              ":hover": {
+                fontColor: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Product Listing
@@ -71,7 +76,7 @@ export default function SmallNavs() {
           <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
-            href="/"
+            href="/events"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -79,7 +84,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { color: "#672361", fontWeight: 600 },
+              ":hover": {
+                color: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Events
@@ -88,7 +97,7 @@ export default function SmallNavs() {
           <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
-            href="/"
+            href="/listed-company"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -96,7 +105,11 @@ export default function SmallNavs() {
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
-              ":hover": { color: "#672361", fontWeight: 600 },
+              ":hover": {
+                color: "#672361",
+                fontWeight: 600,
+                background: "transparent",
+              },
             }}
           >
             Listed Companies
@@ -105,7 +118,7 @@ export default function SmallNavs() {
           <LensRoundedIcon sx={{ color: "#222959", fontSize: "5px" }} />
 
           <Button
-            href="/"
+            href="/news"
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
@@ -116,6 +129,7 @@ export default function SmallNavs() {
               "&:hover": {
                 color: "#672361",
                 fontWeight: 700,
+                background: "transparent",
               },
             }}
           >

@@ -73,16 +73,18 @@ export default function Footer() {
                 borderRadius: "8px",
               }}
             >
-              <Typography
-                sx={{
-                  fontSize: "30px",
-                  fontFamily: "Outfit, sans-serif",
-                  textTransform: "none",
-                  fontWeight: 600,
-                }}
-              >
-                Contact Us
-              </Typography>
+              <Link href="/contact" passHref>
+                <Typography
+                  sx={{
+                    fontSize: "30px",
+                    fontFamily: "Outfit, sans-serif",
+                    textTransform: "none",
+                    fontWeight: 600,
+                  }}
+                >
+                  Contact Us
+                </Typography>
+              </Link>
             </Button>
           </Box>
         </Box>
@@ -124,7 +126,10 @@ export default function Footer() {
                 marginTop: "25px",
               }}
             >
-              <MuiLink href="#" color="inherit">
+              <MuiLink
+                href="https://www.facebook.com/proptechphilippines"
+                color="inherit"
+              >
                 <Facebook />
               </MuiLink>
               <MuiLink href="#" color="inherit">
@@ -178,7 +183,7 @@ export default function Footer() {
                     fontSize: "18px",
                   }}
                 >
-                  Featured Companies
+                  Featured Company
                 </MuiLink>
                 <MuiLink
                   component={Link}
@@ -230,7 +235,7 @@ export default function Footer() {
               >
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/about"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -243,7 +248,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/product-listing"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -256,7 +261,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/events"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -269,7 +274,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/listed-company"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -304,7 +309,7 @@ export default function Footer() {
               >
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href=""
                   underline="none"
                   color="inherit"
                   sx={{

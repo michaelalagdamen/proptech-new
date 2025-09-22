@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Typography, Container, Box, Button, TextField } from "@mui/material";
 import Image from "next/image";
+import EmojiEventsRoundedIcon from "@mui/icons-material/EmojiEventsRounded";
 
 export default function HackathonScores() {
   return (
@@ -71,11 +72,8 @@ export default function HackathonScores() {
                 gap: 1,
               }}
             >
-              <Image
-                src="/icons/trophy.svg"
-                alt="Technelolodja"
-                width={30}
-                height={30}
+              <EmojiEventsRoundedIcon
+                sx={{ color: "#222959", width: "30px", height: "30px" }}
               />
               <Typography
                 sx={{
