@@ -2,10 +2,13 @@
 
 import * as React from "react";
 import { Box, Container, Tabs, Tab, Button } from "@mui/material";
-import Image from "next/image";
 import { useState } from "react";
-import SearchButton from "../search/SearchCompany";
 import SearchCompany from "../search/SearchCompany";
+import {
+  MovingRounded,
+  AutoAwesomeOutlined,
+  SyncRounded,
+} from "@mui/icons-material";
 
 export default function CompanyTabs() {
   const [value, setValue] = useState(0);
@@ -56,8 +59,8 @@ export default function CompanyTabs() {
                   paddingX: "20px",
                 },
                 "& .Mui-selected": {
-                  background: "#93578E",
-                  color: "#fff",
+                  background: "#fff",
+                  color: "#672361",
                   fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": {
@@ -67,11 +70,8 @@ export default function CompanyTabs() {
             >
               <Tab
                 icon={
-                  <Image
-                    src="/icons/today-arrow.svg"
-                    alt="Today"
-                    width={28}
-                    height={25}
+                  <MovingRounded
+                    sx={{ color: "inherit", width: "30px", height: "28px" }}
                   />
                 }
                 iconPosition="start"
@@ -79,11 +79,8 @@ export default function CompanyTabs() {
               />
               <Tab
                 icon={
-                  <Image
-                    src="/icons/shimmer.svg"
-                    alt="New"
-                    width={24}
-                    height={24}
+                  <AutoAwesomeOutlined
+                    sx={{ color: "inherit", fontSize: "24px" }}
                   />
                 }
                 iconPosition="start"
@@ -119,12 +116,7 @@ export default function CompanyTabs() {
                 gap: "10px",
               }}
             >
-              <Image
-                src="/icons/refresh.svg"
-                alt="Refresh"
-                width={24}
-                height={24}
-              />
+              <SyncRounded sx={{ color: "inherit", fontSize: "25px" }} />
               Refresh
             </Button>
           </Box>

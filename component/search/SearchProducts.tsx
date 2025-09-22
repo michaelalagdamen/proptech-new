@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FormControl, OutlinedInput, InputAdornment } from "@mui/material";
-import Image from "next/image";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 export default function SearchProducts() {
   const [value, setValue] = useState<string>("");
@@ -25,11 +25,8 @@ export default function SearchProducts() {
         }
         startAdornment={
           <InputAdornment position="start">
-            <Image
-              src="/icons/search-purple.svg"
-              alt="Search"
-              width={28}
-              height={28}
+            <SearchRoundedIcon
+              sx={{ color: "#672361", width: "28px", height: "30px" }}
             />
           </InputAdornment>
         }

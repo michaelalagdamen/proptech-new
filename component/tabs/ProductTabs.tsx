@@ -2,7 +2,13 @@
 
 import * as React from "react";
 import { Box, Container, Tabs, Tab } from "@mui/material";
-import Image from "next/image";
+import {
+  MovingRounded,
+  AutoAwesomeOutlined,
+  SyncRounded,
+  FilterAltOutlined,
+  VerifiedRounded,
+} from "@mui/icons-material";
 import { useState } from "react";
 
 export default function ProductTabs() {
@@ -58,8 +64,8 @@ export default function ProductTabs() {
                   paddingX: "20px",
                 },
                 "& .Mui-selected": {
-                  background: "#93578E",
-                  color: "#fff",
+                  background: "#fff",
+                  color: "#672361",
                   fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": { color: "#fff" },
@@ -67,11 +73,8 @@ export default function ProductTabs() {
             >
               <Tab
                 icon={
-                  <Image
-                    src="/icons/today-arrow.svg"
-                    alt="Today"
-                    width={28}
-                    height={25}
+                  <MovingRounded
+                    sx={{ color: "inherit", width: "30px", height: "28px" }}
                   />
                 }
                 iconPosition="start"
@@ -79,11 +82,8 @@ export default function ProductTabs() {
               />
               <Tab
                 icon={
-                  <Image
-                    src="/icons/shimmer.svg"
-                    alt="New"
-                    width={24}
-                    height={24}
+                  <AutoAwesomeOutlined
+                    sx={{ color: "inherit", fontSize: "24px" }}
                   />
                 }
                 iconPosition="start"
@@ -118,8 +118,8 @@ export default function ProductTabs() {
                   paddingX: "20px",
                 },
                 "& .Mui-selected": {
-                  background: "#6660A2",
-                  color: "#fff",
+                  background: "#fff",
+                  color: "#222959",
                   fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": { color: "#fff" },
@@ -127,11 +127,8 @@ export default function ProductTabs() {
             >
               <Tab
                 icon={
-                  <Image
-                    src="/icons/filter.svg"
-                    alt="filter"
-                    width={24}
-                    height={24}
+                  <FilterAltOutlined
+                    sx={{ color: "inherit", fontSize: "25px" }}
                   />
                 }
                 iconPosition="start"
@@ -139,11 +136,8 @@ export default function ProductTabs() {
               />
               <Tab
                 icon={
-                  <Image
-                    src="/icons/verified.svg"
-                    alt="Verified"
-                    width={24}
-                    height={24}
+                  <VerifiedRounded
+                    sx={{ color: "inherit", fontSize: "25px" }}
                   />
                 }
                 iconPosition="start"
@@ -151,12 +145,7 @@ export default function ProductTabs() {
               />
               <Tab
                 icon={
-                  <Image
-                    src="/icons/refresh.svg"
-                    alt="Refresh"
-                    width={24}
-                    height={24}
-                  />
+                  <SyncRounded sx={{ color: "inherit", fontSize: "25px" }} />
                 }
                 iconPosition="start"
                 label="Refresh"
