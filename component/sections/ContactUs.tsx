@@ -22,34 +22,34 @@ export default function ContactUs() {
     >
       <Grid>
         <Paper
-          elevation={0}
           sx={{
-            boxShadow: "0 0 3px #2C225980",
+            border: "2px solid #672361",
             ml: -30,
-            borderRadius: "15px",
+            borderRadius: "20px",
             p: 4,
             position: "relative",
             width: "773px",
-            height: "600px",
+            height: "670px",
           }}
         >
           <Box
             sx={{
               position: "absolute",
-              top: 0,
+              top: -1,
               left: "50%",
               transform: "translateX(-50%)",
               bgcolor: "#fff",
               py: 1,
-              borderRadius: "0 0 15px 15px ",
-              boxShadow: "0 1px 3px rgba(90, 45, 130, 0.3)",
+              borderRadius: "0 0 12px 12px ",
+              border: "2px solid #672361",
+              borderTop: "none",
             }}
           >
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#222959",
+                color: "#0A0F2C",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",
@@ -72,26 +72,50 @@ export default function ContactUs() {
               label="Name"
               placeholder="Enter Your Name"
               fullWidth
-              sx={{ background: "#F2F3FD" }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             />
             <TextField
               label="Email"
               placeholder="Enter Email Address"
               fullWidth
-              sx={{ background: "#F2F3FD" }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             />
             <TextField
               label="Company Name"
               placeholder="Enter Company Name"
               fullWidth
-              sx={{ background: "#F2F3FD" }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             />
             <TextField
               label="Category"
               placeholder="Select Category"
               select
               fullWidth
-              sx={{ background: "#F2F3FD" }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+              }}
             >
               <MenuItem value="general">General Inquiry</MenuItem>
               <MenuItem value="support">Support</MenuItem>
@@ -105,16 +129,17 @@ export default function ContactUs() {
               multiline
               rows={5}
               sx={{
-                gridColumn: {
-                  xs: "1",
-                  md: "span 2",
-                  background: "#F2F3FD",
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#222959",
+                  },
                 },
+                gridColumn: { xs: "1", md: "span 2" },
               }}
             />
           </Box>
 
-          <Box sx={{ textAlign: "center", marginTop: "72px" }}>
+          <Box sx={{ textAlign: "center", mt: 17.5 }}>
             <Button
               variant="contained"
               sx={{
@@ -124,9 +149,8 @@ export default function ContactUs() {
                 border: "none",
                 borderRadius: " 12px 12px 0 0 ",
                 textTransform: "none",
-                bgcolor: "#222959",
-                "&:hover": { bgcolor: "#747CB2" },
-                boxShadow: "none",
+                bgcolor: "#0A0F2C",
+                "&:hover": { bgcolor: "#1a234f" },
               }}
             >
               Send Message
@@ -141,8 +165,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
-              borderRadius: "15px",
+              border: "2px solid #222959",
+              borderRadius: "50px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -151,7 +175,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#222959",
+                bgcolor: "#0A0F2C",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -164,7 +188,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               (032) 254-8900
@@ -175,8 +199,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
-              borderRadius: "15px",
+              border: "2px solid #222959",
+              borderRadius: "50px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -185,7 +209,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#222959",
+                bgcolor: "#0A0F2C",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -198,7 +222,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               propertytechph@gmail.com
@@ -209,8 +233,8 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
-              borderRadius: "15px",
+              border: "2px solid #222959",
+              borderRadius: "50px",
               p: 1,
               pr: 2,
               maxWidth: 280,
@@ -219,7 +243,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#222959",
+                bgcolor: "#0A0F2C",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -232,7 +256,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               Cebu City, Philippines
