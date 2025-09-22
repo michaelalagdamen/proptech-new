@@ -56,7 +56,7 @@ export default function HackathonScores() {
           <Box
             sx={{
               width: 705,
-              height: 393,
+              height: 385,
               background: "#fff",
               borderRadius: "15px",
               boxShadow: "0 0 3px #2C225980",
@@ -90,7 +90,7 @@ export default function HackathonScores() {
             </Box>
             <Typography
               sx={{
-                marginTop: "10px",
+                marginTop: "15px",
                 fontFamily: "Outfit, sans-serif",
                 color: "#7689A6",
                 fontSize: "22px",
@@ -101,22 +101,52 @@ export default function HackathonScores() {
               Enter team code to view current ranking.
             </Typography>
 
-            <Box component="form" noValidate autoComplete="off">
-              <TextField
-                required
-                id="outlined-required"
-                label="Team Code"
-                sx={{
+            <Box
+              component="form"
+              noValidate
+              autoComplete="off"
+              sx={{
+                marginTop: "40px",
+                "& .MuiTextField-root": {
                   width: "639px",
+                },
+                "& .MuiOutlinedInput-root": {
                   height: "60px",
-                  borderRadius: "15px",
-                  border: "1px #222959",
+                  borderRadius: "10px",
+                  "& fieldset": {
+                    borderColor: "#222959",
+                    borderWidth: "1px",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#222959",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#222959",
+                  },
+                },
+                "& .MuiInputBase-input": {
                   fontFamily: "Outfit, sans-serif",
                   color: "#222959",
                   fontSize: "15px",
                   fontWeight: 300,
-                }}
-                // defaultValue="Hello World"
+                  padding: "0 15px",
+                },
+                "& .MuiInputLabel-root": {
+                  fontFamily: "Outfit, sans-serif",
+                  color: "#222959",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#7689A6",
+                },
+              }}
+            >
+              <TextField
+                required
+                id="outlined-required"
+                label="Team Code"
+                variant="outlined"
               />
             </Box>
 

@@ -126,7 +126,7 @@ export default function GalleryHero() {
                   fontWeight: 300,
                 }}
               >
-                Latest Highlights
+                Luzon
               </Typography>
             </Button>
 
@@ -146,7 +146,7 @@ export default function GalleryHero() {
                   fontWeight: 300,
                 }}
               >
-                Latest Highlights
+                Visayas
               </Typography>
             </Button>
 
@@ -166,7 +166,7 @@ export default function GalleryHero() {
                   fontWeight: 300,
                 }}
               >
-                Latest Highlights
+                Mindanao
               </Typography>
             </Button>
           </Stack>

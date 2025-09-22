@@ -1,0 +1,58 @@
+"use client";
+
+import { useState } from "react";
+import { FormControl, OutlinedInput, InputAdornment } from "@mui/material";
+import Image from "next/image";
+
+export default function SearchProducts() {
+  const [value, setValue] = useState<string>("");
+
+  return (
+    <FormControl
+      variant="outlined"
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <OutlinedInput
+        placeholder="Search..."
+        value={value}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setValue(e.target.value)
+        }
+        startAdornment={
+          <InputAdornment position="start">
+            <Image
+              src="/icons/search.svg"
+              alt="Search"
+              width={25}
+              height={25}
+            />
+          </InputAdornment>
+        }
+        sx={{
+          borderRadius: "8px",
+          height: "40px",
+          width: "400px",
+          textTransform: "none",
+          fontFamily: "Outfit, sans-serif",
+          fontSize: "18px",
+          fontWeight: 400,
+          color: "#222959",
+          "& .MuiOutlinedInput-notchedOutline": {
+            borderWidth: "1.5px",
+            borderStyle: "solid",
+            borderColor: "transparent",
+            background: "linear-gradient(90deg, #672361, #222959) border-box",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+          },
+        }}
+      />
+    </FormControl>
+  );
+}

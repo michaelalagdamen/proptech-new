@@ -20,7 +20,7 @@ const itemData = [
   { img: "/images/davao4.jpg", title: "image" },
 ];
 
-export default function GalleryImages() {
+export default function FirstGroup() {
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState("");
 

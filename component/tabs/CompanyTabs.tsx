@@ -3,15 +3,17 @@
 import * as React from "react";
 import { Box, Container, Tabs, Tab, Button } from "@mui/material";
 import Image from "next/image";
+import { useState } from "react";
+import SearchButton from "../search/SearchCompany";
+import SearchCompany from "../search/SearchCompany";
 
-export default function NavTab() {
-  const [value, setValue] = React.useState(0);
+export default function CompanyTabs() {
+  const [value, setValue] = useState(0);
+  const [active, setActive] = useState("");
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
-
-  const [active, setActive] = React.useState("search");
 
   return (
     <Box>
@@ -54,9 +56,9 @@ export default function NavTab() {
                   paddingX: "20px",
                 },
                 "& .Mui-selected": {
-                  background: "#fff",
-                  color: "#672361",
-                  fontWeight: 600,
+                  background: "#93578E",
+                  color: "#fff",
+                  fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": {
                   color: "#fff",
@@ -93,13 +95,17 @@ export default function NavTab() {
           <Box
             sx={{
               display: "flex",
-              gap: "20px",
+              gap: "10px",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "row",
             }}
           >
+            <SearchCompany />
             <Button
               onClick={() => setActive("refresh")}
               sx={{
-                minHeight: "40px",
+                height: "40px",
                 borderRadius: "8px",
                 paddingX: "20px",
                 textTransform: "none",
