@@ -7,19 +7,9 @@ import Footer from "@/component/sections/Footer";
 
 export default function ContactUS() {
   return (
-    <Box
-      sx={{
-        overflowX: "hidden",
-        backgroundColor: "#FFFFFF",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <Hero />
-      <Navs />
-      <SmallNavs />
+    <>
       <ContactUs />
       <Footer />
-    </Box>
+    </>
   );
 }

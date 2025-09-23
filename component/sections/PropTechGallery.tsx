@@ -3,6 +3,7 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import { Typography, Container, Box, Button, Paper } from "@mui/material";
+import Link from "next/link";
 import { OpenInNewRounded } from "@mui/icons-material";
 import GalleryImages from "./gallery-boxes/GalleryImages";
 
@@ -73,6 +74,8 @@ export default function PropTechGallery() {
               PropTech Gallery
             </Typography>
             <Button
+              component={Link}
+              href="/gallery"
               variant="contained"
               sx={{
                 width: "60px",

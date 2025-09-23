@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Hero from "@/component/sections/Hero";
+import Navs from "@/component/sections/Navs";
+import { Box } from "@mui/material";
+import SmallNavs from "@/component/sections/SmallNavs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +31,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Box
+          sx={{
+            overflowX: "hidden",
+            backgroundColor: "#FFFFFF",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <Hero />
+          <Navs />
+          <SmallNavs />
+          {children}
+        </Box>
       </body>
     </html>
   );

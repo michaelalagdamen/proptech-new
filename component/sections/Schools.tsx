@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import { Typography, Container, Box } from "@mui/material";
 import SchoolCards from "./cards/SchoolCards";

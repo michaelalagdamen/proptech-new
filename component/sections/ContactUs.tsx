@@ -23,7 +23,7 @@ export default function ContactUs() {
       <Grid>
         <Paper
           sx={{
-            border: "2px solid #672361",
+            boxShadow: "0 0 3px #2C225980",
             ml: -30,
             borderRadius: "20px",
             p: 4,
@@ -35,13 +35,13 @@ export default function ContactUs() {
           <Box
             sx={{
               position: "absolute",
-              top: -1,
+              top: 0,
               left: "50%",
               transform: "translateX(-50%)",
               bgcolor: "#fff",
               py: 1,
               borderRadius: "0 0 12px 12px ",
-              border: "2px solid #672361",
+              boxShadow: "0 1px 3px #2C225980",
               borderTop: "none",
             }}
           >
@@ -145,11 +145,12 @@ export default function ContactUs() {
               sx={{
                 px: 4,
                 py: 1.5,
+                bottom: 0,
                 fontSize: "16px",
                 border: "none",
                 borderRadius: " 12px 12px 0 0 ",
                 textTransform: "none",
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 "&:hover": { bgcolor: "#1a234f" },
               }}
             >
@@ -165,7 +166,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #222959",
+              boxShadow: "0 0 3px #2C225980",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -188,7 +189,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               (032) 254-8900
@@ -199,7 +200,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #222959",
+              boxShadow: "0 0 3px #2C225980",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -222,7 +223,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               propertytechph@gmail.com
@@ -233,7 +234,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid #222959",
+              boxShadow: "0 0 3px #2C225980",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -256,7 +257,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#000000",
+                color: "#222959",
               }}
             >
               Cebu City, Philippines
