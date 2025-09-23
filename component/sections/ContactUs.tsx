@@ -15,10 +15,10 @@ export default function ContactUs() {
   return (
     <Grid
       container
-      spacing={2}
+      spacing={4}
       justifyContent="center"
       alignItems="flex-start"
-      sx={{ maxWidth: 1200, mx: "auto", my: 10, px: 2 }}
+      sx={{ marginTop: "100px" }}
     >
       <Grid>
         <Paper
@@ -28,8 +28,8 @@ export default function ContactUs() {
             borderRadius: "20px",
             p: 4,
             position: "relative",
-            width: "773px",
-            height: "670px",
+            width: "785px",
+            height: "680px",
           }}
         >
           <Box
@@ -49,7 +49,7 @@ export default function ContactUs() {
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#0A0F2C",
+                color: "#222959",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",
@@ -60,97 +60,196 @@ export default function ContactUs() {
           </Box>
 
           <Box
-            component="form"
             sx={{
-              display: "grid",
-              gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-              gap: 4,
-              mt: 15,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <TextField
-              label="Name"
-              placeholder="Enter Your Name"
-              fullWidth
+            <Box
+              component="form"
               sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#222959",
-                  },
-                },
-              }}
-            />
-            <TextField
-              label="Email"
-              placeholder="Enter Email Address"
-              fullWidth
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#222959",
-                  },
-                },
-              }}
-            />
-            <TextField
-              label="Company Name"
-              placeholder="Enter Company Name"
-              fullWidth
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#222959",
-                  },
-                },
-              }}
-            />
-            <TextField
-              label="Category"
-              placeholder="Select Category"
-              select
-              fullWidth
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#222959",
-                  },
-                },
+                display: "grid",
+                gridTemplateColumns: { xs: "1r", md: "2fr 2fr" },
+                gap: 3,
+                mt: 13,
               }}
             >
-              <MenuItem value="general">General Inquiry</MenuItem>
-              <MenuItem value="support">Support</MenuItem>
-              <MenuItem value="partnership">Partnership</MenuItem>
-            </TextField>
+              <Box>
+                <Typography sx={{ color: "#222959" }}>Name</Typography>
+                <Box
+                  sx={{
+                    width: "355px",
+                    height: "50px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextField
+                    fullWidth
+                    placeholder="Enter your name"
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "#222959",
+                          borderRadius: "10px",
+                        },
+                        "& input::placeholder": {
+                          color: "#C4C7D9",
+                        },
+                        backgroundColor: "#F2F3FD",
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
 
-            <TextField
-              label="Message"
-              placeholder="Enter Message"
-              fullWidth
-              multiline
-              rows={5}
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#222959",
+              <Box>
+                <Typography sx={{ color: "#222959" }}>Email</Typography>
+                <Box
+                  sx={{
+                    width: "355px",
+                    height: "50px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextField
+                    fullWidth
+                    placeholder="Enter email address"
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "#222959",
+                          borderRadius: "10px",
+                        },
+                        "& input::placeholder": {
+                          color: "#C4C7D9",
+                        },
+                        backgroundColor: "#F2F3FD",
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
+
+              <Box>
+                <Typography sx={{ color: "#222959" }}>Company Name</Typography>
+                <Box
+                  sx={{
+                    width: "355px",
+                    height: "50px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextField
+                    fullWidth
+                    placeholder="Enter company name"
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "#222959",
+                          borderRadius: "10px",
+                        },
+                        "& input::placeholder": {
+                          color: "#C4C7D9",
+                        },
+                        backgroundColor: "#F2F3FD",
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
+
+              <Box>
+                <Typography sx={{ color: "#222959" }}>Category</Typography>
+                <Box
+                  sx={{
+                    width: "355px",
+                    height: "50px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextField
+                    fullWidth
+                    placeholder="Select ategory"
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "#222959",
+                          borderRadius: "10px",
+                        },
+                        "& input::placeholder": {
+                          color: "#C4C7D9",
+                        },
+                        backgroundColor: "#F2F3FD",
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
+
+              <Box>
+                <Typography sx={{ color: "#222959" }}>Message</Typography>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextField
+                    fullWidth
+                    multiline
+                    minRows={6}
+                    placeholder="Enter message"
+                    sx={{
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "#222959",
+                          borderRadius: "10px",
+                        },
+                        "& textarea::placeholder": {
+                          color: "#C4C7D9",
+                        },
+                        backgroundColor: "#F2F3FD",
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
+
+              {/* <TextField
+                label="Category"
+                placeholder="Select Category"
+                select
+                fullWidth
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#222959",
+                      background: "#F2F3FD",
+                      borderRadius: "10px",
+                    },
                   },
-                },
-                gridColumn: { xs: "1", md: "span 2" },
-              }}
-            />
+                }}
+              >
+                <MenuItem value="general">General Inquiry</MenuItem>
+                <MenuItem value="support">Support</MenuItem>
+                <MenuItem value="partnership">Partnership</MenuItem>
+              </TextField> */}
+            </Box>
           </Box>
 
-          <Box sx={{ textAlign: "center", mt: 17.5 }}>
+          <Box sx={{ textAlign: "center", marginTop: "49px" }}>
             <Button
               variant="contained"
               sx={{
-                px: 4,
+                px: 5,
                 py: 1.5,
                 fontSize: "16px",
                 border: "none",
                 borderRadius: " 12px 12px 0 0 ",
                 textTransform: "none",
-                bgcolor: "#0A0F2C",
-                "&:hover": { bgcolor: "#1a234f" },
+                bgcolor: "#222959",
+                boxShadow: "none",
+                "&:hover": { bgcolor: "#747CB2", boxShadow: "none" },
               }}
             >
               Send Message
@@ -175,7 +274,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -209,7 +308,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",
@@ -243,7 +342,7 @@ export default function ContactUs() {
           >
             <Box
               sx={{
-                bgcolor: "#0A0F2C",
+                bgcolor: "#222959",
                 borderRadius: "50%",
                 p: 1,
                 display: "flex",

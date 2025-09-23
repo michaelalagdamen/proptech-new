@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Hero from "@/component/sections/Hero";
 import Navs from "@/component/sections/Navs";
 import { Box } from "@mui/material";
 import SmallNavs from "@/component/sections/SmallNavs";
+import Footer from "@/component/sections/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfitSans = Outfit({
+  variable: "--font-outfit-sans",
   subsets: ["latin"],
 });
 
@@ -28,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${outfitSans.variable} antialiased`}>
         <Box
           sx={{
             overflowX: "hidden",
@@ -43,6 +37,7 @@ export default function RootLayout({
           <Navs />
           <SmallNavs />
           {children}
+          <Footer />
         </Box>
       </body>
     </html>
