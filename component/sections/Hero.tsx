@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Link as MuiLink } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
 
@@ -40,12 +40,14 @@ export default function Hero() {
             zIndex: 2,
           }}
         >
-          <Image
-            src="/images/proptech-logo.png"
-            alt="Technelolodja"
-            width={280}
-            height={80}
-          />
+          <MuiLink href="/home">
+            <Image
+              src="/images/proptech-logo.png"
+              alt="Technelolodja"
+              width={280}
+              height={80}
+            />
+          </MuiLink>
         </Box>
 
         <Box
