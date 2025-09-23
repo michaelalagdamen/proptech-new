@@ -8,7 +8,7 @@ import Footer from "./sections/Footer";
 import { Box } from "@mui/material";
 import { usePathname } from "next/navigation";
 
-const specialPaths = ["/gallery", "/about"];
+const specialPaths = ["/gallery"];
 
 const hideLayoutByPathname = (path: string) =>
   specialPaths.some((p) => p === path);
