@@ -1,3 +1,5 @@
+"use client";
+
 import GalleryContent from "@/component/sections/GalleryContent";
 import GalleryHero from "@/component/sections/GalleryHero";
 
