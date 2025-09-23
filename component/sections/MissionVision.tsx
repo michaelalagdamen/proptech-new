@@ -10,7 +10,7 @@ export default function MissionVision() {
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
-        py: 10,
+        py: 15,
         fontFamily: "Outfit, sans-serif",
       }}
     >

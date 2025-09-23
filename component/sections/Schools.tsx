@@ -32,6 +32,7 @@ export default function Schools() {
             fontWeight: 700,
             color: "#0A0F2C",
             mb: 4,
+            pl: 4,
           }}
         >
           Cebu City

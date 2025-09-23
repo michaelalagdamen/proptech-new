@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function WhoWeAre() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white">
       <div className="container mx-auto mt-30 px-6 grid md:grid-cols-2 items-center gap-12">
         <div className="flex-1 flex justify-center mb-8 md:mb-0 translate-x-15">
           <Image

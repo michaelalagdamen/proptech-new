@@ -272,11 +272,31 @@ export default function PropTechYoutube() {
                   height: "560px",
                   width: "980px",
                   boxSizing: "border-box",
-                  background: "#F1F1F7",
+                  background: "#FFFFFF",
                   borderRadius: "15px",
                   boxShadow: "none",
                 }}
-              ></Item>
+              >
+                <Box sx={{ position: "relative", paddingTop: "56.25%" }}>
+                  <iframe
+                    width="914"
+                    height="514"
+                    src="https://www.youtube.com/embed/JhKpUbTGjIc"
+                    title="Hackathon: Hackestate 2025 Davao League"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      borderRadius: "20px",
+                    }}
+                  ></iframe>
+                </Box>
+              </Item>
             </Grid>
             <Grid>
               <Stack spacing={2}>
@@ -285,11 +305,35 @@ export default function PropTechYoutube() {
                     height: "272px",
                     width: "385px",
                     boxSizing: "border-box",
-                    background: "#F1F1F7",
+                    background: "#FFFFFF",
                     borderRadius: "15px",
                     boxShadow: "none",
                   }}
-                ></Item>
+                >
+                  <Box
+                    sx={{
+                      position: "relative",
+                      paddingTop: "56.25%",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+                    <iframe
+                      src="https://drive.google.com/file/d/1ZWJdMvMU64ZR_nU-ujyUL5MqtNu9uHdk/preview"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "370px",
+                        height: "255px",
+                        borderRadius: "20px",
+                      }}
+                    ></iframe>
+                  </Box>
+                </Item>
                 <Item
                   sx={{
                     height: "272px",
