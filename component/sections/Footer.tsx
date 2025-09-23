@@ -22,7 +22,7 @@ export default function Footer() {
         maxHeight: "750px",
         position: "relative",
         paddingBottom: "25px",
-        marginTop: "100px",
+        marginTop: "180px",
       }}
     >
       <Box

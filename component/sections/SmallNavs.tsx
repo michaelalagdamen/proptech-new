@@ -33,13 +33,13 @@ export default function SmallNavs() {
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
-              fontWeight: 300,
+              fontWeight: 400,
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",
               "&:hover, &:focus": {
                 color: "#672361",
-                fontWeight: 700,
+                fontWeight: 600,
                 background: "transparent",
               },
             }}
@@ -65,7 +65,7 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               ":hover": {
-                fontColor: "#672361",
+                color: "#672361",
                 fontWeight: 600,
                 background: "transparent",
               },

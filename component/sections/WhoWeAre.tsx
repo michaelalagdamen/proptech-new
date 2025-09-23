@@ -2,8 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { Dialog, DialogContent, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function WhoWeAre() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="w-full bg-white">
       <div className="container mx-auto mt-30 px-6 grid md:grid-cols-2 items-center gap-12">
@@ -51,10 +56,40 @@ export default function WhoWeAre() {
 
           <Link
             href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setOpen(true);
+            }}
             className="text-[#672361] hover:text-[#222959] font-medium"
           >
             View Certificate
           </Link>
+
+          <Dialog open={open} onClose={() => setOpen(false)} maxWidth="md">
+            <IconButton
+              aria-label="close"
+              onClick={() => setOpen(false)}
+              sx={{
+                position: "absolute",
+                right: 8,
+                top: 8,
+                color: "#672361",
+                zIndex: 1,
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
+
+            <DialogContent sx={{ p: 0 }}>
+              <Image
+                src="/images/certificate-CJSHc-71.png"
+                alt="Certificate"
+                width={800}
+                height={600}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>
