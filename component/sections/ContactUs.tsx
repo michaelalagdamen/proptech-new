@@ -15,7 +15,7 @@ export default function ContactUs() {
   return (
     <Grid
       container
-      spacing={4}
+      spacing={2}
       justifyContent="center"
       alignItems="flex-start"
       sx={{ maxWidth: 1200, mx: "auto", my: 10, px: 2 }}
@@ -23,7 +23,7 @@ export default function ContactUs() {
       <Grid>
         <Paper
           sx={{
-            boxShadow: "0 0 3px #2C225980",
+            border: "2px solid #672361",
             ml: -30,
             borderRadius: "20px",
             p: 4,
@@ -35,13 +35,13 @@ export default function ContactUs() {
           <Box
             sx={{
               position: "absolute",
-              top: 0,
+              top: -1,
               left: "50%",
               transform: "translateX(-50%)",
               bgcolor: "#fff",
               py: 1,
               borderRadius: "0 0 12px 12px ",
-              boxShadow: "0 1px 3px #2C225980",
+              border: "2px solid #672361",
               borderTop: "none",
             }}
           >
@@ -145,12 +145,11 @@ export default function ContactUs() {
               sx={{
                 px: 4,
                 py: 1.5,
-                bottom: 0,
                 fontSize: "16px",
                 border: "none",
                 borderRadius: " 12px 12px 0 0 ",
                 textTransform: "none",
-                bgcolor: "#222959",
+                bgcolor: "#0A0F2C",
                 "&:hover": { bgcolor: "#1a234f" },
               }}
             >
@@ -166,7 +165,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -189,7 +188,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               (032) 254-8900
@@ -200,7 +199,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -223,7 +222,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               propertytechph@gmail.com
@@ -234,7 +233,7 @@ export default function ContactUs() {
             sx={{
               display: "flex",
               alignItems: "center",
-              boxShadow: "0 0 3px #2C225980",
+              border: "2px solid #222959",
               borderRadius: "50px",
               p: 1,
               pr: 2,
@@ -257,7 +256,7 @@ export default function ContactUs() {
             </Box>
             <Typography
               sx={{
-                color: "#222959",
+                color: "#000000",
               }}
             >
               Cebu City, Philippines
