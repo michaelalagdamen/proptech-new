@@ -41,18 +41,16 @@ export default function ContactUs() {
               top: 0,
               left: "50%",
               transform: "translateX(-50%)",
-              bgcolor: "#fff",
+              bgcolor: "#672361",
               py: 1,
               borderRadius: "0 0 12px 12px ",
-              boxShadow: "0 1px 3px #2C225980",
-              borderTop: "none",
             }}
           >
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#222959",
+                color: "#ffffff",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",

@@ -343,7 +343,21 @@ export default function PropTechYoutube() {
                     borderRadius: "15px",
                     boxShadow: "none",
                   }}
-                ></Item>
+                >
+                  <Typography
+                    sx={{
+                      position: "relative",
+                      display: "flex",
+                      height: "250px",
+                      width: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Comming Soon...
+                  </Typography>
+                </Item>
               </Stack>
             </Grid>
           </Grid>

@@ -10,6 +10,18 @@ import { usePathname } from "next/navigation";
 
 const specialPaths = ["/gallery"];
 
+const theme = createTheme({
+  pallete: {
+    primary: {
+      main: "#32sd23",
+    },
+
+    background: {
+      default: "#fff232",
+    },
+  },
+});
+
 const hideLayoutByPathname = (path: string) =>
   specialPaths.some((p) => p === path);
 
