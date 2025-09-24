@@ -7,6 +7,7 @@ import SmallNavs from "./sections/SmallNavs";
 import Footer from "./sections/Footer";
 import { Box } from "@mui/material";
 import { usePathname } from "next/navigation";
+import GalleryNavs from "./GalleryNavs";
 
 const specialPaths = ["/gallery"];
 
@@ -27,6 +28,8 @@ export default function Main({ children }: { children: React.ReactNode }) {
           height: "100%",
         }}
       >
+        {" "}
+        <GalleryNavs />
         {children}
         <Footer />
       </Box>

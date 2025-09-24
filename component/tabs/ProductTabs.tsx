@@ -65,7 +65,7 @@ export default function ProductTabs() {
                 },
                 "& .Mui-selected": {
                   background: "#fff",
-                  color: "#672361",
+                  color: "#672361 !important",
                   fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": { color: "#fff" },

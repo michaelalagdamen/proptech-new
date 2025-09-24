@@ -18,6 +18,10 @@ const itemData = [
   { img: "/images/cebu3.jpg", title: "image" },
   { img: "/images/cebu4.jpg", title: "image" },
   { img: "/images/cebu5.jpg", title: "image" },
+  { img: "/images/cebu5.jpg", title: "image" },
+  { img: "/images/cebu1.jpg", title: "image" },
+  { img: "/images/cebu2.jpg", title: "image" },
+  { img: "/images/cebu3.jpg", title: "image" },
 ];
 
 export default function SecondGroup() {

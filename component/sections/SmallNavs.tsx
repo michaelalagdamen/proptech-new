@@ -24,7 +24,6 @@ export default function SmallNavs() {
             alignItems: "center",
             marginRight: "30px",
             marginTop: "-130px",
-            // zIndex: 9999,
           }}
         >
           <Button
@@ -38,7 +37,6 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               "&:hover, &:focus": {
-                color: "#672361",
                 fontWeight: 700,
                 background: "transparent",
               },
@@ -65,7 +63,6 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               ":hover": {
-                fontColor: "#672361",
                 fontWeight: 600,
                 background: "transparent",
               },
@@ -86,7 +83,6 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               ":hover": {
-                color: "#672361",
                 fontWeight: 600,
                 background: "transparent",
               },
@@ -107,7 +103,6 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               ":hover": {
-                color: "#672361",
                 fontWeight: 600,
                 background: "transparent",
               },
@@ -128,7 +123,6 @@ export default function SmallNavs() {
               textTransform: "none",
               color: "#222959",
               "&:hover": {
-                color: "#672361",
                 fontWeight: 700,
                 background: "transparent",
               },
@@ -136,39 +130,6 @@ export default function SmallNavs() {
           >
             News
           </Button>
-          {/* 
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Image
-              src="/icons/circle.svg"
-              alt="Call Icon"
-              width={5}
-              height={5}
-            />
-          </Box>
-
-          <Button
-            href="/"
-            sx={{
-              fontFamily: "Outfit, sans-serif",
-              fontSize: "16px",
-              fontWeight: 400,
-              lineHeight: "20px",
-              textTransform: "none",
-              color: "#222959",
-              "&:hover": {
-                color: "#672361",
-                fontWeight: 700,
-              },
-            }}
-          >
-            Contact Us
-          </Button> */}
         </Stack>
       </Container>
     </Box>

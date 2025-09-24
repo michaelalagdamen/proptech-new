@@ -1,22 +1,10 @@
 "use client";
 
 import * as React from "react";
-import {
-  Card,
-  CardActions,
-  CardContent,
-  Button,
-  Typography,
-  Container,
-  Box,
-} from "@mui/material";
+import { Card, CardContent, Typography, Container, Box } from "@mui/material";
 import Image from "next/image";
-import {
-  PhoneRounded,
-  Email,
-  LocationOn,
-  OpenInNewRounded,
-} from "@mui/icons-material";
+import { PhoneRounded, Email, LocationOn } from "@mui/icons-material";
+import ViewAllButton from "@/component/buttons/ViewAllButton";
 
 export default function CompanyListCards() {
   return (
@@ -48,125 +36,147 @@ export default function CompanyListCards() {
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/infinite-logo.png"
-                  alt="Technelolodja"
-                  width={155}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#6681a8ff",
-                        fontWeight: 400,
-                      }}
-                    >
-                      (02) 8892-9073 to 77
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#6681a8ff",
-                        fontWeight: 400,
-                      }}
-                    >
-                      inquiry.ayala@infinitePH.com
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#6681a8ff",
-                        fontWeight: 400,
-                      }}
-                    >
-                      Door A, 345 L. Tudtud Street,Mabolo, Cebu City
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/infinite-logo.png"
+                    alt="Technelolodja"
+                    width={155}
+                    height={50}
+                  />
                 </Box>
               </Box>
 
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (02) 8892-9073 to 77
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    inquiry.ayala@infinitePH.com
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Door A, 345 L. Tudtud Street,Mabolo, Cebu City
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -177,7 +187,6 @@ export default function CompanyListCards() {
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -203,178 +212,158 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "15px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
 
           <Card
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
               maxWidth: 450,
+              maxHeight: 380,
               borderRadius: "15px",
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/smart-home.png"
-                  alt="Technelolodja"
-                  width={125}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      0932 887 3173
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      hello@smarthomecebu.com
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      Level 2 The Space, AS Fortuna St, Mandaue, Cebu
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/smart-home.png"
+                    alt="Technelolodja"
+                    width={120}
+                    height={50}
+                  />
                 </Box>
               </Box>
 
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    0932 887 3173
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    hello@smarthomecebu.com
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Level 2 The Space, AS Fortuna St, Mandaue, Cebu
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -385,7 +374,6 @@ export default function CompanyListCards() {
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -411,178 +399,158 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "10px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
 
           <Card
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
               maxWidth: 450,
+              maxHeight: 380,
               borderRadius: "15px",
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/iconnect-tech.png"
-                  alt="Technelolodja"
-                  width={155}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      (032) 252-1122
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      sales@iconnecttech.com
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      Unit 11L, 11th floor Avenir Bldg., Cebu City
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/iconnect-tech.png"
+                    alt="Technelolodja"
+                    width={155}
+                    height={50}
+                  />
                 </Box>
               </Box>
 
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (032) 252-1122
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    sales@iconnecttechnologies.com
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    Unit 11L, 11th floor Avenir Bldg., Cebu City
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -593,7 +561,6 @@ export default function CompanyListCards() {
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -619,45 +586,7 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "10px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
         </Box>
 
@@ -673,133 +602,47 @@ export default function CompanyListCards() {
         >
           <Card
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
               maxWidth: 450,
               maxHeight: 380,
               borderRadius: "15px",
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/itech.png"
-                  alt="Technelolodja"
-                  width={155}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      +639770374462
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      support@itech.com.ph
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      3rd Floor, Cyberzone, SM J Mall, Mandaue City, Cebu
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/itech.png"
+                    alt="Technelolodja"
+                    width={155}
+                    height={50}
+                  />
                 </Box>
               </Box>
 
@@ -807,14 +650,115 @@ export default function CompanyListCards() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    +639770374462
+                  </Typography>
+                </Box>
 
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    support@itech.com.ph
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    3rd Floor, Cyberzone, SM J Mall, Mandaue City, Cebu
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
                   justifyContent: "center",
                   textAlign: "left",
                 }}
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -841,190 +785,168 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "10px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
 
           <Card
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
               maxWidth: 450,
               maxHeight: 380,
               borderRadius: "15px",
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/rapid-tech.png"
-                  alt="Technelolodja"
-                  width={155}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      0917 112 1948
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      admin@rapidtechph.com
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      2nd floor JY Square Mall Salinas Drive Lahug, Cebu
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/rapid-tech.png"
+                    alt="Technelolodja"
+                    width={180}
+                    height={80}
+                  />
                 </Box>
               </Box>
+
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    0917 112 1948
+                  </Typography>
+                </Box>
 
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    admin@rapidtechph.com
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    2nd floor JY Square Mall Salinas Drive Lahug, Cebu City
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
                   justifyContent: "center",
                   textAlign: "left",
                 }}
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -1050,190 +972,168 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "10px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
 
           <Card
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "left",
               maxWidth: 450,
               maxHeight: 380,
               borderRadius: "15px",
               boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
             }}
           >
-            <CardContent sx={{ padding: "25px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                top: 0,
+              }}
+            >
               <Box
                 sx={{
+                  borderBottom: "2px solid #E6D7E5",
+                  borderRight: "2px solid #E6D7E5",
+                  borderLeft: "none",
+                  borderTop: "none",
+                  transform: "skew(-15deg)",
+                  borderRadius: "0 0 15px 0",
+                  background: "transparent",
+                  width: "250px",
+                  height: "120px",
                   display: "flex",
                   alignItems: "center",
-                  gap: 4,
+                  justifyContent: "center",
+                  padding: "5px",
                 }}
               >
-                <Image
-                  src="/images/republic-gamers.png"
-                  alt="Technelolodja"
-                  width={155}
-                  height={50}
-                />
-
                 <Box
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    maxWidth: "240px",
-                    marginLeft: "15px",
+                    transform: "skew(15deg)",
                   }}
                 >
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PhoneRounded
-                        sx={{ color: "#7689A6", fontSize: "13px" }}
-                      />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      (02) 8892-9073 to 77
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      asusrepublic@gmail.com
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      marginTop: "17px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "5px",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        bgcolor: "#E8E8E8",
-                        borderRadius: "50%",
-                        p: 0.5,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
-                    </Box>
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontFamily: "Outfit, sans-serif",
-                        color: "#222959",
-                        fontWeight: 400,
-                      }}
-                    >
-                      3rd Floor, Ayala Center Cebu, Cebu Business Park
-                    </Typography>
-                  </Box>
+                  <Image
+                    src="/images/republic-gamers.png"
+                    alt="Technelolodja"
+                    width={185}
+                    height={80}
+                  />
                 </Box>
               </Box>
+
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
+                  maxWidth: "240px",
+                  marginLeft: "10px",
+                  marginTop: "15px",
+                }}
+              >
+                <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneRounded sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    (02) 8892-9073 to 77
+                  </Typography>
+                </Box>
 
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Email sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    asusrepublic@gmail.com
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    marginTop: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      bgcolor: "#E8E8E8",
+                      borderRadius: "50%",
+                      p: 0.5,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <LocationOn sx={{ color: "#7689A6", fontSize: "13px" }} />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      lineHeight: "15px",
+                      fontFamily: "Outfit, sans-serif",
+                      color: "#6681a8ff",
+                      fontWeight: 400,
+                    }}
+                  >
+                    3rd Floor, Ayala Center Cebu, Cebu Business Park
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <CardContent sx={{ padding: "25px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
                   justifyContent: "center",
                   textAlign: "left",
                 }}
               >
                 <Typography
                   sx={{
-                    marginTop: "35px",
                     fontFamily: "Outfit, sans-serif",
                     color: "#222959",
                     fontSize: "22px",
@@ -1259,45 +1159,7 @@ export default function CompanyListCards() {
               </Box>
             </CardContent>
 
-            <CardActions
-              sx={{
-                padding: " 0 25px 25px 25px",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  width: "400px",
-                  height: "40px",
-                  fontFamily: "Outfit, sans-serif",
-                  color: "#fff",
-                  fontSize: "18px",
-                  lineHeight: "30px",
-                  fontWeight: 300,
-                  textTransform: "none",
-                  padding: "10px",
-                  backgroundColor: "#672361",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#986393",
-                    fontWeight: 600,
-                    boxShadow: "none",
-                  },
-                }}
-              >
-                View all products
-                <Box
-                  sx={{
-                    marginLeft: "10px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-                </Box>
-              </Button>
-            </CardActions>
+            <ViewAllButton />
           </Card>
         </Box>
       </Box>

@@ -58,7 +58,7 @@ export default function CompanyTabs() {
                 },
                 "& .Mui-selected": {
                   background: "#fff",
-                  color: "#672361",
+                  color: "#672361 !important",
                   fontWeight: 400,
                 },
                 "& .MuiTab-root:not(.Mui-selected)": { color: "#fff" },
