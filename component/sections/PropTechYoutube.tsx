@@ -94,6 +94,7 @@ export default function PropTechYoutube() {
             </Typography>
             <Button
               variant="contained"
+              href="https://www.youtube.com/@leuteriorealty/videos"
               sx={{
                 width: "60px",
                 height: "55px",

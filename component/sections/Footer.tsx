@@ -176,7 +176,7 @@ export default function Footer() {
               >
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/listed-company"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -189,7 +189,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/product-listing"
                   underline="none"
                   color="inherit"
                   sx={{
@@ -202,7 +202,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="/events"
                   underline="none"
                   color="inherit"
                   sx={{

@@ -56,31 +56,31 @@ export default function AboutHero() {
             top: "250px",
             left: "60px",
             zIndex: 2,
-            width: "1210px",
+            width: "1010px",
           }}
         >
           <Typography
             sx={{
               fontSize: "50px",
-              fontWeight: "bold",
+              fontWeight: "semi-bold",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
               textTransform: "uppercase",
               lineHeight: "50px",
-              letterSpacing: "8px",
             }}
           >
             building bridges to smarter business futures
           </Typography>
 
           <Divider
-            sx={{ width: "1070px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "1075px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{
               fontSize: "22px",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
+              width: "1080px",
             }}
           >
             Connecting innovation and opportunity to help businesses grow,
