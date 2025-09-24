@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Hero from "@/component/sections/Hero";
-import Navs from "@/component/sections/Navs";
-import { Box } from "@mui/material";
-import SmallNavs from "@/component/sections/SmallNavs";
-import Footer from "@/component/sections/Footer";
+import Main from "@/component/Main";
 
 const outfitSans = Outfit({
   variable: "--font-outfit-sans",
@@ -25,20 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfitSans.variable} antialiased`}>
-        <Box
-          sx={{
-            overflowX: "hidden",
-            backgroundColor: "#FFFFFF",
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <Hero />
-          <Navs />
-          <SmallNavs />
-          {children}
-          <Footer />
-        </Box>
+        <Main>{children}</Main>
       </body>
     </html>
   );
