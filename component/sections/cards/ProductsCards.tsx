@@ -101,9 +101,9 @@ export default function ProductsCards() {
               display: "grid",
               gap: 3,
               gridTemplateColumns: {
-                xs: "1fr",
-                sm: "1fr 1fr",
-                lg: "1fr 1fr 1fr 1fr",
+                xs: "2fr",
+                sm: "2fr 2fr",
+                lg: "2fr 2fr 2fr 2fr",
               },
             }}
           >
@@ -111,73 +111,92 @@ export default function ProductsCards() {
               <Box
                 key={product.id}
                 sx={{
-                  borderRadius: 2,
-                  border: "3px solid #e5e7eb",
+                  borderRadius: "15px",
+                  boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
                   display: "flex",
                   flexDirection: "column",
-                  overflow: "hidden",
+                  zIndex: 2,
+                  position: "relative",
                 }}
               >
-                {/* Top Section */}
-                <Box sx={{ p: 3, flex: 1 }}>
-                  <Box
-                    sx={{
-                      display: "grid",
-                      gridTemplateColumns: "auto 1fr",
-                      alignItems: "start",
-                    }}
-                  >
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      width={150}
-                      height={60}
-                      style={{
-                        borderRadius: "6px",
-                        position: "relative",
-                        display: "flex",
-                        left: "-25px",
-                        top: "-25px",
+                <Box>
+                  {/* Top Section */}
+                  <Box sx={{ padding: "25px" }}>
+                    <Box
+                      sx={{
+                        display: "grid",
+                        gridTemplateColumns: "auto 1fr",
+                        alignItems: "start",
                       }}
-                    />
-                    <Box>
-                      <Typography
-                        variant="h6"
-                        sx={{ fontWeight: 600, color: "#6E1B5D", mb: 1 }}
-                      >
-                        {product.name}
-                      </Typography>
-                      <Box sx={{ display: "flex", alignItems: "center" }}>
-                        {[...Array(product.rating)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="w-4 h-4"
-                            style={{ color: "#7e22ce", fill: "#7e22ce" }}
-                          />
-                        ))}
+                    >
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        width={150}
+                        height={60}
+                        style={{
+                          borderRadius: "15px 0 15px 0",
+                          position: "relative",
+                          display: "flex",
+                          left: "-25px",
+                          top: "-25px",
+                        }}
+                      />
+                      <Box>
                         <Typography
-                          variant="body2"
-                          sx={{ ml: 1, color: "gray" }}
+                          variant="h6"
+                          sx={{
+                            fontWeight: 600,
+                            color: "#6E1B5D",
+                            mb: 1,
+                            fontFamily: "Outfit, sans-serif",
+                            fontSize: "25px",
+                            lineHeight: "25px",
+                            width: "165px",
+                          }}
                         >
-                          (5)
+                          {product.name}
                         </Typography>
+                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                          {[...Array(product.rating)].map((_, i) => (
+                            <Star
+                              key={i}
+                              className="w-4 h-4"
+                              style={{ color: "#6E1B5D", fill: "#6E1B5D" }}
+                            />
+                          ))}
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              ml: 1,
+                              color: "#6E1B5D",
+                              fontFamily: "Outfit, sans-serif",
+                              fontSize: "16px",
+                            }}
+                          >
+                            (5)
+                          </Typography>
+                        </Box>
                       </Box>
                     </Box>
                   </Box>
+                  {/* Description */}
+                  <Box sx={{ py: -1, px: 4, flex: 1 }}>
+                    <Typography variant="body1" sx={{ color: "#222959" }}>
+                      <strong>{product.brand}</strong> {product.description}
+                    </Typography>
+                  </Box>
                 </Box>
-
-                {/* Description */}
-                <Box sx={{ py: -1, px: 4, flex: 1 }}>
-                  <Typography variant="body1" sx={{ color: "#222959" }}>
-                    <strong>{product.brand}</strong> {product.description}
-                  </Typography>
-                </Box>
-
                 {/* Button */}
                 <Box
                   sx={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
                     backgroundColor: "#672361",
                     "&:hover": { backgroundColor: "#986393" },
+                    zIndex: 1,
                   }}
                 >
                   <Link

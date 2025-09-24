@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Box, Typography, Tabs, Tab, Container } from "@mui/material";
+import { Box, Typography, Tabs, Tab, Container, Divider } from "@mui/material";
 import Image from "next/image";
 
 export default function NewsSection() {
@@ -66,9 +66,22 @@ export default function NewsSection() {
       <Tabs
         value={tabValue}
         onChange={(e, v) => setTabValue(v)}
-        textColor="primary"
-        indicatorColor="primary"
-        sx={{ mt: 5, mb: 6 }}
+        TabIndicatorProps={{
+          style: {
+            backgroundColor: "#672361",
+            height: "3px",
+            borderRadius: "3px",
+          },
+        }}
+        sx={{
+          "& .MuiTab-root": {
+            color: "#672361 !important",
+            fontFamily: "Outfit, sans-serif",
+          },
+          "& .MuiTab-root.Mui-selected": {
+            fontWeight: 600,
+          },
+        }}
       >
         <Tab
           value="latest"
@@ -87,7 +100,14 @@ export default function NewsSection() {
         />
       </Tabs>
 
-      {/**  <Divider sx={{ mb: 4, borderColor: "#0A0F2C", borderBottomWidth: 4 }} />}
+      <Divider
+        sx={{
+          width: "100%",
+          height: "2px",
+          background: "linear-gradient(90deg, #672361 0%, #222959 100%)",
+          top: 0,
+        }}
+      />
 
       {/* News Grid */}
       <Box
@@ -95,6 +115,7 @@ export default function NewsSection() {
           display: "grid",
           gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr" },
           gap: 3,
+          marginTop: "40px",
         }}
       >
         {filteredNews.map((news, i) => (

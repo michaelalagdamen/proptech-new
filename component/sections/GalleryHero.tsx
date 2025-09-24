@@ -20,11 +20,13 @@ export default function GalleryHero() {
         maxWidth={false}
         sx={{
           maxWidth: "1440px",
-          maxHeight: "750px",
+          maxHeight: "2288px",
+          overflow: "hidden",
         }}
       >
         <Box
           sx={{
+<<<<<<< HEAD
             marginTop: "25px",
             top: "20px",
             left: "70px",
@@ -43,6 +45,8 @@ export default function GalleryHero() {
 
         <Box
           sx={{
+=======
+>>>>>>> e287bd9e2e111dac2a69d51327c9d143ff9f2b56
             position: "relative",
             display: "flex",
             justifyContent: "center",
@@ -56,11 +60,10 @@ export default function GalleryHero() {
             height={450}
           />
         </Box>
-
         <Box
           sx={{
             position: "absolute",
-            top: "340px",
+            top: "320px",
             left: "100px",
             zIndex: 2,
             width: "990px",
@@ -94,13 +97,16 @@ export default function GalleryHero() {
             HACKESTATE experience.
           </Typography>
 
-          <Stack direction="row" spacing={2} sx={{ marginTop: "42px" }}>
+          <Stack direction="row" spacing={2} sx={{ marginTop: "45px" }}>
             <Button
               variant="outlined"
               href="#outlined-buttons"
               sx={{
                 borderColor: "#fff",
                 borderRadius: "10px",
+                ":hover": {
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
+                },
               }}
             >
               <Typography
@@ -121,6 +127,9 @@ export default function GalleryHero() {
               sx={{
                 borderColor: "#fff",
                 borderRadius: "10px",
+                ":hover": {
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
+                },
               }}
             >
               <Typography
@@ -141,6 +150,9 @@ export default function GalleryHero() {
               sx={{
                 borderColor: "#fff",
                 borderRadius: "10px",
+                ":hover": {
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
+                },
               }}
             >
               <Typography
@@ -161,6 +173,9 @@ export default function GalleryHero() {
               sx={{
                 borderColor: "#fff",
                 borderRadius: "10px",
+                ":hover": {
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
+                },
               }}
             >
               <Typography

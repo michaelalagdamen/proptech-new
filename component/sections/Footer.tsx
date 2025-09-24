@@ -68,9 +68,10 @@ export default function Footer() {
               sx={{
                 width: "250px",
                 height: "67px",
-                bgcolor: "#2563EB",
-                "&:hover": { bgcolor: "#1E40AF" },
+                bgcolor: "#0533B7",
+                "&:hover": { bgcolor: "#3456B9", boxShadow: "none" },
                 borderRadius: "8px",
+                boxShadow: "none",
               }}
             >
               <Link href="/contact" passHref>
