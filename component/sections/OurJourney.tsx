@@ -23,7 +23,7 @@ export default function MissionVision() {
           display: "flex",
           justifyContent: "flex-start",
           alignItems: "flex-start",
-          backgroundColor: "#101733",
+          backgroundColor: "#00165E",
           height: "310px",
           width: "1400px",
           borderRadius: "50px",
@@ -61,7 +61,7 @@ export default function MissionVision() {
                 cursor: "pointer",
                 transition: "all 0.3s ease",
                 "&:hover": {
-                  backgroundColor: "#2B3045",
+                  backgroundColor: "#00165E",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
                 },
               }}
@@ -69,7 +69,7 @@ export default function MissionVision() {
             >
               <Typography
                 sx={{
-                  color: "#101733",
+                  color: "#00165E",
                   fontSize: "40px",
                   fontWeight: 800,
                   fontFamily: "Outfit, sans-serif",
@@ -91,7 +91,7 @@ export default function MissionVision() {
                 cursor: "pointer",
                 transition: "all 0.3s ease",
                 "&:hover": {
-                  backgroundColor: "#2B3045",
+                  backgroundColor: "#00165E",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
                 },
               }}
@@ -99,7 +99,7 @@ export default function MissionVision() {
             >
               <Typography
                 sx={{
-                  color: "#101733",
+                  color: "#00165E",
                   fontSize: "40px",
                   fontWeight: 800,
                   fontFamily: "Outfit, sans-serif",
@@ -137,7 +137,7 @@ export default function MissionVision() {
               position: "relative",
               width: "90%",
               maxWidth: "700px",
-              bgcolor: "#101733",
+              bgcolor: "#00165E",
               color: "white",
               borderRadius: "20px",
               p: 4,

@@ -20,7 +20,7 @@ export default function Partner() {
   return (
     <Box
       sx={{
-        width: "100%",
+        width: "100",
         minHeight: "400px",
         backgroundImage: "url('/images/partner-with-us.png')",
         backgroundSize: "cover",
@@ -41,7 +41,7 @@ export default function Partner() {
         sx={{
           position: "absolute",
           inset: 0,
-          bgcolor: "rgba(0,0,0,0.6)",
+          bgcolor: "rgba(67,0,54,0.3)",
           zIndex: 1,
         }}
       />
@@ -85,7 +85,7 @@ export default function Partner() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon />}
                     sx={{
-                      bgcolor: "#0A0F2C",
+                      bgcolor: "#00165E",
                       borderRadius: "25px",
                       px: 3,
                       py: 1.2,

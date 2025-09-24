@@ -17,7 +17,7 @@ export default function MissionVision() {
       {/* Mission Section */}
       <Box
         sx={{
-          border: "4px solid #0A0F2C",
+          border: "4px solid #00165E",
           borderRadius: "50px",
           px: 5,
           py: 6,
@@ -33,7 +33,7 @@ export default function MissionVision() {
             left: "-5px",
             fontSize: "60px",
             fontWeight: 800,
-            color: "#0A0F2C",
+            color: "#000000",
             backgroundColor: "#fff",
             px: 3,
             letterSpacing: "-3px",
@@ -46,7 +46,7 @@ export default function MissionVision() {
           sx={{
             fontSize: "22px",
             fontStyle: "italic",
-            color: "#0A0F2C",
+            color: "#000000",
             textAlign: "right",
             fontWeight: 800,
             mt: -3,
@@ -58,7 +58,7 @@ export default function MissionVision() {
         <Typography
           sx={{
             fontSize: "28px",
-            color: "#0A0F2C",
+            color: "#000000",
             maxWidth: "1000px",
             mt: 6,
             lineHeight: "45px",
@@ -81,19 +81,22 @@ export default function MissionVision() {
           mt: -40,
         }}
       >
-        <Box sx={{ pl: 60 }}>
-          <Image
-            src="/images/brainy-bots.png"
-            alt="Robot"
-            width={450}
-            height={400}
-          />
+        <Box
+          sx={{
+            pl: 82,
+            mt: 1,
+            borderRadius: "20px",
+            width: "150%",
+            height: "100%",
+          }}
+        >
+          <Image src="/images/robot.png" alt="Robot" width={450} height={400} />
         </Box>
 
         {/* Our Vision Box */}
         <Box
           sx={{
-            border: "4px solid #0A0F2C",
+            border: "4px solid #00165E",
             borderRadius: "50px",
             px: 5,
             py: 6,
@@ -108,7 +111,7 @@ export default function MissionVision() {
               right: "-5px",
               fontSize: "60px",
               fontWeight: 800,
-              color: "#0A0F2C",
+              color: "#000000",
               backgroundColor: "#fff",
               px: 3,
               letterSpacing: "-3px",
@@ -121,7 +124,7 @@ export default function MissionVision() {
           <Typography
             sx={{
               fontSize: "28px",
-              color: "#0A0F2C",
+              color: "#000000",
               maxWidth: "1000px",
               lineHeight: "45px",
               textAlign: "right",
@@ -139,7 +142,7 @@ export default function MissionVision() {
             sx={{
               fontSize: "22px",
               fontStyle: "italic",
-              color: "#0A0F2C",
+              color: "#000000",
               textAlign: "right",
               fontWeight: 800,
               width: "480px",

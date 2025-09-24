@@ -312,7 +312,7 @@ export default function Footer() {
               >
                 <MuiLink
                   component={Link}
-                  href=""
+                  href="/news"
                   underline="none"
                   color="inherit"
                   sx={{

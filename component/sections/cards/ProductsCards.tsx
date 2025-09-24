@@ -117,6 +117,7 @@ export default function ProductsCards() {
                   flexDirection: "column",
                   zIndex: 2,
                   position: "relative",
+                  paddingBottom: "50px",
                 }}
               >
                 <Box>
@@ -201,7 +202,7 @@ export default function ProductsCards() {
                 >
                   <Link
                     href="#"
-                    className="block w-full text-center text-white text-sm py-3 font-medium"
+                    className="block w-full text-center text-white text-sm py-3 font-medium z-10"
                   >
                     Click Here
                   </Link>

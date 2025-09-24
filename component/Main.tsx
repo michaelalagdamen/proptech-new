@@ -12,7 +12,6 @@ import SmallNavs from "./sections/SmallNavs";
 import Footer from "./sections/Footer";
 import { Box } from "@mui/material";
 import { usePathname } from "next/navigation";
-import GalleryNavs from "./GalleryNavs";
 
 export default function Main({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

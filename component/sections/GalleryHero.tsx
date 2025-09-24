@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import MuiLink from "@mui/material/Link";
+
 import {
   Box,
   Typography,
@@ -26,27 +26,6 @@ export default function GalleryHero() {
       >
         <Box
           sx={{
-<<<<<<< HEAD
-            marginTop: "25px",
-            top: "20px",
-            left: "70px",
-            zIndex: 2,
-          }}
-        >
-          <MuiLink href="/home">
-            <Image
-              src="/images/proptech-logo.png"
-              alt="Technelolodja"
-              width={270}
-              height={91}
-            />
-          </MuiLink>
-        </Box>
-
-        <Box
-          sx={{
-=======
->>>>>>> e287bd9e2e111dac2a69d51327c9d143ff9f2b56
             position: "relative",
             display: "flex",
             justifyContent: "center",
