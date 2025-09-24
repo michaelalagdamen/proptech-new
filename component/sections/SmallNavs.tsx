@@ -32,7 +32,7 @@ export default function SmallNavs() {
             sx={{
               fontFamily: "Outfit, sans-serif",
               fontSize: "16px",
-              fontWeight: 300,
+              fontWeight: 400,
               lineHeight: "20px",
               textTransform: "none",
               color: "#222959",

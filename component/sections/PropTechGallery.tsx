@@ -7,7 +7,7 @@ import Link from "next/link";
 import { OpenInNewRounded } from "@mui/icons-material";
 import GalleryImages from "./gallery-boxes/GalleryImages";
 
-const Item = styled(Paper)(({ theme }) => ({
+const {} = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
   padding: theme.spacing(1),

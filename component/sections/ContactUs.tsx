@@ -12,6 +12,7 @@ import {
 import { Phone, Email, LocationOn } from "@mui/icons-material";
 import { useState } from "react";
 import { ReactNode } from "react";
+import Link from "next/link";
 
 export default function ContactUs() {
   const [category, setCategory] = useState("");
@@ -41,18 +42,16 @@ export default function ContactUs() {
               top: 0,
               left: "50%",
               transform: "translateX(-50%)",
-              bgcolor: "#fff",
+              bgcolor: "#672361",
               py: 1,
               borderRadius: "0 0 12px 12px ",
-              boxShadow: "0 1px 3px #2C225980",
-              borderTop: "none",
             }}
           >
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#222959",
+                color: "#ffffff",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",
@@ -280,22 +279,24 @@ export default function ContactUs() {
           </Box>
 
           <Box sx={{ textAlign: "center", marginTop: "59.5px" }}>
-            <Button
-              variant="contained"
-              sx={{
-                px: 5,
-                py: 1.5,
-                fontSize: "16px",
-                border: "none",
-                borderRadius: " 12px 12px 0 0 ",
-                textTransform: "none",
-                bgcolor: "#222959",
-                boxShadow: "none",
-                "&:hover": { bgcolor: "#747CB2", boxShadow: "none" },
-              }}
-            >
-              Send Message
-            </Button>
+            <Link href="mailto:propertytechph@gmail.com" passHref>
+              <Button
+                variant="contained"
+                sx={{
+                  px: 5,
+                  py: 1.5,
+                  fontSize: "16px",
+                  border: "none",
+                  borderRadius: " 12px 12px 0 0 ",
+                  textTransform: "none",
+                  bgcolor: "#222959",
+                  boxShadow: "none",
+                  "&:hover": { bgcolor: "#747CB2", boxShadow: "none" },
+                }}
+              >
+                Send Message
+              </Button>
+            </Link>
           </Box>
         </Paper>
       </Grid>

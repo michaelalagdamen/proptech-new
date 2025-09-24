@@ -22,7 +22,7 @@ export default function Footer() {
         maxHeight: "750px",
         position: "relative",
         paddingBottom: "25px",
-        marginTop: "100px",
+        marginTop: "180px",
       }}
     >
       <Box
@@ -98,12 +98,14 @@ export default function Footer() {
           }}
         >
           <Box sx={{ marginTop: "55px" }}>
-            <Image
-              src="/images/proptech-white.png"
-              alt="PropTech Logo"
-              width={180}
-              height={60}
-            />
+            <MuiLink href="/home">
+              <Image
+                src="/images/proptech-white.png"
+                alt="PropTech Logo"
+                width={180}
+                height={60}
+              />
+            </MuiLink>
             <Typography
               sx={{
                 fontSize: "18px",
@@ -336,7 +338,7 @@ export default function Footer() {
                 </MuiLink>
                 <MuiLink
                   component={Link}
-                  href="#"
+                  href="https://www.youtube.com/watch?v=JhKpUbTGjIc"
                   underline="none"
                   color="inherit"
                   sx={{

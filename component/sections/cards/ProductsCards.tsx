@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
 import Link from "next/link";
-import { Container } from "@mui/material";
+import { Container, Box, Typography } from "@mui/material";
+
 const products = [
   {
     id: 1,
@@ -88,64 +89,109 @@ export default function ProductsCards() {
         maxHeight: "750px",
         position: "relative",
         overflow: "hidden",
-        p: 0,
       }}
     >
-      <section className="py-16 flex items-center">
-        <div className="container px-12">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <Box
+        component="section"
+        sx={{ py: 8, display: "flex", alignItems: "center" }}
+      >
+        <Box sx={{ width: "100%" }}>
+          <Box
+            sx={{
+              display: "grid",
+              gap: 3,
+              gridTemplateColumns: {
+                xs: "1fr",
+                sm: "1fr 1fr",
+                lg: "1fr 1fr 1fr 1fr",
+              },
+            }}
+          >
             {products.map((product) => (
-              <div
+              <Box
                 key={product.id}
-                className="rounded-xl border-3 flex flex-col overflow-hidden"
+                sx={{
+                  borderRadius: 2,
+                  border: "3px solid #e5e7eb",
+                  display: "flex",
+                  flexDirection: "column",
+                  overflow: "hidden",
+                }}
               >
-                <div className="p-6 flex-1">
-                  <div className="grid grid-cols-[auto_1fr] gap-5 items-start">
+                {/* Top Section */}
+                <Box sx={{ p: 3, flex: 1 }}>
+                  <Box
+                    sx={{
+                      display: "grid",
+                      gridTemplateColumns: "auto 1fr",
+                      alignItems: "start",
+                    }}
+                  >
                     <Image
                       src={product.image}
                       alt={product.name}
-                      width={100}
+                      width={150}
                       height={60}
-                      className="rounded-md"
+                      style={{
+                        borderRadius: "6px",
+                        position: "relative",
+                        display: "flex",
+                        left: "-25px",
+                        top: "-25px",
+                      }}
                     />
-
-                    <div>
-                      <h3 className="text-lg font-semibold text-[#6E1B5D] mb-1">
+                    <Box>
+                      <Typography
+                        variant="h6"
+                        sx={{ fontWeight: 600, color: "#6E1B5D", mb: 1 }}
+                      >
                         {product.name}
-                      </h3>
-                      <div className="flex items-center">
+                      </Typography>
+                      <Box sx={{ display: "flex", alignItems: "center" }}>
                         {[...Array(product.rating)].map((_, i) => (
                           <Star
                             key={i}
-                            className="w-4 h-4 text-purple-700 fill-purple-700"
+                            className="w-4 h-4"
+                            style={{ color: "#7e22ce", fill: "#7e22ce" }}
                           />
                         ))}
-                        <span className="ml-2 text-sm text-gray-500">(5)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        <Typography
+                          variant="body2"
+                          sx={{ ml: 1, color: "gray" }}
+                        >
+                          (5)
+                        </Typography>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
 
-                <div className="pl-4 p-4 flex-1">
-                  <p className="text-gray-600 text-sm">
-                    <span className="font-semibold">{product.brand}</span>{" "}
-                    {product.description}
-                  </p>
-                </div>
+                {/* Description */}
+                <Box sx={{ py: -1, px: 4, flex: 1 }}>
+                  <Typography variant="body1" sx={{ color: "#222959" }}>
+                    <strong>{product.brand}</strong> {product.description}
+                  </Typography>
+                </Box>
 
-                <div className="bg-[#672361] hover:bg-[#986393]">
+                {/* Button */}
+                <Box
+                  sx={{
+                    backgroundColor: "#672361",
+                    "&:hover": { backgroundColor: "#986393" },
+                  }}
+                >
                   <Link
                     href="#"
                     className="block w-full text-center text-white text-sm py-3 font-medium"
                   >
                     Click Here
                   </Link>
-                </div>
-              </div>
+                </Box>
+              </Box>
             ))}
-          </div>
-        </div>
-      </section>
+          </Box>
+        </Box>
+      </Box>
     </Container>
   );
 }
