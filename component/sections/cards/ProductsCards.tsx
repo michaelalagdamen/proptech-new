@@ -99,7 +99,7 @@ export default function ProductsCards() {
           <Box
             sx={{
               display: "grid",
-              gap: 3,
+              gap: 8,
               gridTemplateColumns: {
                 xs: "2fr",
                 sm: "2fr 2fr",
