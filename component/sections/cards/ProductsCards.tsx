@@ -102,7 +102,7 @@ export default function ProductsCards() {
               gap: 3,
               gridTemplateColumns: {
                 xs: "2fr",
-                sm: "2fr 2fr",
+                sm: "5fr 5fr",
                 lg: "2fr 2fr 2fr 2fr",
               },
             }}
@@ -116,12 +116,11 @@ export default function ProductsCards() {
                   display: "flex",
                   flexDirection: "column",
                   zIndex: 2,
-                  position: "relative",
                 }}
               >
                 <Box>
                   {/* Top Section */}
-                  <Box sx={{ padding: "25px" }}>
+                  <Box sx={{ padding: "20px" }}>
                     <Box
                       sx={{
                         display: "grid",
@@ -138,8 +137,8 @@ export default function ProductsCards() {
                           borderRadius: "15px 0 15px 0",
                           position: "relative",
                           display: "flex",
-                          left: "-25px",
-                          top: "-25px",
+                          left: "-20px",
+                          top: "-20px",
                         }}
                       />
                       <Box>
@@ -191,12 +190,15 @@ export default function ProductsCards() {
                 <Box
                   sx={{
                     position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    width: "100%",
-                    backgroundColor: "#672361",
+                    marginTop: "250px",
+                    width: "310px",
+                    background: "#672361",
                     "&:hover": { backgroundColor: "#986393" },
+                    borderRadius: "0 0 15px 15px",
                     zIndex: 1,
+                    // display: "flex",
+                    // justifyContent: "center",
+                    // alignItems: "center",
                   }}
                 >
                   <Link

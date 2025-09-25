@@ -355,7 +355,7 @@ export default function PropTechYoutube() {
                       fontWeight: "bold",
                     }}
                   >
-                    Comming Soon...
+                    Coming Soon...
                   </Typography>
                 </Item>
               </Stack>

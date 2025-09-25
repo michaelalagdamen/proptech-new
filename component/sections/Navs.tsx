@@ -40,7 +40,7 @@ export default function Navs() {
                 "&:hover, &:focus": {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
-                  background: "#292045",
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
                   boxShadow: "none",
                 },
               }}
@@ -58,10 +58,6 @@ export default function Navs() {
                       textAlign: "left",
                       paddingLeft: "30px",
                       paddingTop: "2px",
-                      "&:hover": {
-                        color: "#fff",
-                        fontWeight: 700,
-                      },
                     }}
                   >
                     Featured Company
@@ -85,7 +81,7 @@ export default function Navs() {
                 "&:hover, &:focus": {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
-                  background: "#292045",
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
                   boxShadow: "none",
                 },
               }}
@@ -103,10 +99,6 @@ export default function Navs() {
                       textAlign: "left",
                       paddingLeft: "30px",
                       paddingTop: "2px",
-                      "&:hover": {
-                        color: "#fff",
-                        fontWeight: 700,
-                      },
                     }}
                   >
                     Featured Products
@@ -130,7 +122,7 @@ export default function Navs() {
                 "&:hover, &:focus": {
                   borderTop: "3px solid #fff",
                   borderLeft: "3px solid #fff",
-                  background: "#273157",
+                  bgcolor: "rgba(217, 217, 217, 0.3)",
                   boxShadow: "none",
                 },
               }}

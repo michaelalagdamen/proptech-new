@@ -62,19 +62,17 @@ export default function AboutHero() {
           <Typography
             sx={{
               fontSize: "50px",
-              fontWeight: "bold",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
               textTransform: "uppercase",
               lineHeight: "50px",
-              letterSpacing: "8px",
             }}
           >
             building bridges to smarter business futures
           </Typography>
 
           <Divider
-            sx={{ width: "1070px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "1075px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{

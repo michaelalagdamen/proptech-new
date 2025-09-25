@@ -62,12 +62,10 @@ export default function AboutHero() {
           <Typography
             sx={{
               fontSize: "50px",
-              fontWeight: "bold",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
               textTransform: "uppercase",
               lineHeight: "50px",
-              letterSpacing: "8px",
             }}
           >
             innovative products for <br />
