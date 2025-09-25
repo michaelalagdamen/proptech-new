@@ -62,7 +62,6 @@ export default function AboutHero() {
           <Typography
             sx={{
               fontSize: "50px",
-              fontWeight: "semi-bold",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
               textTransform: "uppercase",

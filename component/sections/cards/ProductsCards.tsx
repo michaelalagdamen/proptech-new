@@ -24,10 +24,20 @@ export default function ProductCards() {
         <Grid size={3}>
           <Item
             sx={{
+<<<<<<< HEAD
               height: "350px",
               borderRadius: "15px",
               position: "relative",
               overflow: "hidden",
+=======
+              display: "grid",
+              gap: 8,
+              gridTemplateColumns: {
+                xs: "2fr",
+                sm: "5fr 5fr",
+                lg: "2fr 2fr 2fr 2fr",
+              },
+>>>>>>> ad62763fdf006003cbfbbc4cd13cbb03b956b6ef
             }}
           >
             {/* Top image */}
@@ -68,6 +78,7 @@ export default function ProductCards() {
               <Typography
                 variant="body2"
                 sx={{
+<<<<<<< HEAD
                   fontSize: "13px",
                   lineHeight: 1.3,
                   overflow: "hidden",
@@ -143,6 +154,105 @@ export default function ProductCards() {
                 <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
                   (30)
                 </Typography>
+=======
+                  borderRadius: "15px",
+                  boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+                  display: "flex",
+                  flexDirection: "column",
+                  zIndex: 2,
+                }}
+              >
+                <Box>
+                  {/* Top Section */}
+                  <Box sx={{ padding: "20px" }}>
+                    <Box
+                      sx={{
+                        display: "grid",
+                        gridTemplateColumns: "auto 1fr",
+                        alignItems: "start",
+                      }}
+                    >
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        width={150}
+                        height={60}
+                        style={{
+                          borderRadius: "15px 0 15px 0",
+                          position: "relative",
+                          display: "flex",
+                          left: "-20px",
+                          top: "-20px",
+                        }}
+                      />
+                      <Box>
+                        <Typography
+                          variant="h6"
+                          sx={{
+                            fontWeight: 600,
+                            color: "#6E1B5D",
+                            mb: 1,
+                            fontFamily: "Outfit, sans-serif",
+                            fontSize: "25px",
+                            lineHeight: "25px",
+                            width: "165px",
+                          }}
+                        >
+                          {product.name}
+                        </Typography>
+                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                          {[...Array(product.rating)].map((_, i) => (
+                            <Star
+                              key={i}
+                              className="w-4 h-4"
+                              style={{ color: "#6E1B5D", fill: "#6E1B5D" }}
+                            />
+                          ))}
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              ml: 1,
+                              color: "#6E1B5D",
+                              fontFamily: "Outfit, sans-serif",
+                              fontSize: "16px",
+                            }}
+                          >
+                            (5)
+                          </Typography>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                  {/* Description */}
+                  <Box sx={{ py: -1, px: 4, flex: 1 }}>
+                    <Typography variant="body1" sx={{ color: "#222959" }}>
+                      <strong>{product.brand}</strong> {product.description}
+                    </Typography>
+                  </Box>
+                </Box>
+                {/* Button */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    marginTop: "250px",
+                    width: "310px",
+                    background: "#672361",
+                    "&:hover": { backgroundColor: "#986393" },
+                    borderRadius: "0 0 15px 15px",
+                    zIndex: 1,
+                    // display: "flex",
+                    // justifyContent: "center",
+                    // alignItems: "center",
+                  }}
+                >
+                  <Link
+                    href="#"
+                    className="block w-full text-center text-white text-sm py-3 font-medium z-10"
+                  >
+                    Click Here
+                  </Link>
+                </Box>
+>>>>>>> ad62763fdf006003cbfbbc4cd13cbb03b956b6ef
               </Box>
               <Typography
                 variant="body2"
