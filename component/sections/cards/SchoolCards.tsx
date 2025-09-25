@@ -23,10 +23,9 @@ export default function Schools() {
       sx={{
         maxWidth: "1440px",
         maxHeight: "848px",
-        marginTop: "50px",
+        marginTop: "40px",
         position: "relative",
-        paddingBottom: "125px",
-        marginLeft: 5,
+        paddingBottom: "30px",
       }}
     >
       {/* --- Cebu Schools Section --- */}
@@ -164,13 +163,7 @@ export default function Schools() {
         </Box>
       </Box>
 
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: -30,
-          left: "40px",
-        }}
-      >
+      <Box sx={{ marginTop: "40px" }}>
         <Button
           variant="contained"
           color="primary"
@@ -183,9 +176,11 @@ export default function Schools() {
             py: 1,
             fontWeight: "bold",
             textTransform: "none",
-            backgroundColor: "#00165E",
+            background: "#222959",
+            boxShadow: "none",
             "&:hover": {
-              backgroundColor: "#15204d",
+              background: "#747CB2",
+              boxShadow: "none",
             },
           }}
         >
@@ -226,7 +221,7 @@ export default function Schools() {
               position: "absolute",
               top: 20,
               right: 20,
-              color: "#0A0F2C",
+              color: "#222959",
             }}
           >
             <CloseIcon fontSize="large" />
@@ -238,7 +233,7 @@ export default function Schools() {
               mb: 4,
               textAlign: "center",
               fontFamily: "Outfit, sans-serif",
-              color: "#0A0F2C",
+              color: "#222959",
             }}
           >
             Davao City
@@ -364,11 +359,8 @@ export default function Schools() {
 }
 
 const schoolBoxStyle = {
-  border: "4px solid #00165E",
+  border: "4px solid #222959",
   borderRadius: "50px",
-  px: 5,
-  py: 6,
-  mb: 6,
   position: "relative",
   width: "400px",
   height: "200px",
@@ -381,7 +373,7 @@ const schoolTitleStyle = {
   transform: "translateX(-50%)",
   fontSize: "22px",
   fontWeight: 800,
-  color: "#000000",
+  color: "#222959",
   backgroundColor: "#fff",
   px: 2,
   textAlign: "center",
@@ -391,7 +383,7 @@ const schoolTitleStyle = {
 const campusTextStyle = {
   fontSize: "20px",
   fontStyle: "italic",
-  color: "#000000",
+  color: "#222959",
   textAlign: "center",
   fontWeight: 800,
   mt: 4,
@@ -402,6 +394,6 @@ const logoOverlay = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  opacity: 0.2,
+  opacity: 0.1,
   zIndex: 0,
 };

@@ -14,25 +14,39 @@ export default function Schools() {
         position: "relative",
       }}
     >
-      <Box sx={{ marginTop: "10px" }}>
+      <Box sx={{ marginTop: "60px" }}>
         <Typography
           sx={{
-            fontSize: "70px",
-            fontWeight: 700,
+            fontFamily: "Outfit, sans-serif",
             color: "#222959",
-            mb: 4,
+            fontSize: "40px",
+            fontWeight: 700,
           }}
         >
           Collaborated Schools
         </Typography>
+        <Typography
+          sx={{
+            marginTop: "7px",
+            fontFamily: "Outfit, sans-serif",
+            color: "#222959",
+            fontSize: "22px",
+            lineHeight: "30px",
+            fontWeight: 300,
+          }}
+        >
+          Building stronger futures through partnerships that inspire growth and
+          learning.
+        </Typography>
 
         <Typography
           sx={{
-            fontSize: "50px",
-            fontWeight: 700,
+            fontSize: "40px",
+            fontWeight: 600,
             color: "#222959",
-            mb: 4,
-            pl: 4,
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "60px",
           }}
         >
           Cebu City

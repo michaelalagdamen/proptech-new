@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { Box, Container, Typography, IconButton } from "@mui/material";
+import { Box, Container, Typography, IconButton, Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function MissionVision() {
@@ -13,105 +13,87 @@ export default function MissionVision() {
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
-        py: 5,
+        marginTop: "100px",
         fontFamily: "Outfit, sans-serif",
       }}
     >
       <Box
         sx={{
           position: "relative",
-          display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          backgroundColor: "#00165E",
-          height: "310px",
+          height: "180px",
           width: "1400px",
-          borderRadius: "50px",
-          p: 5,
+          borderRadius: "20px",
+          p: 2,
+          backgroundImage: `linear-gradient(rgba(103, 35, 97, 0.7), rgba(34, 41, 89, 0.9)), url('/images/filter.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Typography
             sx={{
-              fontSize: "70px",
-              fontWeight: 700,
+              fontSize: "50px",
+              fontWeight: 600,
               fontFamily: "Outfit, sans-serif",
               color: "#fff",
-              mt: -3,
-              mb: 4,
-              ml: -8,
             }}
           >
             Our Journey
           </Typography>
+        </Box>
 
-          <Box sx={{ display: "flex", gap: 3 }}>
-            <Box
-              sx={{
-                backgroundColor: "#FFFFFF",
-                px: 4,
-                py: 1,
-                borderRadius: "10px",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#00165E",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-                },
-              }}
-              onClick={() => setOpenCity("cebu")}
-            >
-              <Typography
-                sx={{
-                  color: "#00165E",
-                  fontSize: "40px",
-                  fontWeight: 800,
-                  fontFamily: "Outfit, sans-serif",
-                  "&:hover": {
-                    color: "#ffffff",
-                  },
-                }}
-              >
-                Cebu
-              </Typography>
-            </Box>
+        <Box
+          sx={{ display: "flex", gap: 3, padding: "10px", marginTop: "8px" }}
+        >
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            sx={{
+              border: "2px solid #fff",
+              borderRadius: "15px",
+              width: "130px",
+              height: "50px",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                bgcolor: "rgba(217, 217, 217, 0.3)",
+                boxShadow: "none",
+              },
+              color: "#fff",
+              fontSize: "25px",
+              fontWeight: 400,
+              fontFamily: "Outfit, sans-serif",
+              textTransform: "none",
+            }}
+            onClick={() => setOpenCity("cebu")}
+          >
+            Cebu
+          </Button>
 
-            <Box
-              sx={{
-                backgroundColor: "#FFFFFF",
-                px: 4,
-                py: 1,
-                borderRadius: "10px",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  backgroundColor: "#00165E",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-                },
-              }}
-              onClick={() => setOpenCity("davao")}
-            >
-              <Typography
-                sx={{
-                  color: "#00165E",
-                  fontSize: "40px",
-                  fontWeight: 800,
-                  fontFamily: "Outfit, sans-serif",
-                  "&:hover": {
-                    color: "#ffffff",
-                  },
-                }}
-              >
-                Mindanao
-              </Typography>
-            </Box>
-          </Box>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            sx={{
+              border: "2px solid #fff",
+              borderRadius: "15px",
+              width: "160px",
+              height: "50px",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                bgcolor: "rgba(217, 217, 217, 0.3)",
+                boxShadow: "none",
+              },
+              color: "#fff",
+              fontSize: "25px",
+              fontWeight: 400,
+              fontFamily: "Outfit, sans-serif",
+              textTransform: "none",
+            }}
+            onClick={() => setOpenCity("davao")}
+          >
+            Mindanao
+          </Button>
         </Box>
       </Box>
 
@@ -135,9 +117,9 @@ export default function MissionVision() {
           <Box
             sx={{
               position: "relative",
-              width: "90%",
-              maxWidth: "700px",
-              bgcolor: "#00165E",
+              height: "560px",
+              maxWidth: "880px",
+              bgcolor: "#672361",
               color: "white",
               borderRadius: "20px",
               p: 4,
@@ -160,7 +142,7 @@ export default function MissionVision() {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontWeight: "bold",
+                    fontWeight: 600,
                     mb: 2,
                     fontFamily: "Outfit, sans-serif",
                   }}
@@ -170,9 +152,11 @@ export default function MissionVision() {
                 <Typography
                   variant="body1"
                   sx={{
-                    fontSize: "16px",
-                    lineHeight: "1.7",
+                    fontSize: "20px",
+                    lineHeight: "35px",
                     fontFamily: "Outfit, sans-serif",
+                    fontWeight: 300,
+                    marginTop: "30px",
                   }}
                 >
                   “Cebu HACKSTATE:2025 is more than just a hackathon — it’s a
@@ -214,7 +198,7 @@ export default function MissionVision() {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontWeight: "bold",
+                    fontWeight: 600,
                     mb: 2,
                     fontFamily: "Outfit, sans-serif",
                   }}
@@ -224,9 +208,11 @@ export default function MissionVision() {
                 <Typography
                   variant="body1"
                   sx={{
-                    fontSize: "16px",
-                    lineHeight: "1.7",
+                    fontSize: "20px",
+                    lineHeight: "35px",
                     fontFamily: "Outfit, sans-serif",
+                    fontWeight: 300,
+                    marginTop: "30px",
                   }}
                 >
                   “Cebu HACKSTATE:2025 stood as a significant milestone in

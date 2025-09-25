@@ -10,64 +10,59 @@ export default function WhoWeAre() {
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
-        marginTop: "60px",
-        textAlign: "center",
-        mt: 15,
+        marginTop: "80px",
+        textAlign: "left",
       }}
     >
       <Typography
-        variant="h3"
         sx={{
+          fontFamily: "Outfit, sans-serif",
+          color: "#222959",
+          fontSize: "40px",
           fontWeight: 700,
-          color: "#0A0F2C",
-          fontSize: "70px",
-          letterSpacing: "-3px",
-          mb: 4,
-          textAlign: "left",
         }}
       >
-        People Behind Proptech
+        People Behind PropTech
       </Typography>
-
-      <Box
-        sx={{
-          border: "3px solid #0A0F2C",
-          borderRadius: "30px",
-          padding: "12px",
-          width: "100%",
-          maxWidth: "1200px",
-          margin: "0 auto",
-          mb: 4,
-        }}
-      >
-        <Image
-          src="/images/people.png"
-          alt="Who We Are Team"
-          width={1200}
-          height={500}
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-          }}
-        />
-      </Box>
-
       <Typography
         sx={{
-          fontSize: "20px",
-          fontWeight: "bold",
-          color: "#0A0F2C",
-          maxWidth: "900px",
-          margin: "0 auto",
-          lineHeight: 1.6,
+          marginTop: "7px",
+          fontFamily: "Outfit, sans-serif",
+          color: "#222959",
+          fontSize: "22px",
+          lineHeight: "30px",
+          fontWeight: 300,
         }}
       >
-        “We are a community of innovators and visionaries reshaping real estate
-        through PropTech. By fostering collaboration, we empower businesses and
-        organizations to embrace digital transformation, push boundaries, and
-        unlock new opportunities for growth.”
+        Passionate professionals at the forefront of progress, collaboration,
+        and innovation in PropTech.
       </Typography>
+
+      <Box sx={{ marginTop: "50px" }}>
+        <Image
+          src="/images/aboutImage.png"
+          alt="Team"
+          width={596}
+          height={466}
+        />
+        <Typography
+          sx={{
+            fontSize: "25px",
+            fontWeight: 400,
+            color: "#222959",
+            maxWidth: "1100px",
+            margin: "0 auto",
+            lineHeight: "35px",
+            marginTop: "30px",
+            textAlign: "center",
+          }}
+        >
+          “We are a community of innovators and visionaries reshaping real
+          estate through PropTech. By fostering collaboration, we empower
+          businesses and organizations to embrace digital transformation, push
+          boundaries, and unlock new opportunities for growth.”
+        </Typography>
+      </Box>
     </Container>
   );
 }

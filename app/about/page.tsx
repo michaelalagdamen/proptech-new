@@ -9,10 +9,10 @@ import Partner from "@/component/sections/Partner";
 export default function About() {
   return (
     <>
-      <MissionVision />
+      <ProductPeople />
       <OurJourney />
       <Schools />
-      <ProductPeople />
+      <MissionVision />
       <Partner />
     </>
   );

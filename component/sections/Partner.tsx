@@ -34,7 +34,7 @@ export default function Partner() {
         py: 8,
         position: "relative",
         color: "#fff",
-        mt: 10,
+        marginTop: "80px",
       }}
     >
       <Box
@@ -55,17 +55,22 @@ export default function Partner() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h6"
           component="h2"
-          sx={{ fontWeight: "bold", mb: 4 }}
+          sx={{
+            fontWeight: 700,
+            mb: 4,
+            fontFamily: "Outfit, sans-serif",
+            fontSize: "35px",
+          }}
         >
-          “PropTech is rising — don’t get left behind.”
+          PropTech is on the rise—don’t get left behind.
         </Typography>
 
         <NoSsr>
           <TextField
             id="partner-email"
-            label="Type your Email Address"
+            placeholder="Type your Email Address"
             variant="outlined"
             fullWidth
             sx={{
@@ -74,6 +79,11 @@ export default function Partner() {
               "& .MuiOutlinedInput-root": {
                 borderRadius: "30px",
                 paddingRight: 0.7,
+                color: "#672361",
+              },
+              "& .MuiInputBase-input::placeholder": {
+                color: "#8381A1",
+                opacity: 0.8,
               },
             }}
             value={email}
@@ -85,14 +95,15 @@ export default function Partner() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon />}
                     sx={{
-                      bgcolor: "#00165E",
+                      bgcolor: "#672361",
                       borderRadius: "25px",
                       px: 3,
                       py: 1.2,
                       textTransform: "none",
                       fontWeight: "bold",
                       ml: 1,
-                      "&:hover": { bgcolor: "#141b4d" },
+                      boxShadow: "none",
+                      "&:hover": { bgcolor: "#986393", boxShadow: "none" },
                     }}
                   >
                     Partner With Us
@@ -103,9 +114,16 @@ export default function Partner() {
           />
         </NoSsr>
 
-        <Typography variant="body2" sx={{ opacity: 0.8, mt: 2 }}>
-          *Stay updated. Enter your email and be part of the future of
-          PropTech.*
+        <Typography
+          variant="body2"
+          sx={{
+            marginTop: "20px",
+            fontFamily: "Outfit, sans-serif",
+            fontSize: "18px",
+            fontWeight: 300,
+          }}
+        >
+          Stay updated. Enter your email and be part of the future of PropTech.
         </Typography>
       </Box>
     </Box>
