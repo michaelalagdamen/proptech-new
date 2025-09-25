@@ -183,7 +183,7 @@ export default function Schools() {
             py: 1,
             fontWeight: "bold",
             textTransform: "none",
-            backgroundColor: "#0A0F2C",
+            backgroundColor: "#00165E",
             "&:hover": {
               backgroundColor: "#15204d",
             },
@@ -364,7 +364,7 @@ export default function Schools() {
 }
 
 const schoolBoxStyle = {
-  border: "4px solid #0A0F2C",
+  border: "4px solid #00165E",
   borderRadius: "50px",
   px: 5,
   py: 6,
@@ -381,7 +381,7 @@ const schoolTitleStyle = {
   transform: "translateX(-50%)",
   fontSize: "22px",
   fontWeight: 800,
-  color: "#0A0F2C",
+  color: "#000000",
   backgroundColor: "#fff",
   px: 2,
   textAlign: "center",
@@ -391,7 +391,7 @@ const schoolTitleStyle = {
 const campusTextStyle = {
   fontSize: "20px",
   fontStyle: "italic",
-  color: "#0A0F2C",
+  color: "#000000",
   textAlign: "center",
   fontWeight: 800,
   mt: 4,

@@ -68,7 +68,7 @@ export default function AboutHero() {
               lineHeight: "50px",
             }}
           >
-            discover the newest updates driving the proptech forward
+            discover the newest updates <br /> driving the proptech forward
           </Typography>
 
           <Divider

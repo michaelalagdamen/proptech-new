@@ -99,7 +99,7 @@ export default function ProductsCards() {
           <Box
             sx={{
               display: "grid",
-              gap: 3,
+              gap: 8,
               gridTemplateColumns: {
                 xs: "2fr",
                 sm: "5fr 5fr",
@@ -203,7 +203,7 @@ export default function ProductsCards() {
                 >
                   <Link
                     href="#"
-                    className="block w-full text-center text-white text-sm py-3 font-medium"
+                    className="block w-full text-center text-white text-sm py-3 font-medium z-10"
                   >
                     Click Here
                   </Link>

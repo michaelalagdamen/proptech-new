@@ -56,34 +56,35 @@ export default function AboutHero() {
             top: "250px",
             left: "60px",
             zIndex: 2,
-            width: "1010px",
+            width: "990px",
           }}
         >
           <Typography
             sx={{
               fontSize: "50px",
+              fontWeight: "semi-bold",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
               textTransform: "uppercase",
               lineHeight: "50px",
             }}
           >
-            building bridges to smarter business futures
+            innovative products for <br />
+            smarter living
           </Typography>
 
           <Divider
-            sx={{ width: "1075px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "765px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{
               fontSize: "22px",
               color: "#ffffff",
               fontFamily: "Outfit, sans-serif",
-              width: "1080px",
             }}
           >
-            Connecting innovation and opportunity to help businesses grow,
-            adapt, and thrive in a rapidly evolving world.
+            Innovative tech designed to enhance everyday living with ease and
+            efficiency.
           </Typography>
         </Box>
       </Container>

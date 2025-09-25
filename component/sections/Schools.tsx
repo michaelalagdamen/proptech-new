@@ -19,7 +19,7 @@ export default function Schools() {
           sx={{
             fontSize: "70px",
             fontWeight: 700,
-            color: "#0A0F2C",
+            color: "#222959",
             mb: 4,
           }}
         >
@@ -30,7 +30,7 @@ export default function Schools() {
           sx={{
             fontSize: "50px",
             fontWeight: 700,
-            color: "#0A0F2C",
+            color: "#222959",
             mb: 4,
             pl: 4,
           }}

@@ -25,7 +25,7 @@ export default function AboutHero() {
           }}
         >
           <Image
-            src="/images/events-hero.jpg"
+            src="/images/about-hero.jpg"
             alt=""
             width={1450}
             height={750}
@@ -73,7 +73,7 @@ export default function AboutHero() {
           </Typography>
 
           <Divider
-            sx={{ width: "900px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "765px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{
