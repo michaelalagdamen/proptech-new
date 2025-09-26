@@ -39,7 +39,7 @@ export default function Schools() {
           learning.
         </Typography>
 
-        <Typography
+        {/* <Typography
           sx={{
             fontSize: "40px",
             fontWeight: 600,
@@ -50,7 +50,7 @@ export default function Schools() {
           }}
         >
           Cebu City
-        </Typography>
+        </Typography> */}
       </Box>
 
       <SchoolCards />

@@ -20,9 +20,9 @@ export default function Partner() {
   return (
     <Box
       sx={{
-        width: "100",
-        minHeight: "400px",
-        backgroundImage: "url('/images/partner-with-us.png')",
+        width: "100%",
+        minHeight: "500px",
+        backgroundImage: `linear-gradient(rgba(103, 35, 97, 0.1), rgba(34, 41, 89, 0.1)), url('/images/filterPartner.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
@@ -34,7 +34,7 @@ export default function Partner() {
         py: 8,
         position: "relative",
         color: "#fff",
-        marginTop: "80px",
+        marginTop: "100px",
       }}
     >
       <Box

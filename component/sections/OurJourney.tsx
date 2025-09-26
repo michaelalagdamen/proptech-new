@@ -24,7 +24,7 @@ export default function MissionVision() {
           width: "1400px",
           borderRadius: "20px",
           p: 2,
-          backgroundImage: `linear-gradient(rgba(103, 35, 97, 0.7), rgba(34, 41, 89, 0.9)), url('/images/filter.jpg')`,
+          backgroundImage: `linear-gradient(rgba(103, 35, 97, 0.1), rgba(34, 41, 89, 0.1)), url('/images/filter.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -119,7 +119,9 @@ export default function MissionVision() {
               position: "relative",
               height: "560px",
               maxWidth: "880px",
-              bgcolor: "#672361",
+              backgroundImage: `linear-gradient(rgba(103, 35, 97, 0.1), rgba(34, 41, 89, 0.1)), url('/images/filterCebu.jpg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
               color: "white",
               borderRadius: "20px",
               p: 4,
@@ -142,12 +144,12 @@ export default function MissionVision() {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontWeight: 600,
+                    fontWeight: 700,
                     mb: 2,
                     fontFamily: "Outfit, sans-serif",
                   }}
                 >
-                  Cebu HACKSTATE:2025
+                  HACKSTATE: Hackathon Cebu 2025
                 </Typography>
                 <Typography
                   variant="body1"
@@ -155,18 +157,18 @@ export default function MissionVision() {
                     fontSize: "20px",
                     lineHeight: "35px",
                     fontFamily: "Outfit, sans-serif",
-                    fontWeight: 300,
+                    fontWeight: 400,
                     marginTop: "30px",
                   }}
                 >
-                  “Cebu HACKSTATE:2025 is more than just a hackathon — it’s a
-                  well-curated innovation arena organized by PropTech leaders
-                  who are passionate about shaping the future of real estate
-                  through technology. Held over two days at Sacred Heart Hall,
-                  Cebu City, the event brought together participants from 9
-                  universities and institutions across Cebu — University of Cebu
-                  Lapu-Lapu & Mandaue Campus, University of Cebu Banilad Campus,
-                  University of Cebu Main Campus, University of San
+                  “HACKSTATE: Hackathon Cebu 2025 is more than just a hackathon
+                  — it’s a well-curated innovation arena organized by PropTech
+                  leaders who are passionate about shaping the future of real
+                  estate through technology. Held over two days at Sacred Heart
+                  Hall, Cebu City, the event brought together participants from
+                  9 universities and institutions across Cebu — University of
+                  Cebu Lapu-Lapu & Mandaue Campus, University of Cebu Banilad
+                  Campus, University of Cebu Main Campus, University of San
                   Jose-Recoletos Basak Campus, Asian College of Technology Cebu
                   Campus, University of Southern Philippines Foundation Main
                   Campus, University of the Visayas Main Campus, University of
@@ -203,7 +205,7 @@ export default function MissionVision() {
                     fontFamily: "Outfit, sans-serif",
                   }}
                 >
-                  Davao City HACKSTATE:2025
+                  HACKSTATE: Hackathon Davao 2025
                 </Typography>
                 <Typography
                   variant="body1"
@@ -215,13 +217,13 @@ export default function MissionVision() {
                     marginTop: "30px",
                   }}
                 >
-                  “Cebu HACKSTATE:2025 stood as a significant milestone in
-                  advancing PropTech innovation, organized by industry leaders
-                  committed to shaping the future of real estate through
-                  technology. The preliminary round, conducted via Zoom on July
-                  30, identified five finalist teams, while the remaining
-                  participants were recognized with consolation prizes and
-                  e-certificates from the organizing body. The Grand Finals,
+                  “HACKSTATE: Hackathon Davao 2025 stood as a significant
+                  milestone in advancing PropTech innovation, organized by
+                  industry leaders committed to shaping the future of real
+                  estate through technology. The preliminary round, conducted
+                  via Zoom on July 30, identified five finalist teams, while the
+                  remaining participants were recognized with consolation prizes
+                  and e-certificates from the organizing body. The Grand Finals,
                   held on August 27, featured formal pitching presentations from
                   the finalists and concluded with the announcement of the top
                   three winners. The event brought together participants from
