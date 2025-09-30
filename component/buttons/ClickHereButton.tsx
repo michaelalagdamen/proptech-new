@@ -2,9 +2,8 @@
 
 import * as React from "react";
 import { Button, Box } from "@mui/material";
-import { OpenInNewRounded } from "@mui/icons-material";
 
-export default function ViewAllButton() {
+export default function ClickHereButton() {
   return (
     <Box
       sx={{
@@ -16,16 +15,16 @@ export default function ViewAllButton() {
       <Button
         variant="contained"
         sx={{
-          width: "385px",
+          fontSize: "16px",
+          backgroundColor: "#672361",
+          width: "285px",
           height: "40px",
           fontFamily: "Outfit, sans-serif",
           color: "#fff",
-          fontSize: "18px",
           lineHeight: "30px",
           fontWeight: 300,
           textTransform: "none",
           padding: "15px",
-          backgroundColor: "#672361",
           borderRadius: "10px",
           boxShadow: "none",
           "&:hover": {
@@ -35,17 +34,7 @@ export default function ViewAllButton() {
           },
         }}
       >
-        View all products
-        <Box
-          sx={{
-            marginLeft: "10px",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-          }}
-        >
-          <OpenInNewRounded sx={{ color: "#fff", fontSize: "22px" }} />
-        </Box>
+        Click Here
       </Button>
     </Box>
   );

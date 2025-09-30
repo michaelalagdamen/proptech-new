@@ -62,7 +62,7 @@ export default function GalleryHero() {
           </Typography>
 
           <Divider
-            sx={{ width: "930px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "910px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{

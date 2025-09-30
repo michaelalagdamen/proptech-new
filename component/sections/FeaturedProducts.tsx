@@ -7,6 +7,7 @@ import ProductsCards from "./cards/ProductsCards";
 export default function FeaturedProducts() {
   return (
     <Container
+      id="featured-products"
       maxWidth={false}
       sx={{
         maxWidth: "1440px",

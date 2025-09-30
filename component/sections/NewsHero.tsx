@@ -72,7 +72,7 @@ export default function AboutHero() {
           </Typography>
 
           <Divider
-            sx={{ width: "1122px", height: "1px", backgroundColor: "#ffffff" }}
+            sx={{ width: "845px", height: "1px", backgroundColor: "#ffffff" }}
           />
           <Typography
             sx={{

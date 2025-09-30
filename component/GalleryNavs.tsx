@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Box, Container, Stack, Button } from "@mui/material";
 import LensRoundedIcon from "@mui/icons-material/LensRounded";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function GalleryNavs() {
@@ -24,12 +25,15 @@ export default function GalleryNavs() {
             gap: 70,
           }}
         >
-          <Image
-            src="/images/proptech-logo.png"
-            alt="Technelolodja"
-            width={270}
-            height={91}
-          />
+          <Link href="/home">
+            <Image
+              src="/images/proptech-logo.png"
+              alt="PropTech"
+              width={270}
+              height={91}
+              style={{ display: "block", cursor: "pointer" }}
+            />
+          </Link>
 
           <Stack
             spacing={1}

@@ -42,16 +42,18 @@ export default function ContactUs() {
               top: 0,
               left: "50%",
               transform: "translateX(-50%)",
-              bgcolor: "#672361",
               py: 1,
-              borderRadius: "0 0 12px 12px ",
+              borderRadius: "0 0 15px 15px",
+              borderLeft: "2px solid #CDCED9",
+              borderRight: "2px solid #CDCED9",
+              borderBottom: "2px solid #CDCED9",
             }}
           >
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#ffffff",
+                color: "#222959",
                 textAlign: "center",
                 width: 550,
                 fontSize: "40px",

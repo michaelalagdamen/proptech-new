@@ -2,8 +2,9 @@
 
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import { Box, Button, Grid, Paper, Typography, Rating } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography, Rating } from "@mui/material";
 import Images from "next/image";
+import ClickHereButton from "@/component/buttons/ClickHereButton";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -18,632 +19,621 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ProductCards() {
   return (
-    <Box sx={{ flexGrow: 1, py: 4, px: 4 }}>
-      <Grid container spacing={4} gap={4}>
-        {/* Doorbell */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            {/* Top image */}
-            <Box
+    <Container
+      maxWidth={false}
+      sx={{
+        maxWidth: "1440px",
+        maxHeight: "848px",
+        position: "relative",
+        marginTop: "50px",
+      }}
+    >
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={3} gap={3}>
+          <Grid size={3}>
+            <Item
               sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
-                position: "relative",
-              }}
-            >
-              <Images
-                src="/images/doorbell.png"
-                alt="Doorbell"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
-                }}
-              />
-            </Box>
-
-            {/* Context */}
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
-              >
-                DoorSmart
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={4} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (12)
-                </Typography>
-              </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                  color: "#222959",
-                }}
-              >
-                The most advanced smart doorbell system with camera and remote
-                control.
-              </Typography>
-            </Box>
-
-            {/* Button */}
-            <Button
-              variant="contained"
-              sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-
-        {/* Drone */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/drone.png"
-                alt="Drone"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              {/* Top image */}
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                SkyCam Drone
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={5} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (30)
+                <Images
+                  src="/images/doorbell.png"
+                  alt="Doorbell"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              {/* Context */}
+              <Box
+                sx={{
+                  textAlign: "left",
+                  padding: "0 15px 0 15px",
+                }}
+              >
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Blink Video Doorbell
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={4} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (12)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  Standout features like its 135° field of view, 1080p
+                  resolution, and seamless Alexa integration.
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                Capture amazing aerial footage with 4K camera and GPS
-                navigation.
-              </Typography>
-            </Box>
 
-            <Button
-              variant="contained"
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-
-        {/* Thermostat */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/thermostat.png"
-                alt="Thermostat"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                SmartThermo
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={4} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (22)
+                <Images
+                  src="/images/vacuum.jpg"
+                  alt="Drone"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Smart Vacuum
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={5} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (30)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  Get Smart & Enhance your cleaning regimen! New era of clean
+                  homes.
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                Control your home temperature remotely with energy-saving
-                features.
-              </Typography>
-            </Box>
 
-            <Button
-              variant="contained"
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-
-        {/* Vacuum */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/vacuum.png"
-                alt="Vacuum"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                CleanBot
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={5} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (40)
+                <Images
+                  src="/images/smarttherm.jpg"
+                  alt="Thermostat"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Smart Thermostat
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={4} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (22)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  Regulate heating and cooling systems in a more efficient and
+                  user-friendly way.
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                Smart vacuum robot that cleans floors automatically with
-                mapping.
-              </Typography>
-            </Box>
 
-            <Button
-              variant="contained"
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-
-        {/* Coffee Machine */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/coffee.png"
-                alt="Coffee Machine"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                BrewMaster
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={4} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (15)
+                <Images
+                  src="/images/coffemachine.jpg"
+                  alt="Vacuum"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Moon Coffee Maker
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={5} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (40)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  This machine is very unlike the espresso makers in the market
+                  and it’s the aesthetics that set it apart. 
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                Enjoy fresh coffee every morning with smart scheduling.
-              </Typography>
-            </Box>
 
-            <Button
-              variant="contained"
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-
-        {/* VR Headset */}
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/vr.png"
-                alt="VR Headset"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                VisionVR
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={5} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (50)
+                <Images
+                  src="/images/vr.jpg"
+                  alt="Coffee Machine"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Oculus Quest 2
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={4} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (15)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  The most popular virtual reality (VR) hardware belongs to
+                  Meta’s Oculus (formerly Facebook). 
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                Immerse yourself in virtual worlds with ultra HD VR experience.
-              </Typography>
-            </Box>
 
-            <Button
-              variant="contained"
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          {/* VR Headset */}
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "15px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "15px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/drone.png"
-                alt="Drone"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                SkyCam Drone
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={5} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (30)
+                <Images
+                  src="/images/kneemassage.jpg"
+                  alt="VR Headset"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Cordless Knee Massager
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={5} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (50)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  The knee massager has 9-speed vibration and heating modes
+                  (107℉-131℉).
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
+
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
+              sx={{
+                height: "370px",
+                borderRadius: "15px",
+                position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
+              }}
+            >
+              <Box
                 sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
               >
-                Capture amazing aerial footage with 4K camera and GPS
-                navigation.
-              </Typography>
-            </Box>
+                <Images
+                  src="/images/humidifier.jpg"
+                  alt="Drone"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
 
-            <Button
-              variant="contained"
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  Anti-Gravity Humidifier
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={5} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (30)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  Experience the magic, where mist floats upward, creating a
+                  calming, almost magical ambiance.
+                </Typography>
+              </Box>
+
+              <ClickHereButton />
+            </Item>
+          </Grid>
+
+          <Grid size={3}>
+            <Item
               sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
+                height: "370px",
                 borderRadius: "10px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
-        </Grid>
-        <Grid size={3}>
-          <Item
-            sx={{
-              height: "350px",
-              borderRadius: "10px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            {/* Top image */}
-            <Box
-              sx={{
-                right: 8,
-                bottom: 8,
-                height: "55%",
-                width: "108%",
                 position: "relative",
+                overflow: "hidden",
+                boxShadow: "0 0 3px rgba(90, 45, 130, 0.5)",
               }}
             >
-              <Images
-                src="/images/doorbell.png"
-                alt="Doorbell"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
+              {/* Top image */}
+              <Box
+                sx={{
+                  right: 8,
+                  bottom: 8,
+                  height: "50%",
+                  width: "108%",
+                  position: "relative",
                 }}
-              />
-            </Box>
-
-            {/* Context */}
-            <Box sx={{ textAlign: "left" }}>
-              <Typography
-                variant="subtitle1"
-                sx={{ fontWeight: "bold", color: "#222959", fontSize: "22px" }}
               >
-                DoorSmart
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
-                <Rating name="read-only" value={4} readOnly size="small" />
-                <Typography variant="body2" sx={{ ml: 0.5, color: "#222959" }}>
-                  (12)
+                <Images
+                  src="/images/drone.jpg"
+                  alt="Doorbell"
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+                />
+              </Box>
+
+              {/* Context */}
+              <Box sx={{ textAlign: "left", padding: "0 15px 0 15px" }}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#222959",
+                    fontSize: "20px",
+                    marginTop: "5px",
+                  }}
+                >
+                  iFlight Alpha A85 HD
+                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 0.5 }}>
+                  <Rating name="read-only" value={4} readOnly size="small" />
+                  <Typography
+                    variant="body2"
+                    sx={{ ml: 0.5, color: "#222959" }}
+                  >
+                    (12)
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    color: "#222959",
+                    fontWeight: 300,
+                    marginTop: "15px",
+                  }}
+                >
+                  Compact and versatile Whoop style racing FPV drone. Features
+                  DJI compatible digital FPV system.
                 </Typography>
               </Box>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "13px",
-                  color: "#222959",
-                  lineHeight: 1.3,
-                  overflow: "hidden",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                The most advanced smart doorbell system with camera and remote
-                control.
-              </Typography>
-            </Box>
 
-            {/* Button */}
-            <Button
-              variant="contained"
-              sx={{
-                bottom: 10,
-                left: 6.5,
-                position: "absolute",
-                borderRadius: "10px",
-                textTransform: "none",
-                width: "95%",
-                fontSize: "16px",
-                backgroundColor: "#672361",
-              }}
-            >
-              Click Here
-            </Button>
-          </Item>
+              {/* Button */}
+              <ClickHereButton />
+            </Item>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+      </Box>
+    </Container>
   );
 }

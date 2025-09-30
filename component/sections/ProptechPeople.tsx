@@ -41,7 +41,7 @@ export default function WhoWeAre() {
             sx={{
               fontFamily: "Outfit, sans-serif",
               color: "#672361",
-              fontSize: "40px",
+              fontSize: "45px",
               fontWeight: 700,
             }}
           >
@@ -51,7 +51,7 @@ export default function WhoWeAre() {
             sx={{
               fontSize: "30px",
               fontFamily: "Outfit, sans-serif",
-              fontWeight: 400,
+              fontWeight: 600,
               color: "#222959",
               maxWidth: "560px",
               lineHeight: "35px",
@@ -66,7 +66,7 @@ export default function WhoWeAre() {
             sx={{
               fontSize: "23px",
               fontFamily: "Outfit, sans-serif",
-              fontWeight: 300,
+              fontWeight: 400,
               color: "#222959",
               maxWidth: "560px",
               lineHeight: "33px",

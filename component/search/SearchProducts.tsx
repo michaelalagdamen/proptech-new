@@ -18,7 +18,7 @@ export default function SearchProducts() {
       }}
     >
       <OutlinedInput
-        placeholder="Search..."
+        placeholder="Search"
         value={value}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setValue(e.target.value)

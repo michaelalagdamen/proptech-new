@@ -26,7 +26,7 @@ export default function Hero() {
         >
           <Image
             src="/images/hero-bg.png"
-            alt="Technelolodja"
+            alt="PropTech"
             width={1450}
             height={750}
           />
@@ -43,7 +43,7 @@ export default function Hero() {
           <MuiLink href="/home">
             <Image
               src="/images/proptech-logo.png"
-              alt="Technelolodja"
+              alt="PropTech"
               width={280}
               height={80}
             />

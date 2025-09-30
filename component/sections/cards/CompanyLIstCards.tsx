@@ -9,7 +9,6 @@ import ViewAllButton from "@/component/buttons/ViewAllButton";
 export default function CompanyListCards() {
   return (
     <Container
-      id="feature-company"
       maxWidth={false}
       sx={{
         maxWidth: "1440px",
